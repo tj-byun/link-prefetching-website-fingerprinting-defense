@@ -1,8 +1,8 @@
-/* Files Describtion */
+/* Files Description */
 normal.*: call google.com through Firefox web browser (call one time)
 tor.*: a call google.com through tor browser (call one time)
 
-/* Fields Discribtion */
+/* Fields Discription */
 frame.time: time since the first frame 
 ip.src: source ip address
 ip.dst: destination ip address

@@ -1,6 +1,3 @@
-## Overview
-Please find *scraped.csv* for a comprehensive list of urls that does prefetching (of any kind).
-
 ## Experience
 * I first tried to implement a sequential crawler using `requests.get()`. However, the time it took for loading a website varied hugely (1 sec to >100 sec) (I/O bottleneck, i guess) that I had to looked for a different solution.
 * I tried to parallelize the crawler by implementing a thread for each address or a bucket of addresses. It was neither efficient however.

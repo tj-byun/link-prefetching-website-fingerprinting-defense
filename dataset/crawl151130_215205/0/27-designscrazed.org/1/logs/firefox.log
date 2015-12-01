@@ -1,0 +1,46 @@
+
+(process:8852): GLib-CRITICAL **: g_slice_set_config: assertion 'sys_page_size == 0' failed
+
+(firefox:8852): IBUS-WARNING **: The owner of /home/taejoon/.config/ibus/bus is not root!
+1448942334226	addons.manager	DEBUG	Application has been upgraded
+1448942334230	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/addons/XPIProvider.jsm: ["XPIProvider"]
+1448942334232	addons.manager	DEBUG	Loaded provider scope for resource://gre/modules/LightweightThemeManager.jsm: ["LightweightThemeManager"]
+1448942334233	addons.xpi	DEBUG	startup
+1448942334244	addons.xpi	DEBUG	checkForChanges
+1448942334250	addons.xpi	DEBUG	Directory state JSON differs: cache [] state [{"name":"app-profile","addons":{"https-everywhere@eff.org":{"descriptor":"/tmp/tmpn2drOR/webdriver-py-profilecopy/extensions/https-everywhere@eff.org","mtime":1448942333000,"rdfTime":1446131580000},"torbutton@torproject.org":{"descriptor":"/tmp/tmpn2drOR/webdriver-py-profilecopy/extensions/torbutton@torproject.org.xpi","mtime":1446131580000},"fxdriver@googlecode.com":{"descriptor":"/tmp/tmpn2drOR/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com","mtime":1448942334000,"rdfTime":1448942334000},"tor-launcher@torproject.org":{"descriptor":"/tmp/tmpn2drOR/webdriver-py-profilecopy/extensions/tor-launcher@torproject.org.xpi","mtime":1446131580000},"{73a6fe31-595d-460b-a920-fcc0f8843232}":{"descriptor":"/tmp/tmpn2drOR/webdriver-py-profilecopy/extensions/{73a6fe31-595d-460b-a920-fcc0f8843232}.xpi","mtime":1446131580000}}}]
+1448942334253	addons.xpi-utils	DEBUG	Opening XPI database /tmp/tmpn2drOR/webdriver-py-profilecopy/extensions.json
+1448942334253	addons.xpi-utils	DEBUG	Attempting to upgrade from SQLITE database
+1448942334254	addons.xpi-utils	DEBUG	Migrating data from sqlite
+1448942334254	addons.xpi-utils	ERROR	Unable to read anything useful from the database
+1448942334254	addons.xpi	DEBUG	New add-on https-everywhere@eff.org installed in app-profile
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1448942334266	addons.xpi-utils	DEBUG	Make addon app-profile:https-everywhere@eff.org visible
+1448942334268	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334268	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334268	addons.xpi	DEBUG	New add-on torbutton@torproject.org installed in app-profile
+1448942334281	addons.xpi-utils	DEBUG	Make addon app-profile:torbutton@torproject.org visible
+1448942334281	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334281	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334281	addons.xpi	DEBUG	New add-on fxdriver@googlecode.com installed in app-profile
+1448942334283	addons.xpi-utils	DEBUG	Make addon app-profile:fxdriver@googlecode.com visible
+1448942334284	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334284	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334284	addons.xpi	DEBUG	New add-on tor-launcher@torproject.org installed in app-profile
+1448942334292	addons.xpi-utils	DEBUG	Make addon app-profile:tor-launcher@torproject.org visible
+1448942334292	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334292	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334292	addons.xpi	DEBUG	New add-on {73a6fe31-595d-460b-a920-fcc0f8843232} installed in app-profile
+1448942334294	addons.xpi-utils	DEBUG	Make addon app-profile:{73a6fe31-595d-460b-a920-fcc0f8843232} visible
+1448942334294	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334294	DeferredSave.extensions.json	DEBUG	Save changes
+1448942334299	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1448942334299	addons.xpi-utils	DEBUG	Updating add-on states
+1448942334300	addons.xpi-utils	DEBUG	Writing add-ons list
+/home/taejoon/Downloads/tor-browser-crawler/tbb/tor-browser-linux64-4.0.8_en-US/Browser/TorBrowser/Tor/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by /usr/lib/x86_64-linux-gnu/libproxy.so.1)
+Failed to load module: /usr/lib/x86_64-linux-gnu/gio/modules/libgiolibproxy.so
+1448942334587	DeferredSave.extensions.json	DEBUG	Starting timer
+1448942334630	DeferredSave.extensions.json	DEBUG	Starting write
+1448942334688	DeferredSave.extensions.json	DEBUG	Write succeeded
+1448942334688	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 16
+0 migrated.
+JavaScript error: chrome://https-everywhere/content/toolbar_button.js, line 168: toolbarbutton is null

@@ -1,0 +1,21 @@
+DOI: http://dx.doi.org/10.1109/SP.2012.28
+
+BibTeX: 
+@inproceedings{Dyer:2012:PIS:2310656.2310689,
+ author = {Dyer, Kevin P. and Coull, Scott E. and Ristenpart, Thomas and Shrimpton, Thomas},
+ title = {Peek-a-Boo, I Still See You: Why Efficient Traffic Analysis Countermeasures Fail},
+ booktitle = {Proceedings of the 2012 IEEE Symposium on Security and Privacy},
+ series = {SP '12},
+ year = {2012},
+ isbn = {978-0-7695-4681-0},
+ pages = {332--346},
+ numpages = {15},
+ url = {http://dx.doi.org/10.1109/SP.2012.28},
+ doi = {10.1109/SP.2012.28},
+ acmid = {2310689},
+ publisher = {IEEE Computer Society},
+ address = {Washington, DC, USA},
+ keywords = {traffic analysis countermeasures, privacy, machine learning, padding, encrypted traffic},
+} 
+
+Comments: This paper evaluates different packet level countermeasures against 3 different classifiers. It proposes a VNG++ classifier of its own which uses variable n-grams, total time and bandwidth in each direction of the connection with naive Bayes. It then proposes a new defense mechanism called BuFlo which sends out fixed-sized packets at fixed time intervals for a predetermined amount of time and evaluate this defense mechanism.

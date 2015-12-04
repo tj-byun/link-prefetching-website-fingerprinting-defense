@@ -113,18 +113,19 @@ This section provides a brief description of required background.
 \subsection{Link Pre-fetching}
  Today's web browsers, including Tor, makes use of a specific syntax called \emph{pre-fetching}, which was proposed as a draft standard by Mozilla. Using pre-fetching, browser can predicts documents likely to be visited by the user in the near future. Therefore, based on the hint provided by pre-fetching a browser is able to fetch those documents a head of time. In fact, it is the web page that provides a set of pre-fetching hints for the browser. Then, loading the page and passing an idle time, the browser starts to pre-fetch and cache specified documents. Needless to say, this mechanism improves efficiency. Particularly, it is most effective if the content provider may be reasonably certain which links users are going to visit next \cite{wikiPreF}.
 
- \subsection{Network Analysis and }
+ \subsection{Network Analysis and Classifiers}
+ description about how we analyzed the traffic. And which classifer used, which/how features are extracted.
 
 \section{Effects of Pre-Fetching on Fingerprinting}
 In this section, we will write  about our experiments. We are planning to conduct two sets of experiments. If we consider the network traffic, the number of packages go upstream depends on the number of pre-fetching requests, and the number of downstream packages coming depends on the size of resources that should be pre-fetched. Therefore, it is obvious that pre-fetching would affect the fingerprint of the traffic of a particular website.  \emph{should be completed.}
 
-\subsubsection{Investigate Pre-Fetching Effects on top 60 Popular Websites}
+\subsection{Investigate Pre-Fetching Effects on top 60 Popular Websites}
 We are running experiments to see how pre-fetching affects the websites' fingerprints.
 After doing some search on top popular websites, we put together a small crawler by which we learnt that only around 60 of all 6000 websites are use pre-fetching mechanism. We are capturing traffic of these websites in two different modes: 1) with enabled pre-fetching, and 2) with disabled pre-fetching. We are working on feature extraction, and about to decide which classifiers to use for the learning phase.
 Ultimately, we plan to conduct two sets of experiments. One sort of experiment is to compare two series of the captured packets and find the accuracy number with the help of a classifier, by which our goal is to provide an evidence to see if pre-fetching really affects fingerprints of websites. So, if the result will be positive, we will perform another set of experiment, which kind of simulates a sub set of those 60 websites. Then, we will see how (altering) the size of pre-fetching affects fingerprinting attacks/ defense mechanisms.
 
 
-\subsubsection{Effect of Pre-Fetching Packets Size on Fingerprinting Attacks}
+\subsection{Effect of Pre-Fetching Packets Size on Fingerprinting Attacks}
 Here, we will explain our second experiment. We will simulate a sub set of webpages we investigated in the previous experiment. Then, we will equip them with a mechanism so that they can affect the downstream traffic and finally their fingerprint. Then, we will analyze the result to see how this idea contributes to the effectiveness of attacks and defense techniques.
 %
 

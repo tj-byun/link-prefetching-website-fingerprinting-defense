@@ -1,0 +1,239 @@
+
+\documentclass{sig-alternate-05-2015}
+
+
+\begin{document}
+
+% Copyright
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+%\doi{10.475/123_4}
+%
+%% ISBN
+%\isbn{123-4567-24-567/08/06}
+%
+%%Conference
+%\conferenceinfo{PLDI '13}{June 16--19, 2013, Seattle, WA, USA}
+%
+%\acmPrice{\$15.00}
+
+%
+% --- Author Metadata here ---
+%\conferenceinfo{WOODSTOCK}{'97 El Paso, Texas USA}
+%\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED %BE.
+%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
+% --- End of Author Metadata ---
+
+\title{Investigating the Effects of Pre-Fetching on Website Fingerprinting Attack\titlenote{CSCi5271: Introduction to Security}}
+\subtitle{Department of Computer Science and  Engineering\\University of Minnesota}
+%\titlenote{A full version of this paper is available as
+%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
+%\LaTeX$2_\epsilon$\ and BibTeX} at
+%\texttt{www.acm.org/eaddress.htm}}}
+%
+% You need the command \numberofauthors to handle the 'placement
+% and alignment' of the authors beneath the title.
+%
+% For aesthetic reasons, we recommend 'three authors at a time'
+% i.e. three 'name/affiliation blocks' be placed beneath the title.
+%
+% NOTE: You are NOT restricted in how many 'rows' of
+% "name/affiliations" may appear. We just ask that you restrict
+% the number of 'columns' to three.
+%
+% Because of the available 'opening page real-estate'
+% we ask you to refrain from putting more than six authors
+% (two rows with three columns) beneath the article title.
+% More than six makes the first-page appear very cluttered indeed.
+%
+% Use the \alignauthor commands to handle the names
+% and affiliations for an 'aesthetic maximum' of six authors.
+% Add names, affiliations, addresses for
+% the seventh etc. author(s) as the argument for the
+% \additionalauthors command.
+% These 'additional authors' will be output/set for you
+% without further effort on your part as the last section in
+% the body of your article BEFORE References or any Appendices.
+
+\numberofauthors{4}
+\author{
+% 1st. author
+\alignauthor
+Vaibhav Sharma\\%
+%       \affaddr{Department of Computer Science and Engineering}\\
+%       \affaddr{University of Minnesota- Twin Cities}\\
+       \email{sharm361@umn.edu}
+% 2nd. author
+\alignauthor
+Taejoon Byun\\
+       % \affaddr{Department of Computer Science and Engineering}\\
+%       \affaddr{University of Minnesota- Twin Cities}\\
+       \email{taejoon@umn.edu}
+\and  % use '\and' if you need 'another row' of author names
+% 3rd. author
+\alignauthor Se Eun Oh\\%
+%       \affaddr{Department of Computer Science and Engineering}\\
+%       \affaddr{University of Minnesota- Twin Cities}\\
+       \email{seoh@umn.edu}
+       % 4th. author
+\alignauthor
+Elaheh Ghassabani\\
+       %\affaddr{Department of Computer Science and Engineering}\\
+%       \affaddr{University of Minnesota- Twin Cities}\\
+       \email{ghass013@umn.edu}
+}
+
+\maketitle
+\begin{abstract}
+\emph{This content will be edited later.} We plan to explore the area of website fingerprinting in anonymization networks starting with the paper Website Fingerprinting in Onion Routing Based Anonymization Networks.
+\end{abstract}
+
+% We no longer use \terms command
+%\terms{Theory}
+
+\keywords{Website fingerprinting, anonymity, encrypted traffic, Tor}
+
+\section{Introduction}
+\emph{The content of this section will be changed later.} Penchenko et al. \cite{panchenko11:LaTeX} were among the first to report website fingerprinting attacks with reasonable accuracy on Tor. This paper provides a sufficient understanding of the feature set and classification framework required for this attack. Some of the team members are familiar with data mining techniques and software packages required for their use. All team members have access to the compute servers provided by the Computer Science and Engineering department and will request access to the other high performance computing resources if required.
+
+\section{Related Work}
+This section discusses related work in the area of website fingerpriting. We will update the content shortly \cite{Dyer:2012:PIS:2310656.2310689, panchenko11, wang2013improved, kopf2013preventing}.
+
+\section{Background}
+This section provides a brief description of required background.
+
+\subsection{Link Pre-fetching}
+ Today's web browsers, including Tor, makes use of a specific syntax called \emph{pre-fetching}, which was proposed as a draft standard by Mozilla. Using pre-fetching, browser can predicts documents likely to be visited by the user in the near future. Therefore, based on the hint provided by pre-fetching a browser is able to fetch those documents a head of time. In fact, it is the web page that provides a set of pre-fetching hints for the browser. Then, loading the page and passing an idle time, the browser starts to pre-fetch and cache specified documents. Needless to say, this mechanism improves efficiency. Particularly, it is most effective if the content provider may be reasonably certain which links users are going to visit next \cite{wikiPreF}.
+
+ \subsection{Network Analysis and }
+
+\section{Effects of Pre-Fetching on Fingerprinting}
+In this section, we will write  about our experiments. We are planning to conduct two sets of experiments. If we consider the network traffic, the number of packages go upstream depends on the number of pre-fetching requests, and the number of downstream packages coming depends on the size of resources that should be pre-fetched. Therefore, it is obvious that pre-fetching would affect the fingerprint of the traffic of a particular website.  \emph{should be completed.}
+
+\subsubsection{Investigate Pre-Fetching Effects on top 60 Popular Websites}
+We are running experiments to see how pre-fetching affects the websites' fingerprints.
+After doing some search on top popular websites, we put together a small crawler by which we learnt that only around 60 of all 6000 websites are use pre-fetching mechanism. We are capturing traffic of these websites in two different modes: 1) with enabled pre-fetching, and 2) with disabled pre-fetching. We are working on feature extraction, and about to decide which classifiers to use for the learning phase.
+Ultimately, we plan to conduct two sets of experiments. One sort of experiment is to compare two series of the captured packets and find the accuracy number with the help of a classifier, by which our goal is to provide an evidence to see if pre-fetching really affects fingerprints of websites. So, if the result will be positive, we will perform another set of experiment, which kind of simulates a sub set of those 60 websites. Then, we will see how (altering) the size of pre-fetching affects fingerprinting attacks/ defense mechanisms.
+
+
+\subsubsection{Effect of Pre-Fetching Packets Size on Fingerprinting Attacks}
+Here, we will explain our second experiment. We will simulate a sub set of webpages we investigated in the previous experiment. Then, we will equip them with a mechanism so that they can affect the downstream traffic and finally their fingerprint. Then, we will analyze the result to see how this idea contributes to the effectiveness of attacks and defense techniques.
+%
+
+%\subsection{Citations}
+%Citations to articles \cite{bowman:reasoning,
+%clark:pct, braams:babel, herlihy:methodology},
+%conference proceedings \cite{clark:pct} or
+%books \cite{salas:calculus, Lamport:LaTeX} listed
+%in the Bibliography section of your
+
+%\subsection{Tables}
+%Because tables cannot be split across pages, the best
+%placement for them is typically the top of the page
+%nearest their initial cite.  To
+%ensure this proper ``floating'' placement of tables, use the
+%environment \textbf{table} to enclose the table's contents and
+%the table caption.  The contents of the table itself must go
+%in the \textbf{tabular} environment, to
+%be aligned properly in rows and columns, with the desired
+%horizontal and vertical rules.  Again, detailed instructions
+%on \textbf{tabular} material
+%is found in the \textit{\LaTeX\ User's Guide}.
+%
+%Immediately following this sentence is the point at which
+%Table 1 is included in the input file; compare the
+%placement of the table here with the table in the printed
+%dvi output of this document.
+%
+%\begin{table}
+%\centering
+%\caption{Frequency of Special Characters}
+%\begin{tabular}{|c|c|l|} \hline
+%Non-English or Math&Frequency&Comments\\ \hline
+%\O & 1 in 1,000& For Swedish names\\ \hline
+%$\pi$ & 1 in 5& Common in math\\ \hline
+%\$ & 4 in 5 & Used in business\\ \hline
+%$\Psi^2_1$ & 1 in 40,000& Unexplained usage\\
+%\hline\end{tabular}
+%\end{table}
+\section{Experiments}
+We are planning to conduct two sets of experiments.
+
+\section{Conclusions}
+This section will conclude the result of our experiments. Finally we will provide some evidence to show how pre-fetching affect fingerprinting attacks. Based on our result, we are planing to suggest some defense mechanisms.
+
+%ACKNOWLEDGMENTS are optional
+\section{Acknowledgments}
+This is a research project for CSCi5271, University of Minnesota.
+
+%
+% The following two commands are all you need in the
+% initial runs of your .tex file to
+% produce the bibliography for the citations in your paper.
+\bibliographystyle{abbrv}
+\bibliography{finPrin}  % sigproc.bib is the name of the Bibliography in this case
+% You must have a proper ".bib" file
+%  and remember to run:
+% latex bibtex latex latex
+% to resolve all references
+%
+% ACM needs 'a single self-contained file'!
+%
+%APPENDICES are optional
+%%\balancecolumns
+%\appendix
+%%Appendix A
+%\section{Headings in Appendices}
+%The rules about hierarchical headings discussed above for
+%the body of the article are different in the appendices.
+%In the \textbf{appendix} environment, the command
+%\textbf{section} is used to
+%indicate the start of each Appendix, with alphabetic order
+%designation (i.e. the first is A, the second B, etc.) and
+%a title (if you include one).  So, if you need
+%hierarchical structure
+%\textit{within} an Appendix, start with \textbf{subsection} as the
+%highest level. Here is an outline of the body of this
+%document in Appendix-appropriate form:
+%\subsection{Introduction}
+%\subsection{The Body of the Paper}
+%\subsubsection{Type Changes and  Special Characters}
+%\subsubsection{Math Equations}
+%\paragraph{Inline (In-text) Equations}
+%\paragraph{Display Equations}
+%\subsubsection{Citations}
+%\subsubsection{Tables}
+%\subsubsection{Figures}
+%\subsubsection{Theorem-like Constructs}
+%\subsubsection*{A Caveat for the \TeX\ Expert}
+%\subsection{Conclusions}
+%\subsection{Acknowledgments}
+%\subsection{Additional Authors}
+%This section is inserted by \LaTeX; you do not insert it.
+%You just add the names and information in the
+%\texttt{{\char'134}additionalauthors} command at the start
+%of the document.
+%\subsection{References}
+%Generated by bibtex from your ~.bib file.  Run latex,
+%then bibtex, then latex twice (to resolve references)
+%to create the ~.bbl file.  Insert that ~.bbl file into
+%the .tex source file and comment out
+%the command \texttt{{\char'134}thebibliography}.
+%% This next section command marks the start of
+%% Appendix B, and does not continue the present hierarchy
+%\section{More Help for the Hardy}
+%The sig-alternate.cls file itself is chock-full of succinct
+%and helpful comments.  If you consider yourself a moderately
+%experienced to expert user of \LaTeX, you may find reading
+%it useful but please remember not to change it.
+%%\balancecolumns % GM June 2007
+%% That's all folks!
+\end{document}

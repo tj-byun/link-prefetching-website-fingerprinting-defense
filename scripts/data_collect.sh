@@ -1,7 +1,8 @@
 #!/bin/bash
 in_data_dir=$HOME/prefetch-off
 out_data_dir=$HOME/data-pfoff
-for ((i=0; i<1; i++ )) 
+max=60
+for ((i=0; i<$max; i++ )) 
 do
 	#echo $i; 
 	for file in `find $in_data_dir -name "*\_$i\_*.pcap" | sort` 

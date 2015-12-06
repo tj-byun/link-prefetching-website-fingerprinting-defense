@@ -2,7 +2,7 @@
 
 #file=/home/vaibhav/data-pfon/0_0_0.pcap.csv
 max=60
-data_dir=$HOME/data-pfon
+data_dir=$HOME/data-pfoff
 #echo $data_dir;
 for ((i=0; i<$max; i++ )) 
 	do
@@ -29,8 +29,8 @@ for ((i=0; i<$max; i++ ))
     	length="${length#\"}";
     	#echo "length = " $length "sip = " $src_ip "dip = " $dest_ip; 
   		dir=0;
-  		if [ "$src_ip" == "192.168.91.129" ]; then dir=1;
-  	  elif [ "$dest_ip" == "192.168.91.129" ]; then dir=-1;
+  		if [ "$src_ip" == "192.168.91.130" ]; then dir=1;
+  	  elif [ "$dest_ip" == "192.168.91.130" ]; then dir=-1;
   		fi
   		if [ "$dir" -ne 0 ]; then
   		  echo $session "" $dir "" $length "" $i;

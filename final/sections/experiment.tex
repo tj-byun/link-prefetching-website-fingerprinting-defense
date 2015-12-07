@@ -1,0 +1,26 @@
+% sections/experiment.tex
+\begin{table}[]
+\centering
+\caption{Experiment design to answer {\it RQ1}}
+\label{table:prefetch}
+\begin{tabular}{lllll}
+\cline{1-3}
+\multicolumn{1}{|l|}{victim \textbackslash attacker} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch on}                    & \multicolumn{1}{l|}{(1)}         & \multicolumn{1}{l|}{(2)}          &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch off}                   & \multicolumn{1}{l|}{(3)}         & \multicolumn{1}{l|}{(4)}          &  &  \\ \cline{1-3}
+                                                     &                                  &                                   &  & 
+\end{tabular}                  
+\end{table}
+
+\begin{enumerate}
+\item
+We speculate that prefetching itself might provide extra defense because of the extra packets.
+It can also be the case however, prefetching websites are more vulnerable to fingerprinting because of the extra prefetch packets that shows distinct prefix.
+\item
+This case is unlikely since prefetching is on by default. We assume that victims will more likely be using Tor under the default setting.
+\item
+This case is what we are most curious about, whether a victim can confuse an attacker by simply turning prefetching setting off of his browser.
+\item
+This case simulates a situation where a victim is loading any other websites that does not prefetch any resource.
+This can be used as a comparison case.
+\end{enumerate}

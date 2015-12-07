@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  6 DEC 2015 12:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  6 DEC 2015 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -335,31 +335,38 @@ Overfull \hbox (1.21005pt too wide) in paragraph at lines 59--59
 
 
 ]
-(./sections/conclusion.tex) (./csci5271.bbl) [2
+(./sections/experiment.tex
 
-] (./csci5271.aux) ) 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 2.
+
+) (./sections/conclusion.tex) (./csci5271.bbl) [2] (./csci5271.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3172 strings out of 494501
- 41490 string characters out of 6167030
- 110836 words of memory out of 5000000
- 6349 multiletter control sequences out of 15000+600000
- 50688 words of font info for 70 fonts, out of 8000000 for 9000
+ 3184 strings out of 494501
+ 41622 string characters out of 6167030
+ 112836 words of memory out of 5000000
+ 6352 multiletter control sequences out of 15000+600000
+ 53836 words of font info for 76 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  41i,10n,35p,820b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}</usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/he
-lvetic/uhvb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helv
-etic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/
-utmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8
-a.pfb>
-Output written on csci5271.pdf (2 pages, 101118 bytes).
+{/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
+cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
+/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
+b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
+.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
+fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
+r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on csci5271.pdf (2 pages, 113523 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

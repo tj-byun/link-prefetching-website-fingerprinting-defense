@@ -1,4 +1,20 @@
 % sections/experiment.tex
+
+\section{Research Question}
+
+\section{Effects of Pre-Fetching on Fingerprinting}
+In this section, we will write  about our experiments. We are planning to conduct two sets of experiments. If we consider the network traffic, the number of packages go upstream depends on the number of pre-fetching requests, and the number of downstream packages coming depends on the size of resources that should be pre-fetched. Therefore, it is obvious that pre-fetching would affect the fingerprint of the traffic of a particular website.  \emph{should be completed.}
+
+\subsection{Investigate Pre-Fetching Effects on top 60 Popular Websites}
+We are running experiments to see how pre-fetching affects the websites' fingerprints.
+After doing some search on top popular websites, we put together a small crawler by which we learnt that only around 60 of all 6000 websites are use pre-fetching mechanism. We are capturing traffic of these websites in two different modes: 1) with enabled pre-fetching, and 2) with disabled pre-fetching. We are working on feature extraction, and about to decide which classifiers to use for the learning phase.
+Ultimately, we plan to conduct two sets of experiments. One sort of experiment is to compare two series of the captured packets and find the accuracy number with the help of a classifier, by which our goal is to provide an evidence to see if pre-fetching really affects fingerprints of websites. So, if the result will be positive, we will perform another set of experiment, which kind of simulates a sub set of those 60 websites. Then, we will see how (altering) the size of pre-fetching affects fingerprinting attacks/ defense mechanisms.
+
+
+\subsection{Effect of Pre-Fetching Packets Size on Fingerprinting Attacks}
+Here, we will explain our second experiment. We will simulate a sub set of webpages we investigated in the previous experiment. Then, we will equip them with a mechanism so that they can affect the downstream traffic and finally their fingerprint. Then, we will analyze the result to see how this idea contributes to the effectiveness of attacks and defense techniques.
+
+
 Research Questions
 \begin{enumerate}
 \item

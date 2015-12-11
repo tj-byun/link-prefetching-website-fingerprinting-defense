@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  11 DEC 2015 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  11 DEC 2015 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,13 +320,7 @@ Underfull \hbox (badness 1902) in paragraph at lines 30--30
 [][]\T1/aer/m/n/9 This re-port is sub-mit-ted as a par-tial ful-fill-ment of
  []
 
-(./sections/intro.tex)
-Overfull \hbox (3.70822pt too wide) in paragraph at lines 2--44
-[]\T1/aer/m/it/9 The con-tent of this sec-tion will be changed later. \T1/aer/m
-/n/9 Penchenko
- []
-
-(./sections/fingerprinting.tex
+(./sections/intro.tex) (./sections/fingerprinting.tex
 Overfull \hbox (15.99854pt too wide) in paragraph at lines 4--5
 []\T1/aer/m/n/9 This sec-tion ex-plains the back-ground about Tor, an anonymity
 
@@ -340,39 +334,40 @@ t line 8.
 File: figures/attack_model.png Graphic file (type png)
 
 <use figures/attack_model.png>
-Package pdftex.def Info: figures/attack_model.png used on input line 15.
+Package pdftex.def Info: figures/attack_model.png used on input line 17.
 (pdftex.def)             Requested size: 167.99927pt x 52.67488pt.
-) (./sections/prefetching.tex
+) (./sections/related.tex)
+(./sections/prefetching.tex
 <figures/prefetch.png, id=3, 1004.25188pt x 521.69907pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
-Package pdftex.def Info: figures/prefetch.png used on input line 21.
+Package pdftex.def Info: figures/prefetch.png used on input line 30.
 (pdftex.def)             Requested size: 240.0pt x 124.67697pt.
-)
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./sections/experiment.tex [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/
-pdftex/updmap/pdftex.map}
+) [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures/attack_model.png>]
-Overfull \hbox (1.21005pt too wide) in paragraph at lines 21--21
+ <./figures/attack_model.png>] (./sections/experiment.tex
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 16.
+
+
+Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 27.
-
-) (./sections/related.tex) (./sections/conclusion.tex) (./csci5271.bbl)
-[2 <./figures/prefetch.png>] [3
+) (./sections/discussion.tex) (./sections/conclusion.tex) (./csci5271.bbl
+[2 <./figures/prefetch.png>]) [3
 
 ] (./csci5271.aux) ) 
 Here is how much of TeX's memory you used:
- 3203 strings out of 494501
- 42000 string characters out of 6167030
+ 3206 strings out of 494501
+ 42058 string characters out of 6167030
  112860 words of memory out of 5000000
  6364 multiletter control sequences out of 15000+600000
  53836 words of font info for 76 fonts, out of 8000000 for 9000
@@ -389,7 +384,7 @@ sfonts/cm/cmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 elvetic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb>
-Output written on csci5271.pdf (3 pages, 194934 bytes).
+Output written on csci5271.pdf (3 pages, 194831 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream

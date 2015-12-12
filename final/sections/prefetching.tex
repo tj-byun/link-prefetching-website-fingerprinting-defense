@@ -6,7 +6,7 @@ This section explains the concept of link prefetching and discusses a possible u
 \subsection{Link Prefetching}
 
 % introduction about link prefetching
-Link prefetching is a HTML syntax that gives the web browser hints about which page the user is most likely to visit in the near future~\cite{fisher2003, fisher2004link}. 
+Link prefetching is a HTML syntax that gives the web browser hints about which page the user is most likely to visit in a near future~\cite{fisher2003, fisher2004link}. 
 The pages and resource to pre-fetch are specified in the web page so that the web browser can silently load them (or pre-fetch them) after an idle time.
 Since the pre-fetch happens only after the page is fully loaded, it does not sacrifice the loading time of the requested web page.
 Moreover, it can save the loading time for the pre-fetched pages and thus improve the user experience by caching the {\it future} contents.
@@ -45,14 +45,17 @@ Please also note that the time it took for loading the image when the user actua
 \label{fig:network}
 \end{figure*}
 
-
 \subsection{The Effect of Prefetching on Fingerprinting}
 % cite some papers to describe about the features that are used for attacks,
 % and explain why prefetching change the feature.
-
 % Vaibhav says: put the intuition down 
 
-See Figure~\ref{fig:prefetch}. It's not so pretty though.
+The idea of studying the effect of prefetching on Tor network is not new~\cite{something}.
+
+Figure~\ref{fig:prefetch} shows an aspect of fingerprint we gathered for the firt page of {\tt www.wired.com}.
+It depicts the number of packets on the {\it y-axis} for each time interval ({\it 500 ms}), where the {\it x-axis} represents the time in seconds.
+The solid line represents the number of packets throughout time when the pre-fetch feature was enabled, and the dashed line represents when the pre-fetch was disabled in the browser settings.
+
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{figures/prefetch.png}
 \centering

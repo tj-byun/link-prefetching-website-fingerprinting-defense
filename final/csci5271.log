@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  11 DEC 2015 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  11 DEC 2015 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -338,20 +338,31 @@ Package pdftex.def Info: figures/attack_model.png used on input line 17.
 (pdftex.def)             Requested size: 167.99927pt x 52.67488pt.
 ) (./sections/related.tex)
 (./sections/prefetching.tex
-<figures/prefetch.png, id=3, 1004.25188pt x 521.69907pt>
-File: figures/prefetch.png Graphic file (type png)
 
-<use figures/prefetch.png>
-Package pdftex.def Info: figures/prefetch.png used on input line 30.
-(pdftex.def)             Requested size: 240.0pt x 124.67697pt.
+LaTeX Warning: Reference `fig:network' on page \thepage  undefined on input lin
+e 22.
+
+<figures/prefetch-network.png, id=3, 940.51375pt x 615.29875pt>
+File: figures/prefetch-network.png Graphic file (type png)
+
+<use figures/prefetch-network.png>
+Package pdftex.def Info: figures/prefetch-network.png used on input line 24.
+(pdftex.def)             Requested size: 240.0pt x 157.00706pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+<figures/prefetch.png, id=4, 1004.25188pt x 521.69907pt>
+File: figures/prefetch.png Graphic file (type png)
+
+<use figures/prefetch.png>
+Package pdftex.def Info: figures/prefetch.png used on input line 39.
+(pdftex.def)             Requested size: 240.0pt x 124.67697pt.
+ [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figures/attack_model.png>] (./sections/experiment.tex
+ <./figures/attack_model.png>])
+(./sections/experiment.tex
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 16.
@@ -361,33 +372,39 @@ Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-) (./sections/discussion.tex) (./sections/conclusion.tex) (./csci5271.bbl
-[2 <./figures/prefetch.png>]) [3
+) (./sections/discussion.tex) (./sections/conclusion.tex) [2 <./figures/prefetc
+h-network.png> <./figures/prefetch.png>] (./csci5271.bbl) [3
 
-] (./csci5271.aux) ) 
+] (./csci5271.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3206 strings out of 494501
- 42058 string characters out of 6167030
- 112860 words of memory out of 5000000
- 6364 multiletter control sequences out of 15000+600000
+ 3212 strings out of 494501
+ 42222 string characters out of 6167030
+ 110860 words of memory out of 5000000
+ 6369 multiletter control sequences out of 15000+600000
  53836 words of font info for 76 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  41i,10n,35p,676b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/ba
-se/8r.enc}</usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmti9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw
-/helvetic/uhvb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/h
-elvetic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/ut
-mr8a.pfb>
-Output written on csci5271.pdf (3 pages, 194831 bytes).
+{/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
+cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
+/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><
+/usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pf
+b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
+.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
+fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
+></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
+r/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on csci5271.pdf (3 pages, 482999 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

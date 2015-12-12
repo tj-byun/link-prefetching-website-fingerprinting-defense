@@ -3,8 +3,9 @@
 
 \subsection{Link Prefetching}
 
+% introduction about link prefetching
 Link prefetching is a HTML syntax that gives the web browser a hint about which page the user is most likely to visit in the near future.
-For the prefetching resources that a web page specifies, the browser silently loads them after idle time and store them in cache. 
+For the prefetching resources that a web page specifies, the browser silently loads them (or pre-fetch them) after idle time and store them in cache. 
 It was first suggested by Mozilla Foundation, and is adopted by most modern browsers nowadays.
 
 Today's web browsers makes use of a specific syntax called \emph{pre-fetching}, which was proposed as a draft standard by Mozilla.
@@ -17,6 +18,14 @@ Particularly, it is most effective if the content provider may be reasonably cer
 
 % Insert a figure of "prefetch-network" which shows the network traffic.
 % explain about how prefetching actually works 
+
+See Figure~\ref{fig:network}. It's not so pretty though.
+\begin{figure}[h]
+\includegraphics[width=\columnwidth]{figures/prefetch-network.png}
+\centering
+\caption{Network timeline showing pre-fetch}
+\label{fig:network}
+\end{figure}
 
 
 \subsection{Effects of Prefetching on Fingerprinting}

@@ -1,33 +1,23 @@
 \begin{thebibliography}{1}
 
-\bibitem{wikiPreF}
-Link prefetching.
-\newblock \url{https://en.wikipedia.org/wiki/Link_prefetching}, 2015.
-\newblock Accessed: 2015-12-04.
+\bibitem{dingledine2004tor}
+R.~Dingledine, N.~Mathewson, and P.~Syverson.
+\newblock Tor: The second-generation onion router.
+\newblock Technical report, DTIC Document, 2004.
 
-\bibitem{Dyer:2012:PIS:2310656.2310689}
-K.~P. Dyer, S.~E. Coull, T.~Ristenpart, and T.~Shrimpton.
-\newblock Peek-a-boo, i still see you: Why efficient traffic analysis
-  countermeasures fail.
-\newblock In {\em Proceedings of the 2012 IEEE Symposium on Security and
-  Privacy}, SP '12, pages 332--346, Washington, DC, USA, 2012. IEEE Computer
-  Society.
+\bibitem{fisher2003}
+D.~Fisher.
+\newblock Link prefetching faq, 2003.
 
-\bibitem{kopf2013preventing}
-M.~B. G. D.~B. Kopf.
-\newblock Preventing side-channel leaks in web traffic: A formal approach.
-\newblock 2013.
+\bibitem{nottingham2010}
+M.~Nottingham.
+\newblock Rfc5988: Web linking.
+\newblock Technical report, 2010.
 
 \bibitem{panchenko11}
 A.~Panchenko, L.~Niessen, A.~Zinnen, and T.~Engel.
 \newblock Website fingerprinting in onion routing based anonymization networks.
 \newblock In {\em Proceedings of the 10th annual ACM workshop on Privacy in the
   electronic society}, pages 103--114. ACM, 2011.
-
-\bibitem{wang2013improved}
-T.~Wang and I.~Goldberg.
-\newblock Improved website fingerprinting on tor.
-\newblock In {\em Proceedings of the 12th ACM workshop on Workshop on privacy
-  in the electronic society}, pages 201--212. ACM, 2013.
 
 \end{thebibliography}

@@ -32,13 +32,13 @@ Resources other than a {\it HTML} web page can also be pre-fetched similarly usi
 There are also some variations for different types of prefetching -- DNS prefetching, which is specified as {\tt <link rel="dns-prefetch" ..>}, is supported by {\it Mozilla Firefox} and {\it Google Chrome}, and {\tt <link rel="prerender" ..>} also does the same job as {\tt prefetch} in {\it Google Chrome} and {\it Microsoft Internet Explorer}.
 
 Figure~\ref{fig:network} illustrates how prefetching actually works in a browser ({\it Google Chrome}).
-This page is set up arbitrarily by the authors to demonstrate link prefetching, and contains a link pre-fetch tag that specifies to load a big image (the image on the left side labeled as {\it prefetch}).
+This page is set up arbitrarily by the authors to demonstrate link prefetching, and contains a link pre-fetch tag that specifies a big image (the image on the left side labeled as {\it prefetch}).
 When the prefetching is off, this image shall be requested only when a user puts his mouse cursor on it (mouse over).
 However, it can be seen on the network timeline (right bottom) that the image is pre-fetched right after loading the page.
-This is indicated by a long blue bar on the second row for the file named {\it Very-high...}, and it is long because the size of the file is relatively big ({\it 3.5 MB}) that it took a relatively long time to download.
+This is indicated by a long blue bar on the second row for the file named ``{\it Very-high...}'', and it is long because the size of the file is relatively big ({\it 3.5 MB}) that it took a longer time to download.
 Please also note that the time it took for loading the image when the user actually requested (by putting his mouse on it) was very short, because the image had already been pre-fetched that the browser merely loaded it from the cache (as shown in the {\it size} column on the fourth row).
 
-\begin{figure*}[h]
+\begin{figure*}[t]
 \includegraphics[width=\textwidth]{figures/prefetch-network.png}
 \centering
 \caption{Network timeline showing pre-fetch}
@@ -50,17 +50,21 @@ Please also note that the time it took for loading the image when the user actua
 % and explain why prefetching change the feature.
 % Vaibhav says: put the intuition down 
 
-The idea of studying the effect of prefetching on Tor network is not new~\cite{something}.
-
-Figure~\ref{fig:prefetch} shows an aspect of fingerprint we gathered for the firt page of {\tt www.wired.com}.
-It depicts the number of packets on the {\it y-axis} for each time interval ({\it 500 ms}), where the {\it x-axis} represents the time in seconds.
-The solid line represents the number of packets throughout time when the pre-fetch feature was enabled, and the dashed line represents when the pre-fetch was disabled in the browser settings.
-
 \begin{figure}[h]
-\includegraphics[width=\columnwidth]{figures/prefetch.png}
+\includegraphics[width=0.95\columnwidth]{figures/prefetch.png}
 \centering
 \caption{hi}
 \label{fig:prefetch}
 \end{figure}
+
+%The idea of studying the effect of prefetching on Tor network is not new~\cite{something}.
+Figure~\ref{fig:prefetch} illustrates a website fingerprint in terms of inter-packet timing, where the {\it x-axis} represents time in seconds and the {\it y-axis} represents the number of packets captured during a certain time interval ({\it 500 ms}).
+The solid line depicts the packets captured while prefetching was enabled, and the dashed line depicts when the pre-fetch was disabled in the browser settings.
+Both the cases are captured for the same web page, which is the first page of {\tt wired.com}.
+However, the number of packets are slightly different for each case (4055 for the {\it off} case while 4218 for the {\it on} case), because the prefetch-on case obviously requests more resources for caching purpose. 
+The elapsed time for loading the whole page was also different, but this variance is mainly due to the difference in network condition because all the packets are more scattered throughout time compared to the pre-fetch-off case.
+When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we can characterize how the {\it fingerprint} of a specific website looks like.
+Please note also that inter-packet timing is only one of many features for characterizing website fingerprint.
+
 
 

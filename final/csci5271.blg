@@ -3,46 +3,47 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: csci5271.aux
 The style file: abbrv.bst
 Database file #1: csci5271.bib
+Warning--I didn't find a database entry for "something"
 Warning--empty institution in nottingham2010
-You've used 4 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4181 characters,
-and the built_in function-call counts, 1204 in all, are:
-= -- 119
-> -- 55
-< -- 1
-+ -- 22
-- -- 18
-* -- 67
-:= -- 208
-add.period$ -- 12
-call.type$ -- 4
-change.case$ -- 23
+            523 strings with 4343 characters,
+and the built_in function-call counts, 1670 in all, are:
+= -- 171
+> -- 68
+< -- 2
++ -- 27
+- -- 22
+* -- 92
+:= -- 273
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 46
-empty$ -- 94
-format.name$ -- 18
-if$ -- 254
+cite$ -- 6
+duplicate$ -- 70
+empty$ -- 135
+format.name$ -- 22
+if$ -- 365
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 1
-newline$ -- 22
-num.names$ -- 8
-pop$ -- 28
+int.to.str$ -- 5
+missing$ -- 2
+newline$ -- 27
+num.names$ -- 10
+pop$ -- 36
 preamble$ -- 1
-purify$ -- 17
+purify$ -- 21
 quote$ -- 0
-skip$ -- 36
+skip$ -- 55
 stack$ -- 0
-substring$ -- 52
-swap$ -- 12
-text.length$ -- 1
+substring$ -- 89
+swap$ -- 22
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 20
 warning$ -- 1
-while$ -- 11
-width$ -- 5
-write$ -- 43
-(There was 1 warning)
+while$ -- 16
+width$ -- 6
+write$ -- 55
+(There were 2 warnings)

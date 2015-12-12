@@ -7,7 +7,13 @@ R.~Dingledine, N.~Mathewson, and P.~Syverson.
 
 \bibitem{fisher2003}
 D.~Fisher.
-\newblock Link prefetching faq, 2003.
+\newblock Link prefetching {FAQ}, 2003.
+
+\bibitem{fisher2004link}
+D.~Fisher and G.~Saksena.
+\newblock Link prefetching in mozilla: A server-driven approach.
+\newblock In {\em Web content caching and distribution}, pages 283--291.
+  Springer, 2004.
 
 \bibitem{nottingham2010}
 M.~Nottingham.

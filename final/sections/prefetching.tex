@@ -39,7 +39,7 @@ This is indicated by a long blue bar on the second row for the file named ``{\it
 Please also note that the time it took for loading the image when the user actually requested (by putting his mouse on it) was very short, because the image had already been pre-fetched that the browser merely loaded it from the cache (as shown in the {\it size} column on the fourth row).
 
 \begin{figure*}[t]
-\includegraphics[width=\textwidth]{figures/prefetch-network.png}
+\includegraphics[width=\textwidth]{figures/prefetch-network-edited.png}
 \centering
 \caption{Network timeline showing pre-fetch}
 \label{fig:network}
@@ -65,6 +65,4 @@ However, the number of packets are slightly different for each case (4055 for th
 The elapsed time for loading the whole page was also different, but this variance is mainly due to the difference in network condition because all the packets are more scattered throughout time compared to the pre-fetch-off case.
 When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we can characterize how the {\it fingerprint} of a specific website looks like.
 Please note also that inter-packet timing is only one of many features for characterizing website fingerprint.
-
-
 

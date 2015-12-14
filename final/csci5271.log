@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  11 DEC 2015 23:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  13 DEC 2015 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,7 +442,7 @@ Overfull \hbox (15.99854pt too wide) in paragraph at lines 4--5
 
  []
 
-<figures/attack_model.png, id=88, 348.8232pt x 109.3686pt>
+<figures/attack_model.png, id=96, 348.8232pt x 109.3686pt>
 File: figures/attack_model.png Graphic file (type png)
 
 <use figures/attack_model.png>
@@ -450,30 +450,32 @@ Package pdftex.def Info: figures/attack_model.png used on input line 17.
 (pdftex.def)             Requested size: 167.99927pt x 52.67488pt.
 ) (./sections/related.tex)
 (./sections/prefetching.tex
-Overfull \hbox (3.328pt too wide) in paragraph at lines 4--5
-\T1/aer/m/n/9 dis-cusses a pos-si-ble us-age of it as a de-fense mech-a-nism ag
-ainst
- []
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 29.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/ae/t1aett.fd
-File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+LaTeX Warning: Citation `Cai:2014kjb' on page \thepage  undefined on input line
+ 5.
+
+[1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figures/attack_model.png>]
-<figures/prefetch-network.png, id=118, 940.51375pt x 615.29875pt>
-File: figures/prefetch-network.png Graphic file (type png)
+LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
 
-<use figures/prefetch-network.png>
-Package pdftex.def Info: figures/prefetch-network.png used on input line 42.
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+<figures/prefetch-network-edited.png, id=122, 940.51375pt x 615.29875pt>
+File: figures/prefetch-network-edited.png Graphic file (type png)
+
+<use figures/prefetch-network-edited.png>
+Package pdftex.def Info: figures/prefetch-network-edited.png used on input line
+ 48.
 (pdftex.def)             Requested size: 504.0pt x 329.72142pt.
 
-<figures/prefetch.png, id=119, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=123, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
-Package pdftex.def Info: figures/prefetch.png used on input line 54.
+Package pdftex.def Info: figures/prefetch.png used on input line 71.
 (pdftex.def)             Requested size: 227.99927pt x 136.1161pt.
 
 
@@ -484,40 +486,48 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 16.
 
-
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.49 
+      [2]
 Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
-been already used, duplicate ignored
+) (./sections/discussion.tex) (./sections/conclusion.texpdfTeX warning (ext4): 
+destination with the same identifier (name{page.}) has been already used, dupli
+cate ignored
 <to be read again> 
                    \relax 
-l.69 \section{Discussion}
-                          [2] (./sections/discussion.tex)
-(./sections/conclusion.tex) (./csci5271.bbl)
+l.6 T
+     his section will conclude the result of our experiments. Finally we wil...
+[3 <./figures/prefetch-network-edited.png> <./figures/prefetch.png>])
+(./csci5271.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.84 \end{document}
-                    [3 <./figures/prefetch-network.png> <./figures/prefetch.png
->]
+                    [4
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./csci5271.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
 Package rerunfilecheck Info: File `csci5271.out' has not changed.
-(rerunfilecheck)             Checksum: 3F9576ED96B809E078C39D8E11EB697D;1327.
+(rerunfilecheck)             Checksum: 2D322696DC1258E0068A2014EA17BE9A;1499.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 6749 strings out of 494501
- 96640 string characters out of 6167030
- 192305 words of memory out of 5000000
- 9834 multiletter control sequences out of 15000+600000
- 54324 words of font info for 78 fonts, out of 8000000 for 9000
+ 6755 strings out of 494501
+ 96775 string characters out of 6167030
+ 193351 words of memory out of 5000000
+ 9837 multiletter control sequences out of 15000+600000
+ 55460 words of font info for 79 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  41i,10n,35p,681b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
@@ -530,11 +540,12 @@ b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9
 tt9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvb8
 a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
 pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
-/usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on csci5271.pdf (3 pages, 583128 bytes).
+/usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on csci5271.pdf (4 pages, 597296 bytes).
 PDF statistics:
- 184 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 176 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 199 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 192 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,13 @@
 % sections/prefetching.tex
 % TJ WILL WRITE THIS SECTION !!!
 
-This section explains the concept of link prefetching and discusses a possible usage of it as a defense mechanism against fingerprinting attacks on Tor.
+%This section explains the concept of link prefetching and discusses a possible usage of it as a defense mechanism against fingerprinting attacks on Tor.
+A classifier used in a website fingerprinting attack can distinguish the differnce between two classes of packets when the difference is consisntent between them~\cite{Cai:2014kjb}. % "A systematic approach to ...", 2014
+Thus, intuitively, a classifier would work the best if the difference in the same class is minimal and the difference among heterogeneous classes is high at the same time.
+However, when variance among fingerprints in the same class is high, a classifier would not be able to characterize it clearly or at least the detection rate using the classifier would be low.
+This is the basic idea of using prefetching as a defense mechanism; our conjecture is that we can use prefetching to manipulate the number and size of incoming and outgoing packets in order to increase the variance among packets in the same class.
+
+This section explains the concept of link prefetching, discusses its effect on website fingerprints and argue its possible usage as a defense mechanism.
 
 \subsection{Link Prefetching}
 
@@ -45,15 +51,26 @@ Please also note that the time it took for loading the image when the user actua
 \label{fig:network}
 \end{figure*}
 
-\subsection{The Effect of Prefetching on Fingerprinting}
+\subsection{The Effect of Prefetching on Website Fingerprint}
 % cite some papers to describe about the features that are used for attacks,
 % and explain why prefetching change the feature.
 % Vaibhav says: put the intuition down 
 
+% TODO: write few sentences as an intro
+% We explained through an example how prefetching can affect the
+
+% defenition of a fingerprint
+
+Link prefetching obviously affects the traffic by sending additional request for prefetching items, and by prefetching those items after an idle time.
+However, to what degree it affects the website fingerprint has not been studiedto the best of our knowledge.
+This subsection first illustrates how the prefetching affects the number of packets being transferred as an example, and then discusses what features of fingerprint prefetching can possibly affect.
+
+\subsubsection{An Example}
+
 \begin{figure}[h]
 \includegraphics[width=0.95\columnwidth]{figures/prefetch.png}
 \centering
-\caption{hi}
+\caption{A website fingerprint for pre-fetch on/off cases}
 \label{fig:prefetch}
 \end{figure}
 
@@ -66,3 +83,11 @@ The elapsed time for loading the whole page was also different, but this varianc
 When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we can characterize how the {\it fingerprint} of a specific website looks like.
 Please note also that inter-packet timing is only one of many features for characterizing website fingerprint.
 
+
+\subsubsection{The Effect of Prefetching on Features}
+
+
+Packet lengths
+Packet length frequency
+Packet ordering.
+Interpacket timing

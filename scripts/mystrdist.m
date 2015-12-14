@@ -1,5 +1,5 @@
 function ret = mystrdist(a,b) 
-	ret=[];
+	ret=[]; 
 	for i=1:size(a,1)
 		tmp=[];
 		for j=1:size(b,1)

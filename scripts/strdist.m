@@ -1,5 +1,5 @@
 function [d,A]=strdist(r,b,krk,cas)
-
+ 
 %d=strdist(r,b,krk,cas) computes Levenshtein and editor distance 
 %between strings r and b with use of Vagner-Fisher algorithm.
 %   Levenshtein distance is the minimal quantity of character

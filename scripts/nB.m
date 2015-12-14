@@ -1,4 +1,4 @@
-clear;
+clear; 
 %col 1 = session id
 %col 2 = -1->incoming packet; 1->outgoing packet
 %col 3 = packet size in bytes

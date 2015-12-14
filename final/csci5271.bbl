@@ -26,7 +26,10 @@ R.~Dingledine, N.~Mathewson, and P.~Syverson.
 
 \bibitem{fisher2003}
 D.~Fisher.
-\newblock Link prefetching {FAQ}, 2003.
+\newblock Link prefetching {FAQ}.
+\newblock
+  \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ},
+  2003.
 
 \bibitem{fisher2004link}
 D.~Fisher and G.~Saksena.

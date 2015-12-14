@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 20:11
 entering extended mode
 **C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
 (C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
@@ -517,7 +517,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 
+l.87 
       [4 <./figures/prefetch-network.png> <./figures/prefetch.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -555,9 +555,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files (x86)/MiKTeX
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
 utmr8a.pfb>
-Output written on csci5271.pdf (5 pages, 617746 bytes).
+Output written on csci5271.pdf (5 pages, 618395 bytes).
 PDF statistics:
- 226 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  52 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

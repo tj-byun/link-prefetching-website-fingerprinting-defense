@@ -1,5 +1,5 @@
 function [tr,te,n_s] = get_data(file,max_c,training_fraction)
-	data = load(file);
+	data = load(file); 
     %for iteration=1:max_iter
     data_coarse_tr=[];
     data_coarse_te=[];

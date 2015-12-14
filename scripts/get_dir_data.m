@@ -1,4 +1,4 @@
-%Extracts only packet direction
+%Extracts only packet direction 
 function [tr_l,tr,te_l,te] = get_dir_data(file,max_c,training_fraction)
 	data = load(file);
     data_coarse_tr=[];

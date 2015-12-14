@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 22:04
 entering extended mode
 **C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
 (C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
@@ -442,8 +442,9 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 (sections/related.tex
-Overfull \hbox (5.6327pt too wide) in paragraph at lines 4--5
-[]\T1/aer/m/n/9 There are a de-cent num-ber of works on by-pass-ing anonymiz-
+Overfull \hbox (7.58527pt too wide) in paragraph at lines 4--5
+[]\T1/aer/m/n/9 This sec-tion sur-veys at-tacks/ de-fenses on/against anonymiz-
+
  []
 
 ) (sections/prefetching.tex
@@ -452,7 +453,14 @@ Overfull \hbox (3.328pt too wide) in paragraph at lines 4--5
 ainst
  []
 
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.14 
+      [2 <./figures/attack_model.png>]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 29.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
@@ -461,13 +469,7 @@ Overfull \hbox (3.55208pt too wide) in paragraph at lines 29--33
 m-ple, a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag \T1/aett/m/n/9 <link rel="p-
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.33 
-      [2 <./figures/attack_model.png>]
-<figures/prefetch-network.png, id=158, 940.51375pt x 615.29875pt>
+<figures/prefetch-network.png, id=155, 940.51375pt x 615.29875pt>
 File: figures/prefetch-network.png Graphic file (type png)
 
 <use figures/prefetch-network.png>
@@ -481,7 +483,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Citation `something' on page \thepage  undefined on input line 5
 3.
 
-<figures/prefetch.png, id=160, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=157, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
@@ -501,37 +503,34 @@ Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-) (sections/discussion.tex) (sections/conclusion.tex)pdfTeX warning (ext4): des
-tination with the same identifier (name{page.}) has been already used, duplicat
-e ignored
+)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.77 \section{Acknowledgments}
-                               [3] (csci5271.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
+l.69 \section
+             {Discussion} [3] (sections/discussion.tex)
+(sections/conclusion.tex) (csci5271.bblpdfTeX warning (ext4): destination with 
+the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.58 
+l.39 
       [4 <./figures/prefetch-network.png> <./figures/prefetch.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \end{document}
+l.83 \end{document}
                     [5
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
  (csci5271.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 83.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `csci5271.out' has not changed.
 (rerunfilecheck)             Checksum: FC818D12C6D8708809C6D48A3D6315E7;1347.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
  6666 strings out of 493673
@@ -552,9 +551,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files (x86)/MiKTeX
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
 utmr8a.pfb>
-Output written on csci5271.pdf (5 pages, 620941 bytes).
+Output written on csci5271.pdf (5 pages, 621577 bytes).
 PDF statistics:
- 234 PDF objects out of 1000 (max. 8388607)
+ 235 PDF objects out of 1000 (max. 8388607)
  53 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,7 +6,7 @@ clear;
 pf_on_file='../dataset/pfon_matlab.data';
 pf_off_file='../dataset/pfoff_matlab.data';
 training_fraction=0.8;
-max_iter=20;
+max_iter=5;
 max_c=59;
 tr_file=pf_on_file;
 te_file=pf_on_file;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 00:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 15:27
 entering extended mode
 **C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
 (C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
@@ -456,7 +456,12 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 29.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-<figures/prefetch-network.png, id=120, 940.51375pt x 615.29875pt>
+Overfull \hbox (3.55208pt too wide) in paragraph at lines 29--33
+\T1/aer/m/n/9 us-ing a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag [[]12[]]. For ex-a
+m-ple, a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag \T1/aett/m/n/9 <link rel="p-
+ []
+
+<figures/prefetch-network.png, id=128, 940.51375pt x 615.29875pt>
 File: figures/prefetch-network.png Graphic file (type png)
 
 <use figures/prefetch-network.png>
@@ -470,7 +475,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Citation `something' on page \thepage  undefined on input line 5
 3.
 
-<figures/prefetch.png, id=122, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=130, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
@@ -480,7 +485,12 @@ Package pdftex.def Info: figures/prefetch.png used on input line 60.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (sections/experiment.tex
+) (sections/experiment.texpdfTeX warning (ext4): destination with the same iden
+tifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 \end{enumerate}
+                     [2 <./figures/attack_model.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 16.
@@ -489,28 +499,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 
-      [2 <./figures/attack_model.png>]
+l.45 ...tching Effects on top 60 Popular Websites}
+                                                   [3 <./figures/prefetch-netwo
+rk.png> <./figures/prefetch.png>]
 Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-) (sections/discussion.tex)pdfTeX warning (ext4): destination with the same ide
-ntifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.71 
-      [3 <./figures/prefetch-network.png> <./figures/prefetch.png>]
-(sections/conclusion.tex) (csci5271.bbl)
+) (sections/discussion.tex) (sections/conclusion.tex) (csci5271.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.84 \end{document}
-                    [4
-
-]
+                    [4]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (csci5271.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
@@ -520,13 +523,13 @@ Package rerunfilecheck Info: File `csci5271.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 6646 strings out of 493673
- 93980 string characters out of 3141527
- 192055 words of memory out of 3000000
- 9803 multiletter control sequences out of 15000+200000
+ 6660 strings out of 493673
+ 94181 string characters out of 3141527
+ 191292 words of memory out of 3000000
+ 9810 multiletter control sequences out of 15000+200000
  54324 words of font info for 78 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,10n,34p,987b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,10n,34p,1164b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
@@ -538,9 +541,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files (x86)/MiKTeX
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
 utmr8a.pfb>
-Output written on csci5271.pdf (4 pages, 605338 bytes).
+Output written on csci5271.pdf (4 pages, 613136 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 50 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

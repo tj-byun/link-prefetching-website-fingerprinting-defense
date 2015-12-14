@@ -59,6 +59,12 @@ M.~Juarez, S.~Afroz, G.~Acar, C.~Diaz, and R.~Greenstadt.
 \newblock In {\em Proceedings of the 2014 ACM SIGSAC Conference on Computer and
   Communications Security}, pages 263--274. ACM, 2014.
 
+\bibitem{luo2011}
+X.~Luo, P.~Zhou, E.~W. Chan, W.~Lee, R.~K. Chang, and R.~Perdisci.
+\newblock Httpos: Sealing information leaks with browser-side obfuscation of
+  encrypted flows.
+\newblock In {\em NDSS}, 2011.
+
 \bibitem{murdoch2005low}
 S.~J. Murdoch and G.~Danezis.
 \newblock Low-cost traffic analysis of tor.

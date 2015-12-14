@@ -1,5 +1,17 @@
 \begin{thebibliography}{1}
 
+\bibitem{TorBlog}
+A critique of website traffic fingerprinting attacks.
+\newblock
+  \url{https://blog.torproject.org/blog/critique-website-traffic-fingerprinting-attacks},
+  2015.
+\newblock Accessed: 2015-11-1.
+
+\bibitem{TorPage}
+Tor project.
+\newblock \url{https://www.torproject.org/}, 2015.
+\newblock Accessed: 2015-12-12.
+
 \bibitem{dingledine2004tor}
 R.~Dingledine, N.~Mathewson, and P.~Syverson.
 \newblock Tor: The second-generation onion router.
@@ -14,6 +26,18 @@ D.~Fisher and G.~Saksena.
 \newblock Link prefetching in mozilla: A server-driven approach.
 \newblock In {\em Web content caching and distribution}, pages 283--291.
   Springer, 2004.
+
+\bibitem{juarez14}
+M.~Juarez, S.~Afroz, G.~Acar, C.~Diaz, and R.~Greenstadt.
+\newblock A critical evaluation of website fingerprinting attacks.
+\newblock In {\em Proceedings of the 2014 ACM SIGSAC Conference on Computer and
+  Communications Security}, pages 263--274. ACM, 2014.
+
+\bibitem{murdoch2005low}
+S.~J. Murdoch and G.~Danezis.
+\newblock Low-cost traffic analysis of tor.
+\newblock In {\em Security and Privacy, 2005 IEEE Symposium on}, pages
+  183--195. IEEE, 2005.
 
 \bibitem{nottingham2010}
 M.~Nottingham.

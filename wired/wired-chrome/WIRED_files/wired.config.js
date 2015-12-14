@@ -1,0 +1,1 @@
+window.SparrowConfig = {"title":"Wired","origin":"wired","events":[{"type":["click"],"selector":"a"},{"type":["scroll","pageview","timespent"],"selector":"window"}]}

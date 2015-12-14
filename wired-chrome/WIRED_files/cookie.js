@@ -1,0 +1,1 @@
+window.parent.googletag.impl.pubads.setCookieInfo({});

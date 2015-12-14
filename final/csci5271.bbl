@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{TorBlog}
 A critique of website traffic fingerprinting attacks.
@@ -11,6 +11,13 @@ A critique of website traffic fingerprinting attacks.
 Tor project.
 \newblock \url{https://www.torproject.org/}, 2015.
 \newblock Accessed: 2015-12-12.
+
+\bibitem{Cai:2014kjb}
+X.~Cai, R.~Nithyanand, T.~Wang, R.~Johnson, and I.~Goldberg.
+\newblock {A Systematic Approach to Developing and Evaluating Website
+  Fingerprinting Defenses}.
+\newblock In {\em the 2014 ACM SIGSAC Conference}, pages 227--238, New York,
+  New York, USA, 2014. ACM Press.
 
 \bibitem{dingledine2004tor}
 R.~Dingledine, N.~Mathewson, and P.~Syverson.

@@ -1,4 +1,23 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{TorBlog}
+A critique of website traffic fingerprinting attacks.
+\newblock
+  \url{https://blog.torproject.org/blog/critique-website-traffic-fingerprinting-attacks},
+  2015.
+\newblock Accessed: 2015-11-1.
+
+\bibitem{TorPage}
+Tor project.
+\newblock \url{https://www.torproject.org/}, 2015.
+\newblock Accessed: 2015-12-12.
+
+\bibitem{cai2012touching}
+X.~Cai, X.~C. Zhang, B.~Joshi, and R.~Johnson.
+\newblock Touching from a distance: Website fingerprinting attacks and
+  defenses.
+\newblock In {\em Proceedings of the 2012 ACM conference on Computer and
+  communications security}, pages 605--616. ACM, 2012.
 
 \bibitem{dingledine2004tor}
 R.~Dingledine, N.~Mathewson, and P.~Syverson.
@@ -15,6 +34,43 @@ D.~Fisher and G.~Saksena.
 \newblock In {\em Web content caching and distribution}, pages 283--291.
   Springer, 2004.
 
+\bibitem{fu2003}
+X.~Fu, B.~Graham, R.~Bettati, and W.~Zhao.
+\newblock On countermeasures to traffic analysis attacks.
+\newblock In {\em Information Assurance Workshop, 2003. IEEE Systems, Man and
+  Cybernetics Society}, pages 188--195. IEEE, 2003.
+
+\bibitem{herrmann2009}
+D.~Herrmann, R.~Wendolsky, and H.~Federrath.
+\newblock Website fingerprinting: attacking popular privacy enhancing
+  technologies with the multinomial na{\"\i}ve-bayes classifier.
+\newblock In {\em Proceedings of the 2009 ACM workshop on Cloud computing
+  security}, pages 31--42. ACM, 2009.
+
+\bibitem{hintz2003}
+A.~Hintz.
+\newblock Fingerprinting websites using traffic analysis.
+\newblock In {\em Privacy Enhancing Technologies}, pages 171--178. Springer,
+  2003.
+
+\bibitem{juarez14}
+M.~Juarez, S.~Afroz, G.~Acar, C.~Diaz, and R.~Greenstadt.
+\newblock A critical evaluation of website fingerprinting attacks.
+\newblock In {\em Proceedings of the 2014 ACM SIGSAC Conference on Computer and
+  Communications Security}, pages 263--274. ACM, 2014.
+
+\bibitem{luo2011}
+X.~Luo, P.~Zhou, E.~W. Chan, W.~Lee, R.~K. Chang, and R.~Perdisci.
+\newblock Httpos: Sealing information leaks with browser-side obfuscation of
+  encrypted flows.
+\newblock In {\em NDSS}, 2011.
+
+\bibitem{murdoch2005low}
+S.~J. Murdoch and G.~Danezis.
+\newblock Low-cost traffic analysis of tor.
+\newblock In {\em Security and Privacy, 2005 IEEE Symposium on}, pages
+  183--195. IEEE, 2005.
+
 \bibitem{nottingham2010}
 M.~Nottingham.
 \newblock Rfc5988: Web linking.
@@ -25,5 +81,30 @@ A.~Panchenko, L.~Niessen, A.~Zinnen, and T.~Engel.
 \newblock Website fingerprinting in onion routing based anonymization networks.
 \newblock In {\em Proceedings of the 10th annual ACM workshop on Privacy in the
   electronic society}, pages 103--114. ACM, 2011.
+
+\bibitem{perry11}
+M.~Perry.
+\newblock Experimental defense for website traffic fingerprinting.
+\newblock
+  \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting}.
+\newblock Accessed: 2015-11-23.
+
+\bibitem{wagner96}
+D.~Wagner, B.~Schneier, et~al.
+\newblock Analysis of the ssl 3.0 protocol.
+\newblock In {\em The Second USENIX Workshop on Electronic Commerce
+  Proceedings}, pages 29--40, 1996.
+
+\bibitem{wang2013improved}
+T.~Wang and I.~Goldberg.
+\newblock Improved website fingerprinting on tor.
+\newblock In {\em Proceedings of the 12th ACM workshop on Workshop on privacy
+  in the electronic society}, pages 201--212. ACM, 2013.
+
+\bibitem{wright2009}
+C.~V. Wright, S.~E. Coull, and F.~Monrose.
+\newblock Traffic morphing: An efficient defense against statistical traffic
+  analysis.
+\newblock In {\em NDSS}, 2009.
 
 \end{thebibliography}

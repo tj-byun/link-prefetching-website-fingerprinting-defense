@@ -1,16 +1,22 @@
 % sections/related.tex
 % 3. Related Works
 
-There are a decent number of works since 0000 which attempts to deanonymize the Tor network.
+There are a decent number of works on bypassing anonymizing systems, especially Tor, on which this section provides an overview.
 
 \subsection{Fingerprinting Attacks}
+The idea of extracting information about content of encrypted SSL packets dates back to 1996 \cite{wagner96}. Later in 2002, Hintz presented an attack on an encrypting web proxy calling it website fingerprinting. The attack successfully exploited a traffic analysis-based vulnerability to detect which website a particular user is surfing \cite{hintz2003}. Since then, a lot of research has been conducted in this area trying either to propose a more realistic attack, or a more effective defense mechanism.
 
+One interesting study has been done in \cite{herrmann2009}, where authors applied WF attack on different anonymizing techniques, including OpenSSH, OpenVPN, Stunnel, Tor. They tried to attack 775 different websites. The result presents a low detection rate in the closed world attack model (only a 3\% success rate for 775 pages). They used Multinomial Naive Bayes classifier focusing only on packet sizes. Later on, this attack has been improved with around 90\% accuracy for 100 wbpages in \cite{wang2013improved, cai2012touching}. In \cite{cai2012touching}, authors could defeat ad hoc defense mechanisms describing a new defense scheme that provides provable security properties. Penchenko et al. \cite{panchenko11} were also among the first to report website fingerprinting attacks with reasonable accuracy on Tor. They provided a sufficient understanding of the feature set and classification framework required for this attack. In fact, they carried out a comprehensive study of WF on Tor, which considers both closed world and open world attack models.
+
+Generally speaking, attacks on anonymizing networks took a variety of approaches; some of the attacks tries to discover the identity of the anonymous user, others focus on uncovering the private pathway, and others attempt to identify the servers users interact with  \cite{cai2012touching}.
 
 \subsection{Defense Mechanisms}
+Usually, defense mechanisms are developed at the IP/TCP level by changing the pattern of traffic. For example, they split packets into multiple packets, or insert fake packets into the traffic, or involve padding packets. A study performed in \cite{fu2003} shows that transmission at random intervals could be a defense against analysis-based attacks. Another defense technique proposed in \cite{wright2009} uses some tricks to change a traffic pattern in a way that it looks like another pattern. However, this method does not split or disordered packets. Therefore, attacks that work without packet size information can easily defeat this mechanism.
 
+In \cite{luo2011}, Luo et al. proposed a collection of tricks at the HTTP/TCP level as a defense mechanism against some analysis attacks. For example, they changed window sizes and order of packets in the TCP stream. Also, at the HTTP level, they tried to insert some extra data into HTTP GET headers, generate some irrelevant HTTP request, and re-order requests. The Tor community also introduced "randomized pipelining" \cite{perry11} as a defense mechanism, where the browser loads content in a random order. Despite such techniques, the proposed attack in \cite{cai2012touching} managed to successfully recognize the target web page over 87\% of the time in their experiments. The experiments show that techniques like traffic morphing and randomized pipelining can impose high costs, but are unable to stop attack. The attack is able to ignore packet sizes, while most of the attacks on Tor work based on packet sizes.
 
 \subsection{Criticism}
-% cite some papers which criticize the feasibility of the fingerprinting attack
-% and provide some reasons why we think fingerprinting is still a serious
-% threat that we should be prepared for.
+In the literature, some work always debate over the practical feasibility of the WF attack. This section tries to summarize issues questioning the practicality of WF. This section is mostly taken from \cite{TorBlog, juarez14}.
 
+
+In conclusion, although more attention should be paid to the scenarios by which attacks are evaluated, we should not dismiss WF as a threat.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  13 DEC 2015 21:25
 entering extended mode
 **C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
 (C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
@@ -465,9 +465,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.40 
+l.33 
       [2 <./figures/attack_model.png>]
-<figures/prefetch-network.png, id=153, 940.51375pt x 615.29875pt>
+<figures/prefetch-network.png, id=158, 940.51375pt x 615.29875pt>
 File: figures/prefetch-network.png Graphic file (type png)
 
 <use figures/prefetch-network.png>
@@ -481,7 +481,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: Citation `something' on page \thepage  undefined on input line 5
 3.
 
-<figures/prefetch.png, id=155, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=160, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
@@ -501,23 +501,20 @@ Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-) (sections/discussion.tex) (sections/conclusion.tex) (csci5271.bblpdfTeX warni
-ng (ext4): destination with the same identifier (name{page.}) has been already 
-used, duplicate ignored
+) (sections/discussion.tex) (sections/conclusion.tex)pdfTeX warning (ext4): des
+tination with the same identifier (name{page.}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
-l.26 
-      [3]
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
-
+l.77 \section{Acknowledgments}
+                               [3] (csci5271.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 
+l.58 
       [4 <./figures/prefetch-network.png> <./figures/prefetch.png>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 84.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -537,10 +534,10 @@ Package rerunfilecheck Info: File `csci5271.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
- 6664 strings out of 493673
- 94223 string characters out of 3141527
- 193352 words of memory out of 3000000
- 9812 multiletter control sequences out of 15000+200000
+ 6666 strings out of 493673
+ 94244 string characters out of 3141527
+ 193382 words of memory out of 3000000
+ 9813 multiletter control sequences out of 15000+200000
  54324 words of font info for 78 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  41i,10n,34p,1164b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -555,9 +552,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb><C:/Program Files (x86)/MiKTeX
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
 /urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
 utmr8a.pfb>
-Output written on csci5271.pdf (5 pages, 618395 bytes).
+Output written on csci5271.pdf (5 pages, 620941 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 53 named destinations out of 1000 (max. 500000)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

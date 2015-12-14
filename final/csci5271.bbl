@@ -92,6 +92,12 @@ M.~Perry.
   \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting}.
 \newblock Accessed: 2015-11-23.
 
+\bibitem{shi2009}
+Y.~Shi and K.~Matsuura.
+\newblock Fingerprinting attack on the tor anonymity system.
+\newblock In {\em Information and Communications Security}, pages 425--438.
+  Springer, 2009.
+
 \bibitem{wagner96}
 D.~Wagner, B.~Schneier, et~al.
 \newblock Analysis of the ssl 3.0 protocol.

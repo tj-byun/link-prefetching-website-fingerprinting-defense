@@ -26,7 +26,10 @@ R.~Dingledine, N.~Mathewson, and P.~Syverson.
 
 \bibitem{fisher2003}
 D.~Fisher.
-\newblock Link prefetching {FAQ}, 2003.
+\newblock Link prefetching {FAQ}.
+\newblock
+  \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ},
+  2003.
 
 \bibitem{fisher2004link}
 D.~Fisher and G.~Saksena.
@@ -82,6 +85,22 @@ A.~Panchenko, L.~Niessen, A.~Zinnen, and T.~Engel.
 \newblock In {\em Proceedings of the 10th annual ACM workshop on Privacy in the
   electronic society}, pages 103--114. ACM, 2011.
 
+<<<<<<< HEAD
+=======
+\bibitem{perry11}
+M.~Perry.
+\newblock Experimental defense for website traffic fingerprinting.
+\newblock
+  \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting}.
+\newblock Accessed: 2015-11-23.
+
+\bibitem{shi2009}
+Y.~Shi and K.~Matsuura.
+\newblock Fingerprinting attack on the tor anonymity system.
+\newblock In {\em Information and Communications Security}, pages 425--438.
+  Springer, 2009.
+
+>>>>>>> ela-report
 \bibitem{wagner96}
 D.~Wagner, B.~Schneier, et~al.
 \newblock Analysis of the ssl 3.0 protocol.

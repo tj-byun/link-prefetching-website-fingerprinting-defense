@@ -1,13 +1,30 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: csci5271.aux
 The style file: abbrv.bst
 Database file #1: csci5271.bib
+<<<<<<< HEAD
 I was expecting a `,' or a `}'---line 30 of file csci5271.bib
+=======
+I was expecting a `,' or a `}'---line 21 of file csci5271.bib
+ : 
+ : @inproceedings{luo2011,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 49 of file csci5271.bib
+>>>>>>> ela-report
  :   
  :   year={2011}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+<<<<<<< HEAD
 Warning--I didn't find a database entry for "Cai:2014kjb"
 Warning--to sort, need author or key in TorPage
 Warning--to sort, need author or key in TorBlog
 Warning--empty institution in nottingham2010
 (There was 1 error message)
+=======
+Warning--I didn't find a database entry for "something"
+Warning--to sort, need author or key in TorPage
+Warning--to sort, need author or key in TorBlog
+Warning--empty institution in nottingham2010
+(There were 2 error messages)
+>>>>>>> ela-report

@@ -1,0 +1,9 @@
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_10_1.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_10_2.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_10_3.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_50_1.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_50_2.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_50_3.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_100_1.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_100_2.html
+http://www-users.cs.umn.edu/~byunx063/wired/prefetch_100_3.html

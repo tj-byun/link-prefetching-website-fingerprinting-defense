@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  15 DEC 2015 10:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  15 DEC 2015 10:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,60 +344,7 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
-) (./csci5271.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 <
-      <<<<<< HEAD
-? 
-
-LaTeX Warning: Label `table:prefetch' multiply defined.
-
-
-LaTeX Warning: Label `fig:network' multiply defined.
-
-
-LaTeX Warning: Label `fig:prefetch' multiply defined.
-
-
-LaTeX Warning: Label `fu2003' multiply defined.
-
-
-LaTeX Warning: Label `herrmann2009' multiply defined.
-
-
-LaTeX Warning: Label `hintz2003' multiply defined.
-
-
-LaTeX Warning: Label `juarez14' multiply defined.
-
-
-LaTeX Warning: Label `luo2011' multiply defined.
-
-
-LaTeX Warning: Label `murdoch2005low' multiply defined.
-
-
-LaTeX Warning: Label `nottingham2010' multiply defined.
-
-
-LaTeX Warning: Label `panchenko11' multiply defined.
-
-
-LaTeX Warning: Label `wagner96' multiply defined.
-
-
-LaTeX Warning: Label `wang2013improved' multiply defined.
-
-
-LaTeX Warning: Label `wright2009' multiply defined.
-
-)
+) (./csci5271.aux)
 \openout1 = `csci5271.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -414,7 +361,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
- (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen127
@@ -464,11 +412,6 @@ LaTeX Info: Redefining \nameref on input line 9.
 \@outlinefile=\write4
 \openout4 = `csci5271.out'.
 
- [1
-
-{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-]
 LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -504,7 +447,7 @@ Overfull \hbox (11.80667pt too wide) in paragraph at lines 7--8
 []\T1/aer/m/n/9 The Onion Router (Tor) is one of the most pop-u-lar anonymiz-
  []
 
-<figures/attack_model.png, id=107, 348.8232pt x 109.3686pt>
+<figures/attack_model.png, id=104, 348.8232pt x 109.3686pt>
 File: figures/attack_model.png Graphic file (type png)
 
 <use figures/attack_model.png>
@@ -514,12 +457,8 @@ Package pdftex.def Info: figures/attack_model.png used on input line 21.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.57 \section{Related Work}
-                            [2
+) [1{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
 
 ] (./sections/related.tex
 Overfull \hbox (7.58527pt too wide) in paragraph at lines 4--5
@@ -537,7 +476,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.9 
-     [3 <./figures/attack_model.png>]
+     [2 <./figures/attack_model.png>]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/ae/t1aett.fd
@@ -560,13 +499,26 @@ Package pdftex.def Info: figures/prefetch-network-edited.png used on input line
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
-Package pdftex.def Info: figures/prefetch.png used on input line 71.
+Package pdftex.def Info: figures/prefetch.png used on input line 76.
 (pdftex.def)             Requested size: 227.99927pt x 136.1161pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./sections/experiment.tex
+
+LaTeX Warning: Citation `Cai:2014kjb' on page \thepage  undefined on input line
+ 96.
+
+
+LaTeX Warning: Citation `Cai:2014kjb' on page \thepage  undefined on input line
+ 99.
+
+) (./sections/experiment.texpdfTeX warning (ext4): destination with the same id
+entifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \subsection{Research Question}
+                                   [3]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 16.
@@ -576,68 +528,66 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.44 
-      [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
+      [4 <./figures/prefetch-network-edited.png> <./figures/prefetch.png>]
 Overfull \hbox (1.21005pt too wide) in paragraph at lines 51--51
 []\secfnt Effect of Pre-Fetching Pack-ets Size on Fin-
  []
 
-
-Underfull \vbox (badness 4479) has occurred while \output is active []
+) (./sections/discussion.tex) (./sections/conclusion.tex) (./csci5271.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 
-      [5 <./figures/prefetch-network-edited.png> <./figures/prefetch.png>])
-(./sections/discussion.tex) (./sections/conclusion.tex) (./csci5271.bbl)
+l.121 
+       [5])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 83.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.83 \end{document}
-                    [6]
+                    [6
+
+]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 83.
  (./csci5271.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 83.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 83.
 Package rerunfilecheck Info: File `csci5271.out' has not changed.
-(rerunfilecheck)             Checksum: 2D322696DC1258E0068A2014EA17BE9A;1499.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: BD4756A4AD08384080386E0CF1117816;1604.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 83.
  ) 
 Here is how much of TeX's memory you used:
- 6783 strings out of 494501
- 97139 string characters out of 6167030
- 192900 words of memory out of 5000000
- 9851 multiletter control sequences out of 15000+600000
- 55460 words of font info for 79 fonts, out of 8000000 for 9000
+ 6793 strings out of 494501
+ 97264 string characters out of 6167030
+ 191802 words of memory out of 5000000
+ 9855 multiletter control sequences out of 15000+600000
+ 56158 words of font info for 81 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  41i,10n,35p,1123b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
-/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></
-usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-</usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pf
-b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
+/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb
+></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
+fb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
 .pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ti9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uh
-vb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helvetic/uhvr
-8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmb8a.pf
-b></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
-sr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on csci5271.pdf (6 pages, 620902 bytes).
+r9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy6.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmtt9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/hel
+vetic/uhvb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/helve
+tic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/u
+tmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on csci5271.pdf (6 pages, 651743 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 230 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 247 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 200 words of extra memory for PDF output out of 10000 (max. 10000000)
 

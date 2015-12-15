@@ -51,6 +51,7 @@ Please also note that the time it took for loading the image when the user actua
 \label{fig:network}
 \end{figure*}
 
+
 \subsection{The Effect of Prefetching on Website Fingerprint}
 % cite some papers to describe about the features that are used for attacks,
 % and explain why prefetching change the feature.
@@ -61,11 +62,15 @@ Please also note that the time it took for loading the image when the user actua
 
 % defenition of a fingerprint
 
+%TODO: rewrite
+\iffalse
 Link prefetching obviously affects the traffic by sending additional request for prefetching items, and by prefetching those items after an idle time.
 However, to what degree it affects the website fingerprint has not been studiedto the best of our knowledge.
 This subsection first illustrates how the prefetching affects the number of packets being transferred as an example, and then discusses what features of fingerprint prefetching can possibly affect.
+\fi
 
-\subsubsection{An Example}
+
+\subsubsection{An Example of prefetching packet sequence}
 
 \begin{figure}[h]
 \includegraphics[width=0.95\columnwidth]{figures/prefetch.png}
@@ -84,10 +89,48 @@ When we ignore the speed difference, we can see that the four peaks of the two l
 Please note also that inter-packet timing is only one of many features for characterizing website fingerprint.
 
 
-\subsubsection{The Effect of Prefetching on Features}
+\subsection{Fingerprint Features}
+
+Since all the traffic on Tor is encrypted, fingerprinting attacks blindly analyze a sequence of packets without knowing its contents, and extract {\it features} which characterizes a fingerprint.
+The attacker then trains his/her classifier on multiple packet sequences from the set of website, for a set of features that attacker determined to use.
+In this subsection, we summarize the definition of the four most popular features defined by Cai et. al.~\cite{Cai:2014kjb} to discuss the effect of prefetching on this features in the following subsection.
+
+{\bf Packet Sequence}:
+A packet sequence $P$ can be written as $P = \langle(t_1, l_1), (t_2, l_2), ..., (t_n, l_n)\rangle$ ~\cite{Cai:2014kjb}, where $t_i$ is the time relative to $t_0$ which is 0, and $l_i$ is the byte length of the $i$-th packet.
+
+{\bf Unique Packet Lengths}: 
+Most packets 
+\begin{equation}
+(\exists L \in P_l | L \notin P'_l ) \vee (\exists L \in P'_l | L \notin P_l)
+\end{equation}
+
+{\bf Packet Length Frequency}:
+When $n_L(P_l)$ is the number of times packet length $L$ appears in $P_l$,
+\begin{equation}
+\exists L|n_L(P_l) \neq n_L(P'_l) \wedge n_L(P_l)>0 \wedge n_L(P'_l) >0
+\end{equation}
+In other words, $P$ and $P'$ have different packet length frequencies iff there exists a packet with length $L$ that appears different times in the two sequences.
+
+{\bf Packet Ordering}:
+When $M_l$ is the multiset of packet lengths in $P_l$ without ordering, two packet sequences $P$ and $P'$ have different packet ordering iff:
+\begin{equation}
+M_{ l }=M'_{ l }\wedge P_{ l }\neq P'_{ l }
+\end{equation}
+
+{\bf Interpacket Timing}:
+\begin{equation}
+\exists i, 1 \le i \le \mathit{min}(|P|, |P'|) : (P_t)_i \neq (P'_t)_i
+\end{equation}
 
 
+\subsubsection{The Effect of Prefetching on the Features}
+
+Existing fingerprinting attacks extract {\it features} from a sequence of packets to characterize a distinct characteristic of a website.
+The most popular features that have been used in the previous works for classification are unique packet lengths, packet length frequency, packet ordering, and interpacket timing.
+Existing works on website fingerprinting considers a sequence
 Packet lengths
 Packet length frequency
 Packet ordering.
 Interpacket timing
+
+Packet sequence.

@@ -9,14 +9,15 @@
 \BOOKMARK [1][-]{section.4}{Link Prefetching as a Defense}{}% 9
 \BOOKMARK [2][-]{subsection.4.1}{Link Prefetching}{section.4}% 10
 \BOOKMARK [2][-]{subsection.4.2}{The Effect of Prefetching on Website Fingerprint}{section.4}% 11
-\BOOKMARK [3][-]{subsubsection.4.2.1}{An Example}{subsection.4.2}% 12
-\BOOKMARK [3][-]{subsubsection.4.2.2}{The Effect of Prefetching on Features}{subsection.4.2}% 13
-\BOOKMARK [1][-]{section.5}{Experimental Evaluation}{}% 14
-\BOOKMARK [2][-]{subsection.5.1}{Research Question}{section.5}% 15
-\BOOKMARK [2][-]{subsection.5.2}{Effects of Pre-Fetching on Fingerprinting}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.3}{Investigate Pre-Fetching Effects on top 60 Popular Websites}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.4}{Effect of Pre-Fetching Packets Size on Fingerprinting Attacks}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Discussion}{}% 19
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 20
-\BOOKMARK [1][-]{section.8}{Acknowledgments}{}% 21
-\BOOKMARK [1][-]{section.9}{References}{}% 22
+\BOOKMARK [3][-]{subsubsection.4.2.1}{An Example of prefetching packet sequence}{subsection.4.2}% 12
+\BOOKMARK [2][-]{subsection.4.3}{Fingerprint Features}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.3.1}{The Effect of Prefetching on the Features}{subsection.4.3}% 14
+\BOOKMARK [1][-]{section.5}{Experimental Evaluation}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Research Question}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Effects of Pre-Fetching on Fingerprinting}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{Investigate Pre-Fetching Effects on top 60 Popular Websites}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.4}{Effect of Pre-Fetching Packets Size on Fingerprinting Attacks}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 20
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 21
+\BOOKMARK [1][-]{section.8}{Acknowledgments}{}% 22
+\BOOKMARK [1][-]{section.9}{References}{}% 23

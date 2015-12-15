@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  15 DEC 2015 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  15 DEC 2015 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -548,15 +548,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 84.
  (./csci5271.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 84.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 84.
-
-
-Package rerunfilecheck Warning: File `csci5271.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `csci5271.out':
-(rerunfilecheck)             Before: 5C0564ACBD2A3AF104DBD7FA5DF02AB3;1600
-(rerunfilecheck)             After:  BD4756A4AD08384080386E0CF1117816;1604.
+Package rerunfilecheck Info: File `csci5271.out' has not changed.
+(rerunfilecheck)             Checksum: BD4756A4AD08384080386E0CF1117816;1604.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 84.
  ) 
 Here is how much of TeX's memory you used:
@@ -584,7 +577,7 @@ tic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on csci5271.pdf (5 pages, 647429 bytes).
+Output written on csci5271.pdf (5 pages, 647428 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  229 compressed objects within 3 object streams

@@ -6,30 +6,40 @@ prefetching on website fingerprinting and the results from these
 experiments in the following subsections.
 \subsection{Research Question}
 
-\begin{enumerate}
-\item
-{\bf RQ1}: Does prefetching itself provide an extra degree of defense?
-\item
-{\bf RQ2}: Can prefetching be used as a browser-side defense mechanism?
-\end{enumerate}
+We formulate the research questions of this project as follows:\\
+{\bf RQ1}: Does prefetching itself provide an extra degree of defense?\\
+{\bf RQ2}: Can prefetching be used as a browser-side defense
+mechanism?\\
+
 
 
 \begin{table}[]
 \centering
-\caption{Experiment design to answer {\it RQ1}}
+\caption{Experiment design to answer RQ1}
 \label{table:prefetch}
 \begin{tabular}{lllll}
 \cline{1-3}
-\multicolumn{1}{|l|}{victim \textbackslash attacker} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{train\textbackslash test} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
 \multicolumn{1}{|l|}{prefetch on}                    & \multicolumn{1}{l|}{(1)}         & \multicolumn{1}{l|}{(2)}          &  &  \\ \cline{1-3}
 \multicolumn{1}{|l|}{prefetch off}                   & \multicolumn{1}{l|}{(3)}         & \multicolumn{1}{l|}{(4)}          &  &  \\ \cline{1-3}
                                                      &                                  &                                   &  & 
 \end{tabular}                  
 \end{table}
 
+We summarize our plans to tackle \emph{RQ1} in Table \ref{table:prefetch}.
+The rows represent the link prefetching setting used during the training stage by the
+attacker and the columns represent the link prefetching setting used
+during the testing stage by the attacker. 
 \begin{enumerate}
 \item
-We speculate that prefetching itself might provide extra defense because of the extra packets.
+We speculate that prefetching itself might provide extra defense because
+of the extra packets. As per the Link Prefetching FAQ\cite{fisher2003},
+Firefox prefetches web content requested by the webpage at browser idle
+time where browser idle time is defined as the time when the web page
+has finished loading. If this is implemented similarly in the Tor
+browser, prefetched packets requests and responses should flow into the
+browser after it has finished downloading resources required by the
+webpage.
 It can also be the case however, prefetching websites are more
 vulnerable to fingerprinting because of the extra prefetch upstream and
 downstream packets that
@@ -40,22 +50,74 @@ default in the latest version of the Tor browser as of this writing. We assume t
 \item
 This case is what we are most curious about, whether a victim can
 confuse an attacker by simply turning the prefetching option off in
-his/her browser.
+his/her browser. This scenario, therefore has the potential to confuse the
+attacker.
 \item
-This case simulates a situation where a victim is loading any other websites that does not prefetch any resource.
-This can be used for checking the strength of our fingerprinting
-classifier.
+This case simulates a situation where a victim is loading websites that does not prefetch any resource.
+This can be thought of the most normal scenario as of now and can be used for checking the strength of our fingerprinting classifier.
 \end{enumerate}
 
-\subsection{Effects of Prefetching on Fingerprinting}
-In this section, we will write  about our experiments. We are planning to conduct two sets of experiments. If we consider the network traffic, the number of packages go upstream depends on the number of Prefetching requests, and the number of downstream packages coming depends on the size of resources that should be pre-fetched. Therefore, it is obvious that Prefetching would affect the fingerprint of the traffic of a particular website.  \emph{should be completed.}
+For \emph{RQ2}, we found that the performance of link prefetching as a
+browser-side defense mechanism depends primarily on two parameters.
+\begin{enumerate}
+\item 
+number of prefetching requests made by the browser 
+\item 
+total size of prefetched responses received by the browser
+\end{enumerate}
+We vary the values of both these parameters and present our results in
+Section 5.5.3.
+ 
+%\subsection{Effects of Prefetching on Fingerprinting}
+\subsection{Experimental Design}
+We have completed two sets of experiments corresponding to \emph{RQ1} and
+\emph{RQ2}. Our first experiment consists of checking the accuracy of
+known classifiers using coarse features for the four scenarios described
+above. Our second experiment consists of checking the effect of randomly
+varying the number of prefetching requests and size of prefetched
+responses on the classifier accuracy.
 
-\subsection{Investigate Prefetching Effects on top 60 Popular Websites}
-We are running experiments to see how Prefetching affects the websites' fingerprints.
-After doing some search on top popular websites, we put together a small crawler by which we learnt that only around 60 of all 6000 websites are use Prefetching mechanism. We are capturing traffic of these websites in two different modes: 1) with enabled Prefetching, and 2) with disabled Prefetching. We are working on feature extraction, and about to decide which classifiers to use for the learning phase.
-Ultimately, we plan to conduct two sets of experiments. One sort of experiment is to compare two series of the captured packets and find the accuracy number with the help of a classifier, by which our goal is to provide an evidence to see if Prefetching really affects fingerprints of websites. So, if the result will be positive, we will perform another set of experiment, which kind of simulates a sub set of those 60 websites. Then, we will see how (altering) the size of Prefetching affects fingerprinting attacks/ defense mechanisms.
+%\subsection{Investigate Prefetching Effects on top 60 Popular Websites}
+\subsection{Data Collection for RQ1 and RQ2}
+%write about the data collection and feature extraction procedure
+We created a web scraper using a Python framework called
+Scrapy\cite{scrapy} and ran on the top 10,000 most popular websites of
+the top 1 million as
+listed by Alexa\cite{alexa-top}. On scraping through the HTML content of
+the top 6000 websites for link prefetching keywords such as
+\textit{prerender},\textit{next},\textit{prefetch} we found 60 websites
+using link prefetching for caching web content in the browser. We then
+configured a virtual machine to run a Tor browser crawler\cite{tor-browser-crawler} to visit each
+of these 60 websites 16 times and captured all packets seen. This was
+done once with the \textit{prefetch-next} option left to its default
+value and repeated with this option turned off. By doing this, we
+captured packets for link prefetching as done currently in the real
+world by some of the most popular websites. \\
+When doing the data collection for \emph{RQ2}, we uploaded a copy of
+the Wired homepage\cite{wired} and uploaded on our
+webspace\cite{tj-wired}. We then created nine different variations of
+this page by changing the number of prefetching requests in this page to
+10,50,100 and changing the size of prefetched response per request to
+100,1 kB, 10 kB. We used the Tor browser
+crawler\cite{tor-browser-crawler} to capture packets for each of these
+webpages 144 times. In order to have equal data for comparison for some
+other websites, we also captured data for two other websites which we
+found to be similar.
 
 
-\subsection{Effect of Prefetching Packets Size on Fingerprinting Attacks}
+\subsection{Feature Set}
+%write about the feature set
+
+
+%\subsection{Effect of Prefetching Packets Size on Fingerprinting Attacks}
 Here, we will explain our second experiment. We will simulate a sub set of webpages we investigated in the previous experiment. Then, we will equip them with a mechanism so that they can affect the downstream traffic and finally their fingerprint. Then, we will analyze the result to see how this idea contributes to the effectiveness of attacks and defense techniques.
 
+\subsection{Experimental Validation}
+
+\subsubsection{Naive Bayes Classifier}
+
+\subsubsection{Support Vector Machine-based Classification}
+
+\subsubsection{Results}
+
+\subsection{Experimental Validation for \emph{RQ2}}

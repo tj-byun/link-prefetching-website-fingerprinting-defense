@@ -1,30 +1,112 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: csci5271.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: csci5271.aux
 The style file: abbrv.bst
 Database file #1: csci5271.bib
-<<<<<<< HEAD
-I was expecting a `,' or a `}'---line 30 of file csci5271.bib
-=======
-I was expecting a `,' or a `}'---line 21 of file csci5271.bib
- : 
- : @inproceedings{luo2011,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 49 of file csci5271.bib
->>>>>>> ela-report
+I was expecting a `,' or a `}'---line 40 of file csci5271.bib
  :   
  :   year={2011}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-<<<<<<< HEAD
-Warning--I didn't find a database entry for "Cai:2014kjb"
+Repeated entry---line 135 of file csci5271.bib
+ : @inproceedings{Cai:2014kjb
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 145 of file csci5271.bib
+ : @inproceedings{luo2011
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 161 of file csci5271.bib
+ : @inproceedings{wright2009
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 168 of file csci5271.bib
+ : @misc{perry11
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 176 of file csci5271.bib
+ : @inproceedings{fu2003
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 186 of file csci5271.bib
+ : @inproceedings{cai2012touching
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 196 of file csci5271.bib
+ : @inproceedings{herrmann2009
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 206 of file csci5271.bib
+ : @inproceedings{hintz2003
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 216 of file csci5271.bib
+ : @inproceedings{wagner96
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 225 of file csci5271.bib
+ : @misc{TorPage
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 232 of file csci5271.bib
+ : @misc{TorBlog
+ :              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 239 of file csci5271.bib
+ : @inproceedings{murdoch2005low
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 249 of file csci5271.bib
+ : @inproceedings{juarez14
+ :                        ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in TorPage
 Warning--to sort, need author or key in TorBlog
+Warning--to sort, need author or key in scrapy
+Warning--to sort, need author or key in alexa-top
+Warning--to sort, need author or key in tor-browser-crawler
+Warning--to sort, need author or key in wired
+Warning--to sort, need author or key in tj-wired
 Warning--empty institution in nottingham2010
-(There was 1 error message)
-=======
-Warning--I didn't find a database entry for "something"
-Warning--to sort, need author or key in TorPage
-Warning--to sort, need author or key in TorBlog
-Warning--empty institution in nottingham2010
-(There were 2 error messages)
->>>>>>> ela-report
+You've used 25 entries,
+            2118 wiz_defined-function locations,
+            623 strings with 7694 characters,
+and the built_in function-call counts, 8698 in all, are:
+= -- 904
+> -- 317
+< -- 12
++ -- 132
+- -- 104
+* -- 482
+:= -- 1273
+add.period$ -- 87
+call.type$ -- 25
+change.case$ -- 128
+chr.to.int$ -- 0
+cite$ -- 33
+duplicate$ -- 381
+empty$ -- 776
+format.name$ -- 104
+if$ -- 1996
+int.to.chr$ -- 0
+int.to.str$ -- 25
+missing$ -- 14
+newline$ -- 129
+num.names$ -- 36
+pop$ -- 213
+preamble$ -- 1
+purify$ -- 101
+quote$ -- 0
+skip$ -- 294
+stack$ -- 0
+substring$ -- 496
+swap$ -- 138
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 100
+warning$ -- 8
+while$ -- 72
+width$ -- 27
+write$ -- 278
+(There were 14 error messages)

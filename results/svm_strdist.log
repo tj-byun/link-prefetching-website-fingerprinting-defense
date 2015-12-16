@@ -1,0 +1,1026 @@
+vaibhav@cs-heathrow:/export/scratch/vaibhav/github.com/csci5271/scripts$ cat svm_1.log
+
+                                         < M A T L A B (R) >
+                               Copyright 1984-2014 The MathWorks, Inc.
+                                 R2014a (8.3.0.532) 64-bit (glnxa64)
+                                          February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 51
+nu = 0.835278
+obj = -10.544026, rho = 0.164755
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 51
+nu = 0.835278
+obj = -10.544026, rho = 0.164755
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+Total nSV = 120
+Accuracy = 27.5% (11/40) (classification)
+
+C =
+
+     3     0     0     0     0     0     0     0     0     1
+     0     1     0     0     0     0     0     0     0     3
+     0     1     1     0     0     0     0     0     0     2
+     0     3     0     0     0     0     0     0     0     1
+     0     0     0     0     1     0     0     0     0     3
+     0     0     0     0     0     2     0     0     0     2
+     0     0     0     0     0     0     0     0     0     4
+     0     3     0     0     0     0     0     0     0     1
+     0     0     0     1     0     0     0     0     1     2
+     0     0     0     0     0     2     0     0     0     2
+
+Accuracy for tr=../dataset/pfon_matlab.data te=../dataset/pfon_matlab.data = 0.275000
+Average accuracy = 0.275000
+
+vaibhav@cs-heathrow:/export/scratch/vaibhav/github.com/csci5271/scripts$ cat svm_2.log
+
+                                                           < M A T L A B (R) >
+                                                 Copyright 1984-2014 The MathWorks, Inc.
+                                                   R2014a (8.3.0.532) 64-bit (glnxa64)
+                                                            February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 51
+nu = 0.835278
+obj = -10.544026, rho = 0.164755
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 51
+nu = 0.835278
+obj = -10.544026, rho = 0.164755
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+.*.*
+optimization finished, #iter = 52
+nu = 0.835294
+obj = -10.544026, rho = 0.164757
+nSV = 24, nBSV = 7
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 22
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+Total nSV = 120
+Accuracy = 20% (8/40) (classification)
+
+C =
+
+     3     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     1     0     0     0     3
+     0     1     0     0     1     0     0     0     0     2
+     0     0     0     0     1     0     0     0     0     3
+     0     1     0     1     0     0     0     0     0     2
+     0     0     0     0     0     3     0     0     0     1
+     0     0     0     0     0     0     0     0     0     4
+     0     2     0     0     0     0     0     0     0     2
+     0     1     0     0     1     0     0     0     0     2
+     0     0     0     0     0     2     0     0     0     2
+
+Accuracy for tr=../dataset/pfon_matlab.data te=../dataset/pfoff_matlab.data = 0.200000
+Average accuracy = 0.200000
+
+>> Your MATLAB session has timed out.  All license keys have been returned.
+
+>> 
+>> 
+
+
+vaibhav@cs-heathrow:/export/scratch/vaibhav/github.com/csci5271/scripts$ cat svm_3.log
+
+                                         < M A T L A B (R) >
+                               Copyright 1984-2014 The MathWorks, Inc.
+                                 R2014a (8.3.0.532) 64-bit (glnxa64)
+                                          February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565208
+obj = -7.383765, rho = 0.434682
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = -0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999894
+obj = -11.998966, rho = 0.000635
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+Total nSV = 119
+Accuracy = 20% (8/40) (classification)
+
+C =
+
+     3     0     0     0     0     1     0     0     0     0
+     0     1     0     0     0     0     0     0     0     3
+     0     0     0     0     0     0     0     1     1     2
+     0     0     0     0     3     0     0     0     0     1
+     0     1     0     0     0     0     0     0     1     2
+     0     0     0     0     0     0     0     0     0     4
+     0     0     0     0     0     0     0     0     0     4
+     0     0     0     0     2     0     0     1     0     1
+     0     0     0     0     2     0     0     0     0     2
+     0     0     0     0     0     1     0     0     0     3
+
+Accuracy for tr=../dataset/pfoff_matlab.data te=../dataset/pfon_matlab.data = 0.200000
+Average accuracy = 0.200000
+>> vaibhav@cs-heathrow:/export/scratch/vaibhav/github.com/csci5271/scripts$ cat svm_4.log
+
+                                         < M A T L A B (R) >
+                               Copyright 1984-2014 The MathWorks, Inc.
+                                 R2014a (8.3.0.532) 64-bit (glnxa64)
+                                          February 11, 2014
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565208
+obj = -7.383765, rho = 0.434682
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+.*
+optimization finished, #iter = 46
+nu = 0.565227
+obj = -7.383818, rho = 0.434756
+nSV = 23, nBSV = 3
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = -0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999894
+obj = -11.998966, rho = 0.000635
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 13
+nu = 0.999875
+obj = -11.998495, rho = 0.000753
+nSV = 24, nBSV = 20
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = -0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+*
+optimization finished, #iter = 12
+nu = 1.000000
+obj = -12.000000, rho = 0.000000
+nSV = 24, nBSV = 24
+Total nSV = 119
+Accuracy = 27.5% (11/40) (classification)
+
+C =
+
+     3     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     4
+     0     0     1     0     2     1     0     0     0     0
+     0     0     0     0     0     0     0     0     1     3
+     0     1     0     1     0     0     0     0     0     2
+     0     0     0     0     0     3     0     0     0     1
+     0     0     0     0     0     0     0     0     0     4
+     0     0     0     0     1     0     0     1     0     2
+     0     0     0     0     0     0     0     1     1     2
+     0     0     0     0     0     2     0     0     0     2
+
+Accuracy for tr=../dataset/pfoff_matlab.data te=../dataset/pfoff_matlab.data = 0.275000
+Average accuracy = 0.275000
+
+

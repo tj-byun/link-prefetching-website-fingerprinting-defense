@@ -20,7 +20,7 @@ Does alexa have a list of its top-ranked websites ? - alexa support.
 \newblock Accessed: 2015-12-14.
 
 \bibitem{scrapy}
-Scrapy | a fast and powerful scraping and web crawling framework.
+Scrapy - a fast and powerful scraping and web crawling framework.
 \newblock \url{http://scrapy.org}, 2015.
 \newblock Accessed: 2015-12-04.
 
@@ -124,7 +124,8 @@ A.~Panchenko, L.~Niessen, A.~Zinnen, and T.~Engel.
 M.~Perry.
 \newblock Experimental defense for website traffic fingerprinting.
 \newblock
-  \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting}.
+  \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting},
+  2011.
 \newblock Accessed: 2015-11-23.
 
 \bibitem{shi2009}

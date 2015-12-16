@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  15 DEC 2015 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  15 DEC 2015 20:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -445,21 +445,21 @@ Underfull \hbox (badness 1902) in paragraph at lines 36--36
  []
 
 (./sections/intro.tex) (./sections/fingerprinting.tex
-Overfull \hbox (15.99854pt too wide) in paragraph at lines 4--5
-[]\T1/aer/m/n/9 This sec-tion ex-plains the back-ground about Tor, an anonymity
-
+Overfull \hbox (19.08545pt too wide) in paragraph at lines 4--5
+[]\T1/aer/m/n/9 This sec-tion ex-plains the back-ground about Tor, the anonymit
+y
  []
 
 
-Overfull \hbox (11.80667pt too wide) in paragraph at lines 7--8
-[]\T1/aer/m/n/9 The Onion Router (Tor) is one of the most pop-u-lar anonymiz-
+Overfull \hbox (12.84183pt too wide) in paragraph at lines 8--16
+[]\T1/aer/m/n/9 The Onion Router (Tor) is one of the most pop-u-lar anonymity
  []
 
 <figures/attack_model.png, id=120, 348.8232pt x 109.3686pt>
 File: figures/attack_model.png Graphic file (type png)
 
 <use figures/attack_model.png>
-Package pdftex.def Info: figures/attack_model.png used on input line 21.
+Package pdftex.def Info: figures/attack_model.png used on input line 34.
 (pdftex.def)             Requested size: 167.99927pt x 52.67488pt.
 
 
@@ -491,27 +491,27 @@ LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Overfull \hbox (3.55208pt too wide) in paragraph at lines 35--39
+Overfull \hbox (3.55208pt too wide) in paragraph at lines 35--40
 \T1/aer/m/n/9 us-ing a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag [[]19[]]. For ex-a
 m-ple, a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag \T1/aett/m/n/9 <link rel="p-
  []
 
-<figures/prefetch-network-edited.png, id=187, 940.51375pt x 615.29875pt>
+<figures/prefetch-network-edited.png, id=189, 940.51375pt x 615.29875pt>
 File: figures/prefetch-network-edited.png Graphic file (type png)
 
 <use figures/prefetch-network-edited.png>
 Package pdftex.def Info: figures/prefetch-network-edited.png used on input line
- 48.
+ 49.
 (pdftex.def)             Requested size: 504.0pt x 329.72142pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/prefetch.png, id=188, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=190, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
-Package pdftex.def Info: figures/prefetch.png used on input line 76.
+Package pdftex.def Info: figures/prefetch.png used on input line 59.
 (pdftex.def)             Requested size: 227.99927pt x 136.1161pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -520,31 +520,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 \end{equation}
-                     [3pdfTeX warning (ext4): destination with the same identif
-ier (name{figure.3}) has been already used, duplicate ignored
+l.93 \begin{equation}
+                      [3pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.113 \end{equation}
-                     <./figures/prefetch.png>]
+l.93 \begin{equation}
+                      <./figures/prefetch.png>]
 
 LaTeX Warning: Citation `fisher2014link' on page \thepage  undefined on input l
-ine 137.
+ine 119.
+
+
+Underfull \vbox (badness 4341) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 
+l.139 
        [4pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.157 
+l.139 
        <./figures/prefetch-network-edited.png>]
-Overfull \hbox (8.46733pt too wide) in paragraph at lines 167--168
+Overfull \hbox (8.46733pt too wide) in paragraph at lines 149--150
 []\T1/aer/m/n/9 We show the ef-fect of prefetch-ing in var-i-ous set-tings thro
 ugh-
  []
@@ -590,22 +593,26 @@ een already used, duplicate ignored
                    \relax 
 l.153 
        [6])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.89 \end{document}
+l.86 \end{document}
                     [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./csci5271.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 89.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `csci5271.out' has not changed.
 (rerunfilecheck)             Checksum: 204C4B42CE72E3952D033EB0E720FBA9;1781.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 89.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
  6875 strings out of 494501
@@ -632,10 +639,10 @@ tic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on csci5271.pdf (7 pages, 661227 bytes).
+Output written on csci5271.pdf (7 pages, 662161 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
+ 331 PDF objects out of 1000 (max. 8388607)
+ 297 compressed objects within 3 object streams
  71 named destinations out of 1000 (max. 500000)
  232 words of extra memory for PDF output out of 10000 (max. 10000000)
 

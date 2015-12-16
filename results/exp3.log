@@ -1,44 +1,286 @@
+
 >> exp3_1
-Accuracy for dynamic wired.com vs eonline.com = 0.620635
-Accuracy for dynamic wired.com vs eonline.com = 0.642857
-Accuracy for dynamic wired.com vs eonline.com = 0.643386
-Accuracy for dynamic wired.com vs eonline.com = 0.612169
-Accuracy for dynamic wired.com vs eonline.com = 0.651323
-Accuracy for dynamic wired.com vs eonline.com = 0.635979
-Accuracy for dynamic wired.com vs eonline.com = 0.628042
-Accuracy for dynamic wired.com vs eonline.com = 0.642857
-Accuracy for dynamic wired.com vs eonline.com = 0.643386
-Accuracy for dynamic wired.com vs eonline.com = 0.643386
-Accuracy for dynamic wired.com vs eonline.com = 0.635450
-Accuracy for dynamic wired.com vs eonline.com = 0.611640
-Accuracy for dynamic wired.com vs eonline.com = 0.626984
-Accuracy for dynamic wired.com vs eonline.com = 0.643386
-Accuracy for dynamic wired.com vs eonline.com = 0.651323
-Accuracy for dynamic wired.com vs eonline.com = 0.621164
-Accuracy for dynamic wired.com vs eonline.com = 0.626984
-Accuracy for dynamic wired.com vs eonline.com = 0.651323
-Accuracy for dynamic wired.com vs eonline.com = 0.620106
-Accuracy for dynamic wired.com vs eonline.com = 0.635979
-Average accuracy = 0.634418
+
+confusion_mat =
+
+    44     1
+     0    42
+
+Accuracy for dynamic wired.com vs eonline.com = 0.988889
+
+confusion_mat =
+
+    42     3
+     2    40
+
+Accuracy for dynamic wired.com vs eonline.com = 0.942857
+
+confusion_mat =
+
+    44     1
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.953175
+
+confusion_mat =
+
+    44     1
+     1    41
+
+Accuracy for dynamic wired.com vs eonline.com = 0.976984
+
+confusion_mat =
+
+    44     1
+     2    40
+
+Accuracy for dynamic wired.com vs eonline.com = 0.965079
+
+confusion_mat =
+
+    41     4
+     4    38
+
+Accuracy for dynamic wired.com vs eonline.com = 0.907937
+
+confusion_mat =
+
+    44     1
+     2    40
+
+Accuracy for dynamic wired.com vs eonline.com = 0.965079
+
+confusion_mat =
+
+    43     2
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.942063
+
+confusion_mat =
+
+    42     3
+     2    40
+
+Accuracy for dynamic wired.com vs eonline.com = 0.942857
+
+confusion_mat =
+
+    45     0
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.964286
+
+confusion_mat =
+
+    44     1
+     1    41
+
+Accuracy for dynamic wired.com vs eonline.com = 0.976984
+
+confusion_mat =
+
+    42     3
+     2    40
+
+Accuracy for dynamic wired.com vs eonline.com = 0.942857
+
+confusion_mat =
+
+    42     3
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.930952
+
+confusion_mat =
+
+    44     1
+     0    42
+
+Accuracy for dynamic wired.com vs eonline.com = 0.988889
+
+confusion_mat =
+
+    42     3
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.930952
+
+confusion_mat =
+
+    45     0
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.964286
+
+confusion_mat =
+
+    45     0
+     1    41
+
+Accuracy for dynamic wired.com vs eonline.com = 0.988095
+
+confusion_mat =
+
+    43     2
+     2    40
+
+Accuracy for dynamic wired.com vs eonline.com = 0.953968
+
+confusion_mat =
+
+    43     2
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.942063
+
+confusion_mat =
+
+    42     3
+     3    39
+
+Accuracy for dynamic wired.com vs eonline.com = 0.930952
+Average accuracy = 0.954960
 >> exp3_1
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.658730
-Accuracy for dynamic wired.com vs vippers.jp = 0.658730
-Accuracy for dynamic wired.com vs vippers.jp = 0.658730
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.658730
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.658730
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Accuracy for dynamic wired.com vs vippers.jp = 0.658730
-Accuracy for dynamic wired.com vs vippers.jp = 0.666667
-Average accuracy = 0.664286
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     2    40
+
+Accuracy for dynamic wired.com vs vippers.jp = 0.976190
+
+confusion_mat =
+
+    45     0
+     2    40
+
+Accuracy for dynamic wired.com vs vippers.jp = 0.976190
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     1    41
+
+Accuracy for dynamic wired.com vs vippers.jp = 0.988095
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     1    41
+
+Accuracy for dynamic wired.com vs vippers.jp = 0.988095
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+
+confusion_mat =
+
+    45     0
+     0    42
+
+Accuracy for dynamic wired.com vs vippers.jp = 1.000000
+Average accuracy = 0.996429
+>> 

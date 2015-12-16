@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{tor-browser-crawler}
+A crawler based on tor browser and selenium.
+\newblock \url{https://github.com/webfp/tor-browser-crawler}, 2015.
+\newblock Accessed: 2015-12-04.
+
 \bibitem{TorBlog}
 A critique of website traffic fingerprinting attacks.
 \newblock
@@ -7,10 +12,40 @@ A critique of website traffic fingerprinting attacks.
   2015.
 \newblock Accessed: 2015-11-1.
 
+\bibitem{alexa-top}
+Does alexa have a list of its top-ranked websites ? - alexa support.
+\newblock
+  \url{https://support.alexa.com/hc/en-us/articles/200449834-Does-Alexa-have-a-list-of-its-top-ranked-websites-},
+  2015.
+\newblock Accessed: 2015-12-14.
+
+\bibitem{scrapy}
+Scrapy | a fast and powerful scraping and web crawling framework.
+\newblock \url{http://scrapy.org}, 2015.
+\newblock Accessed: 2015-12-04.
+
 \bibitem{TorPage}
 Tor project.
 \newblock \url{https://www.torproject.org/}, 2015.
 \newblock Accessed: 2015-12-12.
+
+\bibitem{wired}
+Wired.
+\newblock \url{http://www.wired.com}, 2015.
+\newblock Accessed: 2015-12-04.
+
+\bibitem{tj-wired}
+Wired.
+\newblock \url{http://www-users.cs.umn.edu/~byunx063/wired_prefetch_10_1.html},
+  2015.
+\newblock Accessed: 2015-12-04.
+
+\bibitem{Cai:2014kjb}
+X.~Cai, R.~Nithyanand, T.~Wang, R.~Johnson, and I.~Goldberg.
+\newblock {A Systematic Approach to Developing and Evaluating Website
+  Fingerprinting Defenses}.
+\newblock In {\em the 2014 ACM SIGSAC Conference}, pages 227--238, New York,
+  New York, USA, 2014. ACM Press.
 
 \bibitem{cai2012touching}
 X.~Cai, X.~C. Zhang, B.~Joshi, and R.~Johnson.
@@ -26,7 +61,10 @@ R.~Dingledine, N.~Mathewson, and P.~Syverson.
 
 \bibitem{fisher2003}
 D.~Fisher.
-\newblock Link prefetching {FAQ}, 2003.
+\newblock Link prefetching {FAQ}.
+\newblock
+  \url{https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ},
+  2003.
 
 \bibitem{fisher2004link}
 D.~Fisher and G.~Saksena.
@@ -81,6 +119,19 @@ A.~Panchenko, L.~Niessen, A.~Zinnen, and T.~Engel.
 \newblock Website fingerprinting in onion routing based anonymization networks.
 \newblock In {\em Proceedings of the 10th annual ACM workshop on Privacy in the
   electronic society}, pages 103--114. ACM, 2011.
+
+\bibitem{perry11}
+M.~Perry.
+\newblock Experimental defense for website traffic fingerprinting.
+\newblock
+  \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting}.
+\newblock Accessed: 2015-11-23.
+
+\bibitem{shi2009}
+Y.~Shi and K.~Matsuura.
+\newblock Fingerprinting attack on the tor anonymity system.
+\newblock In {\em Information and Communications Security}, pages 425--438.
+  Springer, 2009.
 
 \bibitem{wagner96}
 D.~Wagner, B.~Schneier, et~al.

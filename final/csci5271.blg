@@ -60,6 +60,7 @@ Repeated entry---line 249 of file csci5271.bib
  : @inproceedings{juarez14
  :                        ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "fisher2014link"
 Warning--to sort, need author or key in TorPage
 Warning--to sort, need author or key in TorBlog
 Warning--to sort, need author or key in scrapy
@@ -70,7 +71,7 @@ Warning--to sort, need author or key in tj-wired
 Warning--empty institution in nottingham2010
 You've used 25 entries,
             2118 wiz_defined-function locations,
-            623 strings with 7694 characters,
+            624 strings with 7708 characters,
 and the built_in function-call counts, 8698 in all, are:
 = -- 904
 > -- 317

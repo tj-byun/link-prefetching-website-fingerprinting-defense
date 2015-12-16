@@ -94,7 +94,7 @@ Please note also that inter-packet timing is only one of many features for chara
 
 Since all the traffic on Tor is encrypted, fingerprinting attacks blindly analyze a sequence of packets without knowing its contents, and extract {\it features} which characterizes a fingerprint.
 The attacker then trains his/her classifier on multiple packet sequences from the set of website, for a set of features that attacker determined to use.
-In this subsection, we summarize the definition of the four most popular features defined by Cai et. al.~\cite{Cai:2014kjb} to discuss the effect of prefetching on this features in the following subsection.
+In this subsection, we summarize the definition of the four most popular features defined by Cai et al.~\cite{Cai:2014kjb} to discuss the effect of prefetching on this features in the following subsection.
 
 {\bf Packet Sequence}:
 A packet sequence $P$ can be written as $P = \langle(t_1, l_1), (t_2, l_2), ..., (t_n, l_n)\rangle$ ~\cite{Cai:2014kjb}, where $t_i$ is the interpacket time between packets $i$ and $i-1$, and $l_i$ is the byte length of the $i$-th packet.
@@ -125,17 +125,21 @@ Interpacket timing is different if the packets of the same index from the two di
 \exists i, 1 \le i \le \mathit{min}(|P|, |P'|) : (P_t)_i \neq (P'_t)_i
 \end{equation}
 
+Based on these features, Cai et al.~\cite{Cai:2014kjb} claimed that if $P \neq P'$, then one of the four features shall differ.
+
 
 \subsection{The Effect of Prefetching on the Features}
 
 Based on the features we summarized in Section~\ref{sec:features}, this subsection explain how prefetching can affect the four features.
-We will compare the two packet sequences $P$ and $P'$ for the same webpage, 
-the packet sequence without prefetching as $P$, and the packet sequence from the same website where prefetching was enabled (and where there is more than one pre-fetch request) as $P'$.
+We will compare the two packet sequences $P$ and $P'$ for the same webpage, where $P$ is the packet sequence without prefetching and $P'$ is the packet sequence where prefetching was enabled (and where there is more than one pre-fetch request).
 
 {\bf Packet Sequence}:
 By the definition of link prefetching~\cite{fisher2014link}, pre-fetch is requested only after a webpage is fully loaded and after an idle time.
 Thus, for a packet sequence $P$ where prefetching was disabled, another packet sequence $P'$ with prefetching enabled would not differ except the prefix of $P'$.
-In other words, $P'$ is a concatenation of two sequences $P$ and $Q$ such that $P' = P \Vert Q$, where $Q$ is the incoming and outgoing packets for pre-fetch request and download such that $Q = \langle(t_{n+1}, l_{n+1}), (t_{n+2}, l_{n+2}), ..., (t_{n+m}, l_{n+m})\rangle$.
+In other words, $P'$ is a concatenation of two sequences $P$ and $Q$ such that $P' = P \Vert Q$, where $Q$ is the incoming and outgoing packets for pre-fetch request and download such that:
+\begin{equation}
+Q = \langle(t_{n+1}, l_{n+1}), (t_{n+2}, l_{n+2}), ..., (t_{n+m}, l_{n+m})\rangle
+\end{equation}
 %We assume a prefetching packet sequence $P'$ (a packet sequence when link prefetching was enabled and more than one prefetching request is made) simply as an extension of a sequence $P$ where prefetching was disabled.
 %This is a valid assumption because by the definition of link prefetching~\cite{fisher2014link}, all the request packets and the download packets for prefetching will follow only after the page is fully loaded.
 %When the number of packets when prefetching was off is $n$ and the number of prefetching packets are $m$, the packet sequence can be written as $Q = \langle(t_1, l_1), (t_2, l_2), ..., (t_n, l_n), (t_{n+1}, l_{n+1}), ..., (t_m, l_m)\rangle$.
@@ -147,11 +151,18 @@ Although in some cases the multiset of packet lengths $M'_l$ can be a subset of 
 Thus, unique packet lengths will be different between $P$ and $P'$.
 
 {\bf Packet Length Frequency}:
-
+This feature differs when there exists a packet length $L$ such that the frequencies differ between $P$ and $P'$, while appearing at least once in both $P$ and $P'$.
+This is highly likely to be different considering that most the packets are transmitted with the size of MTU (maximum transmission unit), which is typically 1500 bytes.
+When the requested resource is bigger than 1500 bytes, which is true in most cases, the number of packts with length 1500 will be larger in $P'$ than in $P$ ($n_{1500}(P') > n_{1500}(P)$) and thus yield false for this feature.
 
 {\bf Packet Ordering}:
-
+$P$ and $P'$ obviously do not have the same packet ordering because $P_l \neq (P \Vert Q)_l$.
 
 {\bf Interpacket Timing}:
+This feature would not be affected because of the clause $\mathit{min}(|P|,|P'|)$ would always yield $|P|$, and $(P_t)_i$ where $i$ is between $1$ and $|P|$ would not be affected by $Q$.
 
+In summary, at least one out of features is affected by link prefetching.
+Furthermore, if our assumptions about the prefetching packets are valid, at most three features are affected by link prefetching, which is sufficient for a classifier to put $P'$ in a different class to $P$.
+
+We show the effect of prefetching in various settings throughout a series of experiments.
 

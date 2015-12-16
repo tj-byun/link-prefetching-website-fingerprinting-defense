@@ -152,4 +152,10 @@ C.~V. Wright, S.~E. Coull, and F.~Monrose.
   analysis.
 \newblock In {\em NDSS}, 2009.
 
+\bibitem{yu10}
+S.~Yu, T.~Thapngam, S.~Wei, and W.~Zhou.
+\newblock Efficient web browsing with perfect anonymity using page prefetching.
+\newblock In {\em Algorithms and Architectures for Parallel Processing}, pages
+  1--12. Springer, 2010.
+
 \end{thebibliography}

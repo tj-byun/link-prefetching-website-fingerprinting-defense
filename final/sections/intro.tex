@@ -1,8 +1,14 @@
 % sections/intro.tex
-Anonymizing networks are privacy technologies that provide a mancinism to anonymize internet communications so as to protect users from network eavesdroppers. Although such systems are able to hide the communication (including both routing information and content), an attacker is still able to obtain different information by analyzing the network traffic. Network analysis can provide very rich information about message length, timing, and frequency by which an attacker can easily identify the communicating parties, and therefore bypass an anonymizing system. This problem is known as Website Fingerprinting (WF) attack, where an adversary attempts to recognize the encrypted traffic patterns of specific web pages without using any other information \cite{juarez14, murdoch2005low}.
+Anonymizing networks are privacy technologies that provide a mancinism to anonymize internet communications so as to protect users from network eavesdroppers.
+Although such systems are able to hide the communication (including both routing information and content), an attacker is still able to obtain different information by analyzing the network traffic.
+Network analysis can provide very rich information about message length, timing, and frequency by which an attacker can easily identify the communicating parties, and therefore bypass an anonymizing system.
+This problem is known as Website Fingerprinting (WF) attack, where an adversary attempts to recognize the encrypted traffic patterns of specific web pages without using any other information \cite{juarez14, murdoch2005low}.
 
 % we should say, there is lots of work trying to prevent WF attack. And, in this project, we studied most of the state of the art works, and tries to provide a novel defend mechanism [or something similar]
 
 % we want to add a summary about we have done
 
-This report is organized as follows; %complete later
+The remaining sections of this report is organized as follows: Section~\ref{sec2} provides a brief background about Tor anonymity network and website fingerprinting and Section~\ref{sec3} mentions related works on website fingerprinting attacks, defenses and criticisms.
+We suggest link prefetching as a defense mechanism in Section~\ref{sec4} followed by experimental evaluation (Section~\ref{sec5})
+Section~\ref{sec6} discusses about the feasibility of the proposed defense based on experimental result, and finally conclude our report on Section~\ref{sec7}.
+

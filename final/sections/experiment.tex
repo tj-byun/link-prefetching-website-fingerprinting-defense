@@ -107,12 +107,34 @@ found to be similar.
 
 \subsection{Feature Set}
 %write about the feature set
+We had the option of choosing fine-grained features or coarse grained features for our classification framework. 
+Fine-grained features have the advantage of capturing structural information about the webpage since packet ordering sequence will depend on the sequence of requests and responses for a webpage. 
+Fine-grained features suffer from the disadvantage of suffering from variations introduced in packet ordering sequence due to network conditions. 
+On the other hand, coarse-grained features avoid the randomness induced by network conditions by using information for the entire session but lose out on taking advantage of some structural information contained in the packet directions and packet sizes.
+We decided to test the effect of prefetching using both fine-grained features which use the information about the order in which packets appear as well as coarse-grained features which only use information from the entire session of information for a webpage. The coarse-grained features used by us are listed as follows:
+\begin{enumerate}
+\item 
+Number of incoming packets: We accumulate the total number of TCP packets which came in to the client machine from any IP address during the load of the webpage
+\item
+Number of outgoing packets: We accumulate the total number of TCP packets going out from the client machine to any IP address
+\item 
+Total size of incoming packets: We add up the size of TCP packets coming in to the client machine from any IP address during the load of the web page
+\item
+Total size of outgoing packets: We add up the size of TCP packets going out of the client machine to any IP address during the web page load
+\end{enumerate}
+All four of the features described above can include noise from background connections being made by the client machine. 
+We also observed many incoming and outgoing packets in our dataset which we were not entirely able to explain, thus contributing to noise in our dataset itself. 
+Some of this noise may have been due to the Tor browser querying the Tor directory for a list of Tor relays, trying to connect to some Tor relays before finally choosing a entry guard.\\
+We decided to use only one fine-grained feature after seeing a stong result report by Cai et al.\cite{cai2012touching}. This paper reports a classification accuracy of 83.7\% when using the sequence of packet directions. From the packet trace, we captured packet directions and represented them using letters. We then used an implementation\cite{edit-distance-matlab} of the edit distance algorithm\cite{edit-distance} as the distance function for a SVM-based classification.
 
 
 %\subsection{Effect of Prefetching Packets Size on Fingerprinting Attacks}
 Here, we will explain our second experiment. We will simulate a sub set of webpages we investigated in the previous experiment. Then, we will equip them with a mechanism so that they can affect the downstream traffic and finally their fingerprint. Then, we will analyze the result to see how this idea contributes to the effectiveness of attacks and defense techniques.
 
-\subsection{Experimental Validation}
+\subsection{Experimental Validation for RQ1}
+We decided to try to evaluate the effect of prefetching by training and testing classifiers on opposite values of the prefetching setting. 
+This would allow us to observe the effect of prefetching on classifier accuracy and also allow us to confirm this effect by trying different classifiers on the same dataset.
+We decided to use the Naive Bayes classifier since it has been used by 
 
 \subsubsection{Naive Bayes Classifier}
 
@@ -120,4 +142,4 @@ Here, we will explain our second experiment. We will simulate a sub set of webpa
 
 \subsubsection{Results}
 
-\subsection{Experimental Validation for \emph{RQ2}}
+\subsection{Experimental Validation for RQ2}

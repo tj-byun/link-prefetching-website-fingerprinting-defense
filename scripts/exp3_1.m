@@ -24,7 +24,9 @@ for iteration=1:max_iter
 	pf_varied_te(:,5)=[];
 	pf_varied_tr(:,5)=zeros(size(pf_varied_tr,1),1);
 	pf_varied_te(:,5)=zeros(size(pf_varied_te,1),1);
-	[pf_ve_tr,pf_ve_te]=get_class_data(pf_ve_file,0,training_fraction);
+	[pf_ve_tr,pf_ve_te]=get_class_data(pf_ve_file,1,training_fraction);
+	%0 = eonline.com
+	%1 = vippers.jp
     pf_ve_tr(:,5)=[];
 	pf_ve_te(:,5)=[];
 	pf_ve_tr(:,5)=ones(size(pf_ve_tr,1),1);
@@ -36,7 +38,7 @@ for iteration=1:max_iter
 	predictLabels=predict(NBModel,data_te(:,1:4));
 	confusion_mat=confusionmat(data_te(:,5),predictLabels);
 	acc=sum(diag(confusion_mat)./(sum(confusion_mat')'))/(max_c+1);
-	fprintf('Accuracy for tr=%s te=%s = %f\n',tr_file,te_file,acc);
+	fprintf('Accuracy for dynamic wired.com vs vippers.jp = %f\n',acc);
 	acc_tot=acc_tot+acc;
 end
 fprintf('Average accuracy = %f\n',acc_tot/max_iter);

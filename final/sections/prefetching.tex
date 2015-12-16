@@ -33,18 +33,19 @@ Needless to say, this mechanism improves efficiency.
 % explain about how prefetching actually works 
 
 The resources to prefetch can be simply specified in {\it HTML} using a {\tt link} tag~\cite{nottingham2010}.
-For example, a {\tt link} tag {\tt <link rel="p\-refetch" href="/page2.html">} tells the browser to pre-fetch a {\it html} file named {\it page2.html}.
+For example, a {\tt link} tag {\tt <link rel="p\-refetch" href="/page2.html">} tells the browser to pre-fetch a HTML file named {\tt page2.html}.
 Resources other than a {\it HTML} web page can also be pre-fetched similarly using the same syntax.
-There are also some variations for different types of prefetching -- DNS prefetching, which is specified as {\tt <link rel="dns-prefetch" ..>}, is supported by {\it Mozilla Firefox} and {\it Google Chrome}, and {\tt <link rel="prerender" ..>} also does the same job as {\tt prefetch} in {\it Google Chrome} and {\it Microsoft Internet Explorer}.
+There are some variations for different types of prefetching called DNS prefetching also, (specified as {\tt <link rel="dns-prefetch" ..>}) which is supported by {\it Mozilla Firefox} and {\it Google Chrome}.
+Another form of expression {\tt <link rel="prerender" ..>} also does the same job as {\tt prefetch} in {\it Google Chrome} and {\it Microsoft Internet Explorer}.
 
 Figure~\ref{fig:network} illustrates how prefetching actually works in a browser ({\it Google Chrome}).
 This page is set up arbitrarily by the authors to demonstrate link prefetching, and contains a link pre-fetch tag that specifies a big image (the image on the left side labeled as {\it prefetch}).
-When the prefetching is off, this image shall be requested only when a user puts his mouse cursor on it (mouse over).
-However, it can be seen on the network timeline (right bottom) that the image is pre-fetched right after loading the page.
+When the prefetching is off, this image shall be requested only when a user hovers his mouse cursor on it.
+However, it can be seen on the network timeline (on the right bottom) that the image is pre-fetched right after loading the page, not when the user actually requested it.
 This is indicated by a long blue bar on the second row for the file named ``{\it Very-high...}'', and it is long because the size of the file is relatively big ({\it 3.5 MB}) that it took a longer time to download.
-Please also note that the time it took for loading the image when the user actually requested (by putting his mouse on it) was very short, because the image had already been pre-fetched that the browser merely loaded it from the cache (as shown in the {\it size} column on the fourth row).
+Please also note that the time it took for loading the image when the user actually requested (by hovering his mouse on it) was very short, because the image had already been pre-fetched that the browser merely loaded it from the cache (as shown in the {\it size} column on the fourth row).
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 \includegraphics[width=\textwidth]{figures/prefetch-network-edited.png}
 \centering
 \caption{Network timeline showing pre-fetch}
@@ -52,54 +53,37 @@ Please also note that the time it took for loading the image when the user actua
 \end{figure*}
 
 
-\subsection{The Effect of Prefetching on Website Fingerprint}
-% cite some papers to describe about the features that are used for attacks,
-% and explain why prefetching change the feature.
-% Vaibhav says: put the intuition down 
+\subsection{An Example of Packet Sequences}
 
-% TODO: write few sentences as an intro
-% We explained through an example how prefetching can affect the
-
-% defenition of a fingerprint
-
-%TODO: rewrite
-\iffalse
-Link prefetching obviously affects the traffic by sending additional request for prefetching items, and by prefetching those items after an idle time.
-However, to what degree it affects the website fingerprint has not been studiedto the best of our knowledge.
-This subsection first illustrates how the prefetching affects the number of packets being transferred as an example, and then discusses what features of fingerprint prefetching can possibly affect.
-\fi
-
-
-\subsubsection{An Example of prefetching packet sequence}
-
-\begin{figure}[h]
+\begin{figure}[H]
 \includegraphics[width=0.95\columnwidth]{figures/prefetch.png}
 \centering
 \caption{A website fingerprint for pre-fetch on/off cases}
 \label{fig:prefetch}
 \end{figure}
 
-%The idea of studying the effect of prefetching on Tor network is not new~\cite{something}.
-Figure~\ref{fig:prefetch} illustrates a website fingerprint in terms of inter-packet timing, where the {\it x-axis} represents time in seconds and the {\it y-axis} represents the number of packets captured during a certain time interval ({\it 500 ms}).
+Figure~\ref{fig:prefetch} illustrates a website fingerprint in terms of inter-packet timing, where the {\it x-axis} corresponds to time in seconds and the {\it y-axis} represents the number of packets captured during a certain time interval ({\it 500 ms}).
 The solid line depicts the packets captured while prefetching was enabled, and the dashed line depicts when the pre-fetch was disabled in the browser settings.
 Both the cases are captured for the same web page, which is the first page of {\tt wired.com}.
-However, the number of packets are slightly different for each case (4055 for the {\it off} case while 4218 for the {\it on} case), because the prefetch-on case obviously requests more resources for caching purpose. 
-The elapsed time for loading the whole page was also different, but this variance is mainly due to the difference in network condition because all the packets are more scattered throughout time compared to the pre-fetch-off case.
-When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we can characterize how the {\it fingerprint} of a specific website looks like.
+However, the number of incoming and outgoing packets combined are different for each case (4055 for the {\it off} case while 4218 for the {\it on} case), because the prefetch-on case obviously requests more resources for caching purpose. 
+The elapsed time for loading the whole page was also different, but this variance is mainly due to the difference in network condition as shown in the figure that the packets for the {\it on} case are more scattered throughout time compared to the pre-fetch-off case.
+When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we would be able to characterize how the {\it fingerprint} of a specific website looks like.
 Please note also that inter-packet timing is only one of many features for characterizing website fingerprint.
 
 
 \subsection{Fingerprint Features}
+\label{sec:features}
 
 Since all the traffic on Tor is encrypted, fingerprinting attacks blindly analyze a sequence of packets without knowing its contents, and extract {\it features} which characterizes a fingerprint.
-The attacker then trains his/her classifier on multiple packet sequences from the set of website, for a set of features that attacker determined to use.
-In this subsection, we summarize the definition of the four most popular features defined by Cai et. al.~\cite{Cai:2014kjb} to discuss the effect of prefetching on this features in the following subsection.
+The attacker then trains his/her classifier on multiple packet sequences from a set of website of interest, for a set of features that attacker determines to use.
+In this subsection, we summarize the definition of the four most popular features defined by Cai et al.~\cite{Cai:2014kjb} to discuss the effect of prefetching on this features in the following subsection.
 
 {\bf Packet Sequence}:
-A packet sequence $P$ can be written as $P = \langle(t_1, l_1), (t_2, l_2), ..., (t_n, l_n)\rangle$ ~\cite{Cai:2014kjb}, where $t_i$ is the time relative to $t_0$ which is 0, and $l_i$ is the byte length of the $i$-th packet.
+A packet sequence $P$ can be written as $P = \langle(t_1, l_1), (t_2, l_2), ..., (t_n, l_n)\rangle$ ~\cite{Cai:2014kjb}, where $t_i$ is the interpacket time between packets $i$ and $i-1$, and $l_i$ is the byte length of the $i$-th packet.
+We write $P_t$ and $P_l$ as the sequences of only the interpacket times and lengths, respectively.
 
 {\bf Unique Packet Lengths}: 
-Most packets 
+Unique packet length is differnet when there exists a unique packet length $L$ in a sequence of packet lengths $P_l$ such that it belongs to a sequence while it does not to the other. In other words:
 \begin{equation}
 (\exists L \in P_l | L \notin P'_l ) \vee (\exists L \in P'_l | L \notin P_l)
 \end{equation}
@@ -118,19 +102,49 @@ M_{ l }=M'_{ l }\wedge P_{ l }\neq P'_{ l }
 \end{equation}
 
 {\bf Interpacket Timing}:
+Interpacket timing is different if the packets of the same index from the two different sequences $P$ and $P'$ have different interpacket timing:
 \begin{equation}
 \exists i, 1 \le i \le \mathit{min}(|P|, |P'|) : (P_t)_i \neq (P'_t)_i
 \end{equation}
 
+Based on these features, Cai et al.~\cite{Cai:2014kjb} claimed that if $P \neq P'$, then one of the four features shall differ.
 
-\subsubsection{The Effect of Prefetching on the Features}
 
-Existing fingerprinting attacks extract {\it features} from a sequence of packets to characterize a distinct characteristic of a website.
-The most popular features that have been used in the previous works for classification are unique packet lengths, packet length frequency, packet ordering, and interpacket timing.
-Existing works on website fingerprinting considers a sequence
-Packet lengths
-Packet length frequency
-Packet ordering.
-Interpacket timing
+\subsection{The Effect of Prefetching on the Features}
 
-Packet sequence.
+Based on the features we summarized in Section~\ref{sec:features}, this subsection explain how prefetching can affect the four features.
+We will compare the two packet sequences $P$ and $P'$ for the same webpage, where $P$ is the packet sequence without prefetching and $P'$ is the packet sequence where prefetching was enabled (and where there is more than one pre-fetch request).
+
+{\bf Packet Sequence}:
+By the definition of link prefetching~\cite{fisher2014link}, pre-fetch is requested only after a webpage is fully loaded and after an idle time.
+Thus, for a packet sequence $P$ where prefetching was disabled, another packet sequence $P'$ with prefetching enabled would not differ except the prefix of $P'$.
+In other words, $P'$ is a concatenation of two sequences $P$ and $Q$ such that $P' = P \Vert Q$, where $Q$ is the incoming and outgoing packets for pre-fetch request and download such that:
+\begin{equation}
+Q = \langle(t_{n+1}, l_{n+1}), (t_{n+2}, l_{n+2}), ..., (t_{n+m}, l_{n+m})\rangle, m > 1
+\end{equation}
+%We assume a prefetching packet sequence $P'$ (a packet sequence when link prefetching was enabled and more than one prefetching request is made) simply as an extension of a sequence $P$ where prefetching was disabled.
+%This is a valid assumption because by the definition of link prefetching~\cite{fisher2014link}, all the request packets and the download packets for prefetching will follow only after the page is fully loaded.
+%When the number of packets when prefetching was off is $n$ and the number of prefetching packets are $m$, the packet sequence can be written as $Q = \langle(t_1, l_1), (t_2, l_2), ..., (t_n, l_n), (t_{n+1}, l_{n+1}), ..., (t_m, l_m)\rangle$.
+
+{\bf Unique Packet Lengths}: 
+In order for the {\it unique packet lengths} to be different between $P$ and $P'$, it is sufficient to have one packet with a different length in $P'$ that do not appear in $P$, or vice versa.
+When there are tailing packets $Q$ for $P'$, the likelihood is high that there is one or more packets in $Q$ that do not exist in $P$.
+Although in some cases the multiset of packet lengths $M'_l$ can be a subset of $M_l$, it is not likely considering that the prefetching resources are different ones from the resources that are already fetched -- the designer of a website would not want to pre-fetch the same resource that's already been downloaded.
+Thus, unique packet lengths will be different between $P$ and $P'$.
+
+{\bf Packet Length Frequency}:
+This feature differs when there exists a packet length $L$ such that the frequencies differ between $P$ and $P'$, while appearing at least once in both $P$ and $P'$.
+This is highly likely to be different considering that most the packets are transmitted with the size of MTU (maximum transmission unit), which is typically 1500 bytes.
+When the requested resource is bigger than 1500 bytes, which is true in most cases, the number of packts with length 1500 will be larger in $P'$ than in $P$ ($n_{1500}(P') > n_{1500}(P)$) and thus yield false for this feature.
+
+{\bf Packet Ordering}:
+$P$ and $P'$ obviously do not have the same packet ordering because $P_l \neq (P \Vert Q)_l$.
+
+{\bf Interpacket Timing}:
+This feature would not be affected because of the clause $\mathit{min}(|P|,|P'|)$ would always yield $|P|$, and $(P_t)_i$ where $i$ is between $1$ and $|P|$ would not be affected by $Q$.
+
+In summary, at least one out of features is affected by link prefetching.
+Furthermore, if our assumptions about the prefetching packets are valid, at most three features are affected by link prefetching, which is sufficient for a classifier to put $P'$ in a different class to $P$.
+
+We show the effect of prefetching in various settings throughout a series of experiments.
+

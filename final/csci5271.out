@@ -8,21 +8,20 @@
 \BOOKMARK [2][-]{subsection.3.3}{Criticism}{section.3}% 8
 \BOOKMARK [1][-]{section.4}{Link Prefetching as a Defense}{}% 9
 \BOOKMARK [2][-]{subsection.4.1}{Link Prefetching}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.2}{The Effect of Prefetching on Website Fingerprint}{section.4}% 11
-\BOOKMARK [3][-]{subsubsection.4.2.1}{An Example of prefetching packet sequence}{subsection.4.2}% 12
-\BOOKMARK [2][-]{subsection.4.3}{Fingerprint Features}{section.4}% 13
-\BOOKMARK [3][-]{subsubsection.4.3.1}{The Effect of Prefetching on the Features}{subsection.4.3}% 14
-\BOOKMARK [1][-]{section.5}{Experimental Evaluation}{}% 15
-\BOOKMARK [2][-]{subsection.5.1}{Research Question}{section.5}% 16
-\BOOKMARK [2][-]{subsection.5.2}{Experimental Design}{section.5}% 17
-\BOOKMARK [2][-]{subsection.5.3}{Data Collection for RQ1 and RQ2}{section.5}% 18
-\BOOKMARK [2][-]{subsection.5.4}{Feature Set}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.5}{Experimental Validation}{section.5}% 20
-\BOOKMARK [3][-]{subsubsection.5.5.1}{Naive Bayes Classifier}{subsection.5.5}% 21
-\BOOKMARK [3][-]{subsubsection.5.5.2}{Support Vector Machine-based Classification}{subsection.5.5}% 22
-\BOOKMARK [3][-]{subsubsection.5.5.3}{Results}{subsection.5.5}% 23
-\BOOKMARK [2][-]{subsection.5.6}{Experimental Validation for RQ2}{section.5}% 24
-\BOOKMARK [1][-]{section.6}{Discussion}{}% 25
-\BOOKMARK [1][-]{section.7}{Conclusions}{}% 26
-\BOOKMARK [1][-]{section.8}{Acknowledgments}{}% 27
-\BOOKMARK [1][-]{section.9}{References}{}% 28
+\BOOKMARK [2][-]{subsection.4.2}{An Example of Packet Sequences}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.3}{Fingerprint Features}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.4}{The Effect of Prefetching on the Features}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{Experimental Evaluation}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Research Question}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Experimental Design}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{Data Collection for RQ1 and RQ2}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.4}{Feature Set}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.5}{Experimental Validation}{section.5}% 19
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Naive Bayes Classifier}{subsection.5.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Support Vector Machine-based Classification}{subsection.5.5}% 21
+\BOOKMARK [3][-]{subsubsection.5.5.3}{Results}{subsection.5.5}% 22
+\BOOKMARK [2][-]{subsection.5.6}{Experimental Validation for RQ2}{section.5}% 23
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 24
+\BOOKMARK [1][-]{section.7}{Conclusions}{}% 25
+\BOOKMARK [1][-]{section.8}{Acknowledgments}{}% 26
+\BOOKMARK [1][-]{section.9}{References}{}% 27

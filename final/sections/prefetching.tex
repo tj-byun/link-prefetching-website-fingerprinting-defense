@@ -33,16 +33,17 @@ Needless to say, this mechanism improves efficiency.
 % explain about how prefetching actually works 
 
 The resources to prefetch can be simply specified in {\it HTML} using a {\tt link} tag~\cite{nottingham2010}.
-For example, a {\tt link} tag {\tt <link rel="p\-refetch" href="/page2.html">} tells the browser to pre-fetch a {\it html} file named {\it page2.html}.
+For example, a {\tt link} tag {\tt <link rel="p\-refetch" href="/page2.html">} tells the browser to pre-fetch a HTML file named {\tt page2.html}.
 Resources other than a {\it HTML} web page can also be pre-fetched similarly using the same syntax.
-There are also some variations for different types of prefetching -- DNS prefetching, which is specified as {\tt <link rel="dns-prefetch" ..>}, is supported by {\it Mozilla Firefox} and {\it Google Chrome}, and {\tt <link rel="prerender" ..>} also does the same job as {\tt prefetch} in {\it Google Chrome} and {\it Microsoft Internet Explorer}.
+There are some variations for different types of prefetching called DNS prefetching also, (specified as {\tt <link rel="dns-prefetch" ..>}) which is supported by {\it Mozilla Firefox} and {\it Google Chrome}.
+Another form of expression {\tt <link rel="prerender" ..>} also does the same job as {\tt prefetch} in {\it Google Chrome} and {\it Microsoft Internet Explorer}.
 
 Figure~\ref{fig:network} illustrates how prefetching actually works in a browser ({\it Google Chrome}).
 This page is set up arbitrarily by the authors to demonstrate link prefetching, and contains a link pre-fetch tag that specifies a big image (the image on the left side labeled as {\it prefetch}).
-When the prefetching is off, this image shall be requested only when a user puts his mouse cursor on it (mouse over).
-However, it can be seen on the network timeline (right bottom) that the image is pre-fetched right after loading the page.
+When the prefetching is off, this image shall be requested only when a user hovers his mouse cursor on it.
+However, it can be seen on the network timeline (on the right bottom) that the image is pre-fetched right after loading the page, not when the user actually requested it.
 This is indicated by a long blue bar on the second row for the file named ``{\it Very-high...}'', and it is long because the size of the file is relatively big ({\it 3.5 MB}) that it took a longer time to download.
-Please also note that the time it took for loading the image when the user actually requested (by putting his mouse on it) was very short, because the image had already been pre-fetched that the browser merely loaded it from the cache (as shown in the {\it size} column on the fourth row).
+Please also note that the time it took for loading the image when the user actually requested (by hovering his mouse on it) was very short, because the image had already been pre-fetched that the browser merely loaded it from the cache (as shown in the {\it size} column on the fourth row).
 
 \begin{figure*}[h]
 \includegraphics[width=\textwidth]{figures/prefetch-network-edited.png}
@@ -50,24 +51,6 @@ Please also note that the time it took for loading the image when the user actua
 \caption{Network timeline showing pre-fetch}
 \label{fig:network}
 \end{figure*}
-
-
-% cite some papers to describe about the features that are used for attacks,
-% and explain why prefetching change the feature.
-% Vaibhav says: put the intuition down 
-
-% TODO: write few sentences as an intro
-% We explained through an example how prefetching can affect the
-
-% defenition of a fingerprint
-
-%TODO: rewrite
-\iffalse
-\subsection{The Effect of Prefetching on Website Fingerprint}
-Link prefetching obviously affects the traffic by sending additional request for prefetching items, and by prefetching those items after an idle time.
-However, to what degree it affects the website fingerprint has not been studiedto the best of our knowledge.
-This subsection first illustrates how the prefetching affects the number of packets being transferred as an example, and then discusses what features of fingerprint prefetching can possibly affect.
-\fi
 
 
 \subsection{An Example of Packet Sequences}
@@ -79,13 +62,12 @@ This subsection first illustrates how the prefetching affects the number of pack
 \label{fig:prefetch}
 \end{figure}
 
-%The idea of studying the effect of prefetching on Tor network is not new~\cite{something}.
-Figure~\ref{fig:prefetch} illustrates a website fingerprint in terms of inter-packet timing, where the {\it x-axis} represents time in seconds and the {\it y-axis} represents the number of packets captured during a certain time interval ({\it 500 ms}).
+Figure~\ref{fig:prefetch} illustrates a website fingerprint in terms of inter-packet timing, where the {\it x-axis} corresponds to time in seconds and the {\it y-axis} represents the number of packets captured during a certain time interval ({\it 500 ms}).
 The solid line depicts the packets captured while prefetching was enabled, and the dashed line depicts when the pre-fetch was disabled in the browser settings.
 Both the cases are captured for the same web page, which is the first page of {\tt wired.com}.
-However, the number of packets are slightly different for each case (4055 for the {\it off} case while 4218 for the {\it on} case), because the prefetch-on case obviously requests more resources for caching purpose. 
-The elapsed time for loading the whole page was also different, but this variance is mainly due to the difference in network condition because all the packets are more scattered throughout time compared to the pre-fetch-off case.
-When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we can characterize how the {\it fingerprint} of a specific website looks like.
+However, the number of incoming and outgoing packets combined are different for each case (4055 for the {\it off} case while 4218 for the {\it on} case), because the prefetch-on case obviously requests more resources for caching purpose. 
+The elapsed time for loading the whole page was also different, but this variance is mainly due to the difference in network condition as shown in the figure that the packets for the {\it on} case are more scattered throughout time compared to the pre-fetch-off case.
+When we ignore the speed difference, we can see that the four peaks of the two lines are roughly the same that if we capture the packets multiple times for the same website, we would be able to characterize how the {\it fingerprint} of a specific website looks like.
 Please note also that inter-packet timing is only one of many features for characterizing website fingerprint.
 
 
@@ -93,7 +75,7 @@ Please note also that inter-packet timing is only one of many features for chara
 \label{sec:features}
 
 Since all the traffic on Tor is encrypted, fingerprinting attacks blindly analyze a sequence of packets without knowing its contents, and extract {\it features} which characterizes a fingerprint.
-The attacker then trains his/her classifier on multiple packet sequences from the set of website, for a set of features that attacker determined to use.
+The attacker then trains his/her classifier on multiple packet sequences from a set of website of interest, for a set of features that attacker determines to use.
 In this subsection, we summarize the definition of the four most popular features defined by Cai et al.~\cite{Cai:2014kjb} to discuss the effect of prefetching on this features in the following subsection.
 
 {\bf Packet Sequence}:
@@ -138,7 +120,7 @@ By the definition of link prefetching~\cite{fisher2014link}, pre-fetch is reques
 Thus, for a packet sequence $P$ where prefetching was disabled, another packet sequence $P'$ with prefetching enabled would not differ except the prefix of $P'$.
 In other words, $P'$ is a concatenation of two sequences $P$ and $Q$ such that $P' = P \Vert Q$, where $Q$ is the incoming and outgoing packets for pre-fetch request and download such that:
 \begin{equation}
-Q = \langle(t_{n+1}, l_{n+1}), (t_{n+2}, l_{n+2}), ..., (t_{n+m}, l_{n+m})\rangle
+Q = \langle(t_{n+1}, l_{n+1}), (t_{n+2}, l_{n+2}), ..., (t_{n+m}, l_{n+m})\rangle, m > 1
 \end{equation}
 %We assume a prefetching packet sequence $P'$ (a packet sequence when link prefetching was enabled and more than one prefetching request is made) simply as an extension of a sequence $P$ where prefetching was disabled.
 %This is a valid assumption because by the definition of link prefetching~\cite{fisher2014link}, all the request packets and the download packets for prefetching will follow only after the page is fully loaded.

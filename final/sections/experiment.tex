@@ -134,12 +134,72 @@ Here, we will explain our second experiment. We will simulate a sub set of webpa
 \subsection{Experimental Validation for RQ1}
 We decided to try to evaluate the effect of prefetching by training and testing classifiers on opposite values of the prefetching setting. 
 This would allow us to observe the effect of prefetching on classifier accuracy and also allow us to confirm this effect by trying different classifiers on the same dataset.
-We decided to use the Naive Bayes classifier since it has been used by 
+We decided to use the Naive Bayes classifier since it has been used by Hermann et al.\cite{hermann} and the SVM classifier with the edit distance as the distance function since it has been used by Cai et al.\cite{cai2012touching}. We provide a brief description of these classifiers in the following sections.
 
-\subsubsection{Naive Bayes Classifier}
+\subsubsection{Naive Bayes Classifier} 
+The Naive Bayes classifier is a simple classifier to test and acts as a first level sanity check in many classification problems before more complex classifiers are tried out. 
+It assumes all features used are independent which is an assumption not entirely met in our classification problem. 
+If the number of incoming packets is zero, the total size of incoming packets will also be zero.
+However, such a communication session would not be terribly useful in website fingerprinting.
+However, if the number of incoming or outgoing packets is not zero, the total size of incoming, outgoing packets will be independent of their respective numbers.
 
 \subsubsection{Support Vector Machine-based Classification}
+SVM classifier tries to find the hyperplane that maximizes the margin to the nearest data points in the training set. 
+In the case of SVM-based classification using coarse-grained features, we used the SVM classifier with the Radial Basis Function kernel with the value of \textit{C} set to 1 and $\gamma$ set to 0.07. The values of these parameters were determined empirically. 
+In the case of SVM-based classification using the fine-grained packet direction sequence feature, we modeled the packet directions with the characeters 'b' and 'd' to represent incoming and outgoing packets respectively. 
+We then used the SVM classifier with the Radial Basis Function with the distance function set to use edit distance between the any two strings with the value of $\sigma$ set to 1/8. 
 
 \subsubsection{Results}
+\begin{table}[]
+\centering
+\caption{Experiment results for accuracy(\%) Naive Bayes classifier using coarse-grained features}
+\label{table:rq1-nb}
+\begin{tabular}{lllll}
+\cline{1-3}
+\multicolumn{1}{|l|}{train\textbackslash test} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch on}                    & \multicolumn{1}{l|}{51.48}         & \multicolumn{1}{l|}{41.35}          &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch off}                   & \multicolumn{1}{l|}{42.29}         & \multicolumn{1}{l|}{56.43}          &  &  \\ \cline{1-3}
+                                                     &                                  &                                   &  & 
+\end{tabular}                  
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Experiment results for accuracy(\%) of SVM classifier using coarse-grained features}
+\label{table:rq1-svm}
+\begin{tabular}{lllll}
+\cline{1-3}
+\multicolumn{1}{|l|}{train\textbackslash test} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch on}                    & \multicolumn{1}{l|}{31.625}         & \multicolumn{1}{l|}{30.77}          &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch off}                   & \multicolumn{1}{l|}{34.34}         & \multicolumn{1}{l|}{34.93}          &  &  \\ \cline{1-3}
+                                                     &                                  &                                   &  & 
+\end{tabular}                  
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Experiment results for accuracy(\%) of SVM classifier using fine-grained features}
+\label{table:rq1-svm-strdist}
+\begin{tabular}{lllll}
+\cline{1-3}
+\multicolumn{1}{|l|}{train\textbackslash test} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch on}                    & \multicolumn{1}{l|}{27.5}         & \multicolumn{1}{l|}{20}          &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{prefetch off}                   & \multicolumn{1}{l|}{20}         & \multicolumn{1}{l|}{27.5}          &  &  \\ \cline{1-3}
+                                                     &                                  &                                   &  & 
+\end{tabular}                  
+\end{table}
+
+Results for our experiments for finding an answer to \emph{RQ1} are presented in Table \ref{table:rq1-nb}, \ref{table:rq1-svm} and \ref{table:rq1-svm-strdist}. 
+Table \ref{table:rq1-nb} clearly shows the classifier accuracy is the highest when no prefetching packets are present in the packet capture. 
+This can be caused by the fact that while prefetching requests are created at browser idle time, coarse grained features do not take into account when browser idle time occurs. 
+The accuracy of the classifier is highest when the attacker has trained and tested on data captured using the same setting of prefetching. 
+The attacker sees a drop of 15\% in accuracy when opposite prefetching settings are used during training and test stages.
+This indicates that the current state of prefetching that exists in real world popular websites has the ability to change coarse-grained features .\\
+Table \ref{table:rq1-svm} shows similar results but using SVM classifier with the Radial Basis Function kernel. 
+In this case, the attacker is able to escape some penalty to the accuracy caused by opposite prefetching settings during the training and test stage but still experiences a lower accuracy than was observed when using the Naive Bayes classifier.\\
+Table \ref{table:rq1-svm-strdist} shows results when only packet direction sequence is used as a feature and all other information from the packet captures is ignored. 
+This information itself is found enough to accurately predict atleast 27.5\% of the websites in our dataset. 
+When opposite prefetching settings during the training and test stages are used, the classifier accuracy drops to 20\%. This drop indicates that fine-grained features are also affect by the presence of prefetching packets in the packet trace.\\
+We conclude from the difference in performance of the three classifiers that using opposite prefetching setting during the training and test stages causes the performance of the classifier to drop, irrespective of the type of features used.\\
 
 \subsection{Experimental Validation for RQ2}

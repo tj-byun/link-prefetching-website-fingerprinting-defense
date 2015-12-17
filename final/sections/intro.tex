@@ -1,13 +1,44 @@
 % sections/intro.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The structure of introduction
+% 1. Tor & WF
+% 2. Why is WF serious
+% 3. Existing WF attacks
+% 4. Existing defenses
+% 5. Our proposed approach - link prefetching
+% 6. Experimental evaluation
+% 7. Contribution
+% 8. Remaining sections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\iffalse
+% 1. Tor & WF (previously written by Elaheh)
 Anonymizing networks are privacy technologies that provide a mancinism to anonymize internet communications so as to protect users from network eavesdroppers.
 Although such systems are able to hide the communication (including both routing information and content), an attacker is still able to obtain different information by analyzing the network traffic.
 Network analysis can provide very rich information about message length, timing, and frequency by which an attacker can easily identify the communicating parties, and therefore bypass an anonymizing system.
 This problem is known as Website Fingerprinting (WF) attack, where an adversary attempts to recognize the encrypted traffic patterns of specific web pages without using any other information \cite{juarez14, murdoch2005low}.
+\fi
+
+% 1. Tor & WF (TJ)
+Tor is an overlay network that provides communication anonymity and security using onion routing.
+An onion network encapsulates a message in layers of encryption and reroutes the messages throughout volunteering nodes, so as to hide not only the contents of the message but also the location of the origin.
+Although the main goal of Tor is to protect its users against {\it traffic analysis}, which is a form of Internet surveillance, it is still vulnerable to a targeted attack called website fingerprinting (WF).
+An adversary of WF attempts to infer which website a victim is visiting, and this can be a serious threat in privacy-sensitive use cases.
+
+% Existing WF attacks
+
 
 % we should say, there is lots of work trying to prevent WF attack. And, in this project, we studied most of the state of the art works, and tries to provide a novel defend mechanism [or something similar]
-
 % we want to add a summary about we have done
 
+% 7. Contribution
+The major contribution of our work is twofolds:
+\begin{itemize}
+\item
+We present a novel approach of using link prefetching as a defense mechanism against WF attacks.
+\end{itemize}
+
+% 8. Remaining sections
 The remaining sections of this report is organized as follows: Section~\ref{sec2} provides a brief background about Tor anonymity network and website fingerprinting and Section~\ref{sec3} mentions related works on website fingerprinting attacks, defenses and criticisms.
 We suggest link prefetching as a defense mechanism in Section~\ref{sec4} followed by experimental evaluation (Section~\ref{sec5})
 Section~\ref{sec6} discusses about the feasibility of the proposed defense based on experimental result, and finally conclude our report on Section~\ref{sec7}.

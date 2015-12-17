@@ -25,7 +25,26 @@ An onion network encapsulates a message in layers of encryption and reroutes the
 Although the main goal of Tor is to protect its users against {\it traffic analysis}, which is a form of Internet surveillance, it is still vulnerable to a targeted attack called website fingerprinting (WF).
 An adversary of WF attempts to infer which website a victim is visiting, and this can be a serious threat in privacy-sensitive use cases.
 
-% Existing WF attacks
+% 2. Existing WF attacks
+Website fingerprinting gained attention since the early work by Hermann et al.~\cite{hermann2009}, when the authors achieved 3\% of success rate using a Naive Bayes classifier.
+Although the success rate is too low to be practical, following works using a more sophisticated classification techniques achieved a much higher accuracy around 90\%~\cite{panchenko11, wang2013improved, cai2012touching}, showing that website fingerprinting can be a serious threat against the users of the anonymity network.
+Especially, Cai et al.~\cite{cai2012touching} showed that their attack can successfully defeat existing well-known defense mechanisms such as HTTPOS~\cite{luo2011}.
+
+% 3. Defense
+Several defenses were also suggested accordingly to defend users against fingerprinting attacks.
+Those defense mechanisms are usually developed at the IP/TCP level by changing the pattern of traffic, whether by splitting, morphing, injecting, or padding packets~\cite{luo2011, }.
+
+For example, they splited packets into multiple packets, injected spurious packets into the traffic, or involved  padding packets to prevent from leaking features of traffic.
+A study performed in \cite{fu2003} suggested to transmit packets at random intervals as a defense mechanism against traffic analysis.
+Another defense technique proposed in \cite{wright2009}, called traffic morphing, uses some tricks to change a traffic pattern to disguise new or existing other traffic.
+However, since their approach still leaks the information such as packet order, attacks that work without packet size information can easily defeat their mechanism.
+
+In \cite{luo2011}, Luo et al. proposed novel HTTP/TCP level defense mechanisms against some analysis attacks by changing window sizes and the order of packets in the TCP stream.
+Besides, at the HTTP level, they tried to inject some extra data into HTTP GET headers, generate some irrelevant HTTP request, and re-order requests.
+The Tor community also introduced "randomized pipelining" \cite{perry11} to defend the WF, by having the browser load the web content in a random order.
+Despite such techniques, the proposed attack in \cite{cai2012touching} managed to successfully recognize target web pages with the accuracy of 87\%. 
+Howerver, all exisitng defenses have not been neither efficient nor effective for fancy WF attacks. %This attack is able to ignore packet sizes, while most of the attacks on Tor work based on packet sizes.
+In contrast, our work more focuses on utilizing existing HTML systax that is link prefetching shown in Section 4, which subsequently does not accomodate extra cost.
 
 
 % we should say, there is lots of work trying to prevent WF attack. And, in this project, we studied most of the state of the art works, and tries to provide a novel defend mechanism [or something similar]

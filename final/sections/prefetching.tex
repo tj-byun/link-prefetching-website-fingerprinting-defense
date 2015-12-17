@@ -116,7 +116,7 @@ Based on the features we summarized in Section~\ref{sec:features}, this subsecti
 We will compare the two packet sequences $P$ and $P'$ for the same webpage, where $P$ is the packet sequence without prefetching and $P'$ is the packet sequence where prefetching was enabled (and where there is more than one pre-fetch request).
 
 {\bf Packet Sequence}:
-By the definition of link prefetching~\cite{fisher2014link}, pre-fetch is requested only after a webpage is fully loaded and after an idle time.
+By the definition of link prefetching~\cite{fisher2004link}, pre-fetch is requested only after a webpage is fully loaded and after an idle time.
 Thus, for a packet sequence $P$ where prefetching was disabled, another packet sequence $P'$ with prefetching enabled would not differ except the prefix of $P'$.
 In other words, $P'$ is a concatenation of two sequences $P$ and $Q$ such that $P' = P \Vert Q$, where $Q$ is the incoming and outgoing packets for pre-fetch request and download such that:
 \begin{equation}

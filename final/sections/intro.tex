@@ -25,12 +25,12 @@ Especially, Cai et al.~\cite{cai2012touching} showed that their attack can succe
 Several defenses were also suggested accordingly to defend users against fingerprinting attacks.
 Those defense mechanisms are usually developed at the IP/TCP level by changing the pattern of the traffic whether by splitting, morphing, injecting, or padding packets~\cite{fu2003, wright2009, luo2011, perry11}.
 Many of the defense mechanisms, however, had been neutralized by following attacks~\cite{cai2012touching}.
-Moreover, {\bf (WHAT IS THE POSITION OF OUR WORK???)}?
+Moreover, all of the defenses involve making changes either to the Tor protocol itself or to the browser. Using link prefetching as a defense mechanism has the distinct advantage of not requiring any changes to be made to the protocol implementation or the browser. It provides more browser-side control which allows this defense to be deployed as a browser extension. 
 
 % 4. Why prefetching
 In this work, we propose a novel technique to provide defense against WF attacks using link prefetching.
-Link prefetching is a HTML syntax that gives hints to a browser the list of resources and pages to pre-fetch, when it can be sure about which page a user is likely to request next.
-When the browser encounters pre-fetch tags, it silently loads and caches the specified resources after the page is fully loaded.
+Link prefetching is a HTML5 feature that gives hints to a browser the list of resources and pages to prefetch, when it can be sure about which page a user is likely to request next.
+When the browser encounters prefetch tags, it silently loads and caches the specified resources after the page is fully loaded.
 Since prefetching generates extra outgoing and incoming packets, it affects the features of website fingerprint and thus undermines the accuracy of the classifiers used in WF attack (Section~\ref{sec4}).
 
 % 5. Experimental validation

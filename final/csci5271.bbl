@@ -54,10 +54,21 @@ X.~Cai, X.~C. Zhang, B.~Joshi, and R.~Johnson.
 \newblock In {\em Proceedings of the 2012 ACM conference on Computer and
   communications security}, pages 605--616. ACM, 2012.
 
+\bibitem{Chen2003}
+X.~Chen and X.~Zhang.
+\newblock {A popularity-based prediction model for web prefetching}.
+\newblock {\em Computer}, 36:63--70+4, 2003.
+
 \bibitem{dingledine2004tor}
 R.~Dingledine, N.~Mathewson, and P.~Syverson.
 \newblock Tor: The second-generation onion router.
 \newblock Technical report, DTIC Document, 2004.
+
+\bibitem{Fan1999}
+L.~Fan, P.~Cao, W.~Lin, and Q.~Jacobson.
+\newblock Web prefetching between low-bandwidth clients and proxies: Potential
+  and performance.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 27(1):178--187, May 1999.
 
 \bibitem{fisher2003}
 D.~Fisher.

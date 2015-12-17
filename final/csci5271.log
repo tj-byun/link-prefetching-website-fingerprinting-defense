@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  16 DEC 2015 18:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.7.10)  16 DEC 2015 18:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -451,7 +451,7 @@ ymity
  []
 
 ) (./sections/fingerprinting.tex
-<figures/tor.png, id=122, 725.20938pt x 311.66437pt>
+<figures/tor.png, id=126, 725.20938pt x 311.66437pt>
 File: figures/tor.png Graphic file (type png)
  <use figures/tor.png>
 Package pdftex.def Info: figures/tor.png used on input line 19.
@@ -464,31 +464,50 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 ]
-<figures/attack_model.png, id=147, 348.8232pt x 109.3686pt>
+<figures/attack_model.png, id=151, 348.8232pt x 109.3686pt>
 File: figures/attack_model.png Graphic file (type png)
 
 <use figures/attack_model.png>
 Package pdftex.def Info: figures/attack_model.png used on input line 50.
 (pdftex.def)             Requested size: 167.99927pt x 52.67488pt.
-) (./sections/related.texpdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
+) (./sections/related.tex
+Overfull \hbox (7.58527pt too wide) in paragraph at lines 4--5
+[]\T1/aer/m/n/9 This sec-tion sur-veys at-tacks/ de-fenses on/against anonymiz-
+
+ []
+
+
+Overfull \hbox (1.98656pt too wide) in paragraph at lines 9--12
+\T1/aer/m/n/9 packet sizes. The WF at-tacks on Tor sug-gested by Penchenko
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 
+l.20 
       [2pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.17 
+l.20 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.17 
-      <./figures/tor.png> <./figures/attack_model.png>])
-(./sections/prefetching.tex
+l.20 
+      <./figures/tor.png> <./figures/attack_model.png>]
+
+LaTeX Warning: Citation `Fan1999' on page \thepage  undefined on input line 32.
+
+
+
+LaTeX Warning: Citation `Chen2003' on page \thepage  undefined on input line 32
+.
+
+) (./sections/prefetching.tex
 LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/ae/t1aett.fd
@@ -499,7 +518,13 @@ Overfull \hbox (3.55208pt too wide) in paragraph at lines 35--40
 m-ple, a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag \T1/aett/m/n/9 <link rel="p-
  []
 
-<figures/prefetch-network-edited.png, id=197, 940.51375pt x 615.29875pt>
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 
+      [3]
+<figures/prefetch-network-edited.png, id=213, 940.51375pt x 615.29875pt>
 File: figures/prefetch-network-edited.png Graphic file (type png)
 
 <use figures/prefetch-network-edited.png>
@@ -510,43 +535,29 @@ Package pdftex.def Info: figures/prefetch-network-edited.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/prefetch.png, id=198, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=214, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
 Package pdftex.def Info: figures/prefetch.png used on input line 59.
 (pdftex.def)             Requested size: 227.99927pt x 136.1161pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Warning: Citation `fisher2014link' on page \thepage  undefined on input l
+ine 119.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64 
-      [3]pdfTeX warning (ext4): destination with the same identifier (name{page
-.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.84 
-      [4pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.3}) has been already used, duplicate ignored
+l.139 
+       [4pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.84 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.4
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.84 
-      <./figures/prefetch-network-edited.png> <./figures/prefetch.png>]
-
-LaTeX Warning: Citation `fisher2014link' on page \thepage  undefined on input l
-ine 119.
-
-
+l.139 
+       <./figures/prefetch.png>]
 Overfull \hbox (8.46733pt too wide) in paragraph at lines 149--150
 []\T1/aer/m/n/9 We show the ef-fect of prefetch-ing in var-i-ous set-tings thro
 ugh-
@@ -565,15 +576,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.51 T
-      his case is what we are most curious about, whether a victim can [5pdfTeX
- warning (ext4): destination with the same identifier (name{table.1}) has been 
-already used, duplicate ignored
+l.48 T
+      his case is unlikely to present itself in reality since the prefetchin...
+[5pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.51 T
-      his case is what we are most curious about, whether a victim can]
+l.48 T
+      his case is unlikely to present itself in reality since the prefetchin...
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
+ been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.48 T
+      his case is unlikely to present itself in reality since the prefetchin...
+ <./figures/prefetch-network-edited.png>]
 Overfull \hbox (5.42537pt too wide) in paragraph at lines 66--67
 []\T1/aer/m/n/9 total size of prefetched re-sponses re-ceived by the browser 
  []
@@ -588,9 +607,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 
-       [6]) (./sections/discussion.tex) (./sections/conclusion.tex)
-(./csci5271.bbl
+l.134 \subsection
+                 {Experimental Validation for RQ1} [6])
+(./sections/discussion.tex) (./sections/conclusion.tex) (./csci5271.bbl
 Overfull \hbox (31.39023pt too wide) in paragraph at lines 16--21
 \T1/aer/m/n/9 200449834-[]Does-[]Alexa-[]have-[]a-[]list-[]of-[]its-[]top-[]ran
 ked-[]websites-[]$[], 
@@ -603,8 +622,8 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.155 
-       [7])
+l.141 \bibitem{edit-distance-matlab}
+                                     [7])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 91.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
@@ -619,17 +638,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 91.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 91.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 91.
 Package rerunfilecheck Info: File `csci5271.out' has not changed.
-(rerunfilecheck)             Checksum: B95DD8BFD80CEC3A044EC50CCFFE3708;1789.
+(rerunfilecheck)             Checksum: D2A100DE5ED03151CB2D49816F6BC578;1854.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 91.
  ) 
 Here is how much of TeX's memory you used:
- 6894 strings out of 494501
- 98610 string characters out of 6167030
- 195746 words of memory out of 5000000
- 9934 multiletter control sequences out of 15000+600000
+ 6900 strings out of 494501
+ 98684 string characters out of 6167030
+ 194746 words of memory out of 5000000
+ 9937 multiletter control sequences out of 15000+600000
  56158 words of font info for 81 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 41i,10n,35p,1123b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,10n,35p,1508b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015basic/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/lo
 cal/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
 /local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
@@ -647,10 +670,10 @@ tic/uhvr8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/u
 tmb8a.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
 >
-Output written on csci5271.pdf (8 pages, 817388 bytes).
+Output written on csci5271.pdf (8 pages, 819631 bytes).
 PDF statistics:
- 360 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 77 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 369 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

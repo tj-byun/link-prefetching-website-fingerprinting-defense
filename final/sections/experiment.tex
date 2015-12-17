@@ -103,6 +103,9 @@ crawler\cite{tor-browser-crawler} to capture packets for each of these
 webpages 144 times. In order to have equal data for comparison for some
 other websites, we also captured data for two other websites which we
 found to be similar.
+We found the classifier accuracy was not affected by much with these variations of dynamic link prefetching. 
+%We then collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
+%We crawled each page 36 times in order to get 144 packet capture sessions.
 
 
 \subsection{Feature Set}
@@ -127,9 +130,6 @@ We also observed many incoming and outgoing packets in our dataset which we were
 Some of this noise may have been due to the Tor browser querying the Tor directory for a list of Tor relays, trying to connect to some Tor relays before finally choosing a entry guard.\\
 We decided to use only one fine-grained feature after seeing a stong result report by Cai et al.\cite{cai2012touching}. This paper reports a classification accuracy of 83.7\% when using the sequence of packet directions. From the packet trace, we captured packet directions and represented them using letters. We then used an implementation\cite{edit-distance-matlab} of the edit distance algorithm\cite{edit-distance} as the distance function for a SVM-based classification.
 
-
-%\subsection{Effect of Prefetching Packets Size on Fingerprinting Attacks}
-Here, we will explain our second experiment. We will simulate a sub set of webpages we investigated in the previous experiment. Then, we will equip them with a mechanism so that they can affect the downstream traffic and finally their fingerprint. Then, we will analyze the result to see how this idea contributes to the effectiveness of attacks and defense techniques.
 
 \subsection{Experimental Validation for RQ1}
 We decided to try to evaluate the effect of prefetching by training and testing classifiers on opposite values of the prefetching setting. 
@@ -203,3 +203,54 @@ When opposite prefetching settings during the training and test stages are used,
 We conclude from the difference in performance of the three classifiers that using opposite prefetching setting during the training and test stages causes the performance of the classifier to drop, irrespective of the type of features used.\\
 
 \subsection{Experimental Validation for RQ2}
+We created a closed world model consisting of only two websites, the first being a copy of our Wired.com homepage\cite{tj-wired} and second being the homepage of the website EOnline.com\cite{eonline} since we found this website's homepage closely resembled the Wired.com homepage. 
+We used the Naive Bayes classifier on the coarse-grained features extracted from traffic for these two webpages. 
+We present our results in Table \ref{table:rq2-nb}. 
+In this case, we varied the number of prefetching requests to values 10, 50, 100 and the size of each prefetched response to 100, 1 KB, 10 KB. 
+
+\begin{table}[]
+\centering
+\caption{Experiment results for accuracy(\%) of Naive Bayes classifier using coarse-grained features for two websites when dynamic link prefetching is being used by one for the websites}
+\label{table:rq2-nb}
+\begin{tabular}{lllll}
+\cline{1-3}
+\multicolumn{1}{|l|}{Accuracy\textbackslash Prefetch Setting} & \multicolumn{1}{l|}{prefetch on} & \multicolumn{1}{l|}{prefetch off} &  &  \\ \cline{1-3}
+\multicolumn{1}{|l|}{Accuracy}                    & \multicolumn{1}{l|}{95.49}         & \multicolumn{1}{l|}{96.64}          &  &  \\ \cline{1-3}
+                                                     &                                  &                                   &  & 
+\end{tabular}                  
+\end{table}
+
+As can be observed, the use of dynamic link prefetching did not lead to a considerable drop in classifier accuracy. 
+A closer look at our dataset revealed one cause of this to be the difference in the features for the two websites even after prefetching was used. 
+
+\begin{table}[]
+\centering
+\caption{Experiment results for accuracy(\%) of Naive Bayes classifier using coarse-grained features for two websites when dynamic link prefetching is being used by one for the websites}
+\label{table:rq2-diff}
+\begin{tabular}{llllll}
+\cline{1-4}
+\multicolumn{1}{|l|}{\# of incoming pkts} & \multicolumn{1}{l|}{\# of outgoing pkts} & \multicolumn{1}{l|}{total incoming pkt size} & \multicolumn{1}{l|}{total outgoing pkt size} &  &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{1800}         & \multicolumn{1}{l|}{1400}  & \multicolumn{1}{l|}{2422900}  & \multicolumn{1}{l|}{455100}      &  &  \\ \cline{1-4}
+                                          &              &                                  &                                   &  & 
+\end{tabular}                  
+\end{table}
+
+
+
+We summarize the difference in the means of feature values of our copy of the dynamically prefetching Wired.com page and EOnline.com\cite{eonline} in Table \ref{table:rq2-diff}. It can be seen that there exists a large difference in every feature. 
+We also noted that this difference is equal to almost half the feature values for our dynamically prefetching version of Wired.com\cite{tj-wired}. 
+We investigated further in order to get to the root cause of this issue. 
+We even collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
+We crawled each page 36 times in order to get 144 packet capture sessions.
+However, we found the mean feature values for our copy of the dynamically prefetching Wired.com page from the new packet capture to be almost same as those from the previous capture. 
+The difference in the mean values also continued to be almost the same as shown in Table \ref{table:rq2-diff}.
+On further investigation we found that the Tor browser does not honor all the link prefetching requests specified in a webpage immediately after a page load has completed. 
+Prefetching requests continue to be sent many seconds after a page load has completed. 
+We found this behavior to be very different from the way prefetching requests are handled in the Chrome browser\cite{chrome}. 
+Our sample Wired.com page\cite{tj-wired} contains 1000 prefetching requests to be submitted by the browser.
+From the Web Inspector tool built into the Chrome browser, we can see all the prefetching requests for our sample Wired.com page being serviced during and after the page load completes whereas in the Tor browser we see only 4-6 requests being serviced.
+It is our conclusion that it is this deviation of the Tor browser from the expected behavior that causes all of our specified prefetching requests to not be serviced and prevents us from getting the packet capture containing traffic for the prefetching requests and responses.  
+
+
+%Values &  1800 &    1400  &    2422900    & 455100 
+

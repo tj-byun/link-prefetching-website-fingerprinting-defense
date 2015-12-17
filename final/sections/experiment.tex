@@ -33,7 +33,7 @@ during the testing stage by the attacker.
 \begin{enumerate}
 \item
 We speculate that prefetching itself might provide extra defense because
-of the extra packets. As per the Link Prefetching FAQ\cite{fisher2003},
+of the extra packets. As per the Link Prefetching FAQ~\cite{fisher2003},
 Firefox prefetches web content requested by the webpage at browser idle
 time where browser idle time is defined as the time when the web page
 has finished loading. If this is implemented similarly in the Tor
@@ -81,30 +81,30 @@ responses on the classifier accuracy.
 \subsection{Data Collection for RQ1 and RQ2}
 %write about the data collection and feature extraction procedure
 We created a web scraper using a Python framework called
-Scrapy\cite{scrapy} and ran on the top 10,000 most popular websites of
+Scrapy~\cite{scrapy} and ran on the top 10,000 most popular websites of
 the top 1 million as
-listed by Alexa\cite{alexa-top}. On scraping through the HTML content of
+listed by Alexa~\cite{alexa-top}. On scraping through the HTML content of
 the top 6000 websites for link prefetching keywords such as
 \textit{prerender},\textit{next},\textit{prefetch} we found 60 websites
 using link prefetching for caching web content in the browser. We then
-configured a virtual machine to run a Tor browser crawler\cite{tor-browser-crawler} to visit each
+configured a virtual machine to run a Tor browser crawler~\cite{tor-browser-crawler} to visit each
 of these 60 websites 16 times and captured all packets seen. This was
 done once with the \textit{prefetch-next} option left to its default
 value and repeated with this option turned off. By doing this, we
 captured packets for link prefetching as done currently in the real
 world by some of the most popular websites. \\
 When doing the data collection for \emph{RQ2}, we uploaded a copy of
-the Wired homepage\cite{wired} and uploaded on our
-webspace\cite{tj-wired}. We then created nine different variations of
+the Wired homepage~\cite{wired} and uploaded on our
+webspace~\cite{tj-wired}. We then created nine different variations of
 this page by changing the number of prefetching requests in this page to
 10,50,100 and changing the size of prefetched response per request to
 100,1 kB, 10 kB. We used the Tor browser
-crawler\cite{tor-browser-crawler} to capture packets for each of these
+crawler~\cite{tor-browser-crawler} to capture packets for each of these
 webpages 144 times. In order to have equal data for comparison for some
 other websites, we also captured data for two other websites which we
 found to be similar.
 We found the classifier accuracy was not affected by much with these variations of dynamic link prefetching. 
-%We then collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
+%We then collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage~\cite{tj-wired}. 
 %We crawled each page 36 times in order to get 144 packet capture sessions.
 
 
@@ -128,13 +128,13 @@ Total size of outgoing packets: We add up the size of TCP packets going out of t
 All four of the features described above can include noise from background connections being made by the client machine. 
 We also observed many incoming and outgoing packets in our dataset which we were not entirely able to explain, thus contributing to noise in our dataset itself. 
 Some of this noise may have been due to the Tor browser querying the Tor directory for a list of Tor relays, trying to connect to some Tor relays before finally choosing a entry guard.\\
-We decided to use only one fine-grained feature after seeing a stong result report by Cai et al.\cite{cai2012touching}. This paper reports a classification accuracy of 83.7\% when using the sequence of packet directions. From the packet trace, we captured packet directions and represented them using letters. We then used an implementation\cite{edit-distance-matlab} of the edit distance algorithm\cite{edit-distance} as the distance function for a SVM-based classification.
+We decided to use only one fine-grained feature after seeing a stong result report by Cai et al.~\cite{cai2012touching}. This paper reports a classification accuracy of 83.7\% when using the sequence of packet directions. From the packet trace, we captured packet directions and represented them using letters. We then used an implementation~\cite{edit-distance-matlab} of the edit distance algorithm~\cite{edit-distance} as the distance function for a SVM-based classification.
 
 
 \subsection{Experimental Validation for RQ1}
 We decided to try to evaluate the effect of prefetching by training and testing classifiers on opposite values of the prefetching setting. 
 This would allow us to observe the effect of prefetching on classifier accuracy and also allow us to confirm this effect by trying different classifiers on the same dataset.
-We decided to use the Naive Bayes classifier since it has been used by Hermann et al.\cite{hermann} and the SVM classifier with the edit distance as the distance function since it has been used by Cai et al.\cite{cai2012touching}. We provide a brief description of these classifiers in the following sections.
+We decided to use the Naive Bayes classifier since it has been used by Hermann et al.~\cite{hermann} and the SVM classifier with the edit distance as the distance function since it has been used by Cai et al.~\cite{cai2012touching}. We provide a brief description of these classifiers in the following sections.
 
 \subsubsection{Naive Bayes Classifier} 
 The Naive Bayes classifier is a simple classifier to test and acts as a first level sanity check in many classification problems before more complex classifiers are tried out. 
@@ -203,7 +203,7 @@ When opposite prefetching settings during the training and test stages are used,
 We conclude from the difference in performance of the three classifiers that using opposite prefetching setting during the training and test stages causes the performance of the classifier to drop, irrespective of the type of features used.\\
 
 \subsection{Experimental Validation for RQ2}
-We created a closed world model consisting of only two websites, the first being a copy of our Wired.com homepage\cite{tj-wired} and second being the homepage of the website EOnline.com\cite{eonline} since we found this website's homepage closely resembled the Wired.com homepage. 
+We created a closed world model consisting of only two websites, the first being a copy of our Wired.com homepage~\cite{tj-wired} and second being the homepage of the website EOnline.com~\cite{eonline} since we found this website's homepage closely resembled the Wired.com homepage. 
 We used the Naive Bayes classifier on the coarse-grained features extracted from traffic for these two webpages. 
 We present our results in Table \ref{table:rq2-nb}. 
 In this case, we varied the number of prefetching requests to values 10, 50, 100 and the size of each prefetched response to 100, 1 KB, 10 KB. 
@@ -227,27 +227,25 @@ A closer look at our dataset revealed one cause of this to be the difference in 
 \centering
 \caption{Experiment results for accuracy(\%) of Naive Bayes classifier using coarse-grained features for two websites when dynamic link prefetching is being used by one for the websites}
 \label{table:rq2-diff}
-\begin{tabular}{llllll}
-\cline{1-4}
-\multicolumn{1}{|l|}{\# of incoming pkts} & \multicolumn{1}{l|}{\# of outgoing pkts} & \multicolumn{1}{l|}{total incoming pkt size} & \multicolumn{1}{l|}{total outgoing pkt size} &  &  \\ \cline{1-4}
-\multicolumn{1}{|l|}{1800}         & \multicolumn{1}{l|}{1400}  & \multicolumn{1}{l|}{2422900}  & \multicolumn{1}{l|}{455100}      &  &  \\ \cline{1-4}
-                                          &              &                                  &                                   &  & 
-\end{tabular}                  
+
+\begin{tabular}{|l|l|l|l|}
+\hline
+\begin{tabular}[c]{@{}l@{}}number of\\ incoming\\ packets\end{tabular} & \begin{tabular}[c]{@{}l@{}}number of\\ outgoing\\ packets\end{tabular} & \begin{tabular}[c]{@{}l@{}}total size\\ of incoming\\ packets\end{tabular} & \begin{tabular}[c]{@{}l@{}}total size\\ of outgoing\\ packets\end{tabular} \\ \hline
+1,800                                                                  & 1,400                                                                  & 2,422,900                                                                  & 455,100                                                                    \\ \hline
+\end{tabular}
 \end{table}
 
-
-
-We summarize the difference in the means of feature values of our copy of the dynamically prefetching Wired.com page and EOnline.com\cite{eonline} in Table \ref{table:rq2-diff}. It can be seen that there exists a large difference in every feature. 
-We also noted that this difference is equal to almost half the feature values for our dynamically prefetching version of Wired.com\cite{tj-wired}. 
+We summarize the difference in the means of feature values of our copy of the dynamically prefetching Wired.com page and EOnline.com~\cite{eonline} in Table \ref{table:rq2-diff}. It can be seen that there exists a large difference in every feature. 
+We also noted that this difference is equal to almost half the feature values for our dynamically prefetching version of Wired.com~\cite{tj-wired}. 
 We investigated further in order to get to the root cause of this issue. 
-We even collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
+We even collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage~\cite{tj-wired}. 
 We crawled each page 36 times in order to get 144 packet capture sessions.
 However, we found the mean feature values for our copy of the dynamically prefetching Wired.com page from the new packet capture to be almost same as those from the previous capture. 
 The difference in the mean values also continued to be almost the same as shown in Table \ref{table:rq2-diff}.
 On further investigation we found that the Tor browser does not honor all the link prefetching requests specified in a webpage immediately after a page load has completed. 
 Prefetching requests continue to be sent many seconds after a page load has completed. 
-We found this behavior to be very different from the way prefetching requests are handled in the Chrome browser\cite{chrome}. 
-Our sample Wired.com page\cite{tj-wired} contains 1000 prefetching requests to be submitted by the browser.
+We found this behavior to be very different from the way prefetching requests are handled in the Chrome browser~\cite{chrome}. 
+Our sample Wired.com page~\cite{tj-wired} contains 1000 prefetching requests to be submitted by the browser.
 From the Web Inspector tool built into the Chrome browser, we can see all the prefetching requests for our sample Wired.com page being serviced during and after the page load completes whereas in the Tor browser we see only 4-6 requests being serviced.
 It is our conclusion that it is this deviation of the Tor browser from the expected behavior that causes all of our specified prefetching requests to not be serviced and prevents us from getting the packet capture containing traffic for the prefetching requests and responses.  
 

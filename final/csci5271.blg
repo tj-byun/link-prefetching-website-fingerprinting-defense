@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: csci5271.aux
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: csci5271.aux
 The style file: abbrv.bst
 Database file #1: csci5271.bib
 Warning--I didn't find a database entry for "fisher2014link"
@@ -10,4 +12,45 @@ Warning--to sort, need author or key in tor-browser-crawler
 Warning--to sort, need author or key in wired
 Warning--to sort, need author or key in tj-wired
 Warning--empty institution in nottingham2010
+You've used 26 entries,
+            2118 wiz_defined-function locations,
+            629 strings with 7876 characters,
+and the built_in function-call counts, 8737 in all, are:
+= -- 905
+> -- 318
+< -- 11
++ -- 134
+- -- 104
+* -- 486
+:= -- 1294
+add.period$ -- 90
+call.type$ -- 26
+change.case$ -- 131
+chr.to.int$ -- 0
+cite$ -- 34
+duplicate$ -- 376
+empty$ -- 782
+format.name$ -- 104
+if$ -- 1991
+int.to.chr$ -- 0
+int.to.str$ -- 26
+missing$ -- 14
+newline$ -- 135
+num.names$ -- 38
+pop$ -- 213
+preamble$ -- 1
+purify$ -- 103
+quote$ -- 0
+skip$ -- 289
+stack$ -- 0
+substring$ -- 489
+swap$ -- 129
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 104
+warning$ -- 8
+while$ -- 73
+width$ -- 28
+write$ -- 290
 (There were 9 warnings)

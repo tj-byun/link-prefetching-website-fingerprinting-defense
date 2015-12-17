@@ -103,11 +103,10 @@ X.~Luo, P.~Zhou, E.~W. Chan, W.~Lee, R.~K. Chang, and R.~Perdisci.
   encrypted flows.
 \newblock In {\em NDSS}, 2011.
 
-\bibitem{murdoch2005low}
-S.~J. Murdoch and G.~Danezis.
-\newblock Low-cost traffic analysis of tor.
-\newblock In {\em Security and Privacy, 2005 IEEE Symposium on}, pages
-  183--195. IEEE, 2005.
+\bibitem{edit-distance}
+G.~Navarro.
+\newblock A guided tour to approximate string matching.
+\newblock {\em ACM Comput. Surv.}, 33(1):31--88, Mar. 2001.
 
 \bibitem{nottingham2010}
 M.~Nottingham.
@@ -127,6 +126,14 @@ M.~Perry.
   \url{https://blog.torproject.org/blog/experimental-defense-website-traffic-fingerprinting},
   2011.
 \newblock Accessed: 2015-11-23.
+
+\bibitem{edit-distance-matlab}
+E.~Polityko.
+\newblock Calculation of distance between strings - matlab.
+\newblock
+  \url{http://www.mathworks.com/matlabcentral/fileexchange/17585-calculation-of-distance-between-strings/content/strdist.m},
+  2015.
+\newblock Accessed: 2015-12-14.
 
 \bibitem{shi2009}
 Y.~Shi and K.~Matsuura.

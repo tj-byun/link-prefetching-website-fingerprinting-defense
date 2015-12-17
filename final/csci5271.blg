@@ -1,9 +1,8 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: csci5271.aux
 The style file: abbrv.bst
 Database file #1: csci5271.bib
-Warning--I didn't find a database entry for "fisher2014link"
 Warning--to sort, need author or key in TorPage
 Warning--to sort, need author or key in TorBlog
 Warning--to sort, need author or key in scrapy
@@ -11,46 +10,47 @@ Warning--to sort, need author or key in alexa-top
 Warning--to sort, need author or key in tor-browser-crawler
 Warning--to sort, need author or key in wired
 Warning--to sort, need author or key in tj-wired
+Warning--to sort, need author or key in eonline
 Warning--empty institution in nottingham2010
-You've used 30 entries,
+You've used 32 entries,
             2118 wiz_defined-function locations,
-            653 strings with 8581 characters,
-and the built_in function-call counts, 10384 in all, are:
-= -- 1077
-> -- 395
+            659 strings with 8668 characters,
+and the built_in function-call counts, 10773 in all, are:
+= -- 1117
+> -- 403
 < -- 13
-+ -- 164
-- -- 130
-* -- 607
-:= -- 1557
-add.period$ -- 104
-call.type$ -- 30
-change.case$ -- 156
++ -- 168
+- -- 132
+* -- 619
+:= -- 1614
+add.period$ -- 111
+call.type$ -- 32
+change.case$ -- 163
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 439
-empty$ -- 907
-format.name$ -- 130
-if$ -- 2345
+cite$ -- 41
+duplicate$ -- 453
+empty$ -- 952
+format.name$ -- 132
+if$ -- 2436
 int.to.chr$ -- 0
-int.to.str$ -- 30
+int.to.str$ -- 32
 missing$ -- 18
-newline$ -- 155
-num.names$ -- 46
-pop$ -- 237
+newline$ -- 166
+num.names$ -- 48
+pop$ -- 253
 preamble$ -- 1
-purify$ -- 124
+purify$ -- 129
 quote$ -- 0
-skip$ -- 332
+skip$ -- 344
 stack$ -- 0
-substring$ -- 602
-swap$ -- 145
+substring$ -- 612
+swap$ -- 147
 text.length$ -- 13
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 120
-warning$ -- 8
-while$ -- 91
-width$ -- 32
-write$ -- 338
+type$ -- 128
+warning$ -- 9
+while$ -- 93
+width$ -- 34
+write$ -- 360
 (There were 9 warnings)

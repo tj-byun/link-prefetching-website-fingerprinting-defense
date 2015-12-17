@@ -1,6 +1,10 @@
-% sections/discussion.tex (excuse)
-
-%State clearly what measures a website should take to use link prefetching as a defense
-    %- mention the two parameters
-    %- talk about how the values for these two parameters should be set
-%Talk more about the difference in prefetching behavior for the two browsers
+% sections/discussion.tex
+The performance of link prefetching as a defense mechanism depends on the values used by the webpage for the number of prefetching requests made and the total size of prefetched responses. 
+A large number of outgoing requests and incoming responses would make the network prefetching traffic indistinguishable from the normal traffic required to display the webpage.
+If a webpage \textit{A} is to make its own network traffic fingerprint similar to another webpage  \textit{B}'s network traffic fingerprint, assuming that webpage \textit{A} currently has a smaller fingerprint than webpage \textit{B}, it should create prefetching network traffic to compensate for the difference in the network traffic fingerprints of \textit{A} and \textit{B}. 
+This can further be generalized to the open world model where every webpage can trigger a set of prefetching requests and responses which change its fingerprint to be more similar to a different webpage which has a larger fingerprint. 
+This can work for fingerprints which use coarse-grained features as well as fine-grained features.
+e.g. a webpage \textit{A} that finds another webpage \textit{B} that creates \textit{K} more outgoing packets resulting in an increase in the total incoming packet size of \textit{S} can simply issue \textit{K} prefetching requests for resources that have a total size of \textit{S}. 
+It should however be noted that webpage \textit{A} would have to make requests for resources that are unlikely to be currently cached by the browser.\\
+Some attacks may also choose to look at only the first 50 or 100 packets that show up in a packet capture for a given webpage and try to develop a fingerprint using only those packets. 
+While the question of the number of packets to be used to create a fingerprinting is definitely interesting, it also needs to be further investigated how many prefetching request and response packets appear in such packet captures. 

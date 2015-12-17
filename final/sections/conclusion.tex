@@ -1,7 +1,13 @@
 % sections/conclusion.tex
 
-What we have done in this work is so cool and awesome.
-What you may criticize will all be put here as ''future work''.
+%What we have done in this work is so cool and awesome.
+%What you may criticize will all be put here as ''future work''.
 
-This section will conclude the result of our experiments. Finally we will provide some evidence to show how pre-fetching affect fingerprinting attacks. Based on our result, we are planing to suggest some defense mechanisms.
-
+%This section will conclude the result of our experiments. Finally we will provide some evidence to show how pre-fetching affect fingerprinting attacks. Based on our result, we are planing to suggest some defense mechanisms.
+We proposed a new method for defending against website fingerprinting attacks on the Tor anonymity network. 
+Link prefetching allows web pages to specify resources which are expected to be downloaded by the browser in the near future and provides web developers with an opportunity to improve user experience on their websites. 
+We presented how link prefetching can be useful not only for improved browsing experience but also for acting as a defense mechanism against fingerprinting attacks. 
+We showed the effect of link prefetching on different features used by fingerprinting attack classifiers. 
+We formulated the challenge of using link prefetching as a defense mechanism in the form of two research questions and designed experiments to evaluate answers to our research questions. 
+We create three different classifiers to evaluate the effect of the link prefetching setting on existing real world link prefetching performed by 60 of the 6000 most popular Alexa websites and found the existence of prefetching traffic to reduce the accuracy of classifiers.
+We then tried to evaluate the effect of changing the parameter values on the fingerprintability of a webpage but found that the Tor browser does not honor the prefetching requests specified in our test webpage. This behavior deviates from the expected behavior of downloading the prefetching requests once the webpage itself has finished downloading. Finally we discussed how a webpage can calculate the value of the number of prefetching requests and size of prefetched responses in order to disguise its fingerprint. 

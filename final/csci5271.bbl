@@ -19,6 +19,11 @@ Does alexa have a list of its top-ranked websites ? - alexa support.
   2015.
 \newblock Accessed: 2015-12-14.
 
+\bibitem{eonline}
+Entertainment news.
+\newblock \url{http://www.eonline.com/}, 2015.
+\newblock Accessed: 2015-12-14.
+
 \bibitem{scrapy}
 Scrapy - a fast and powerful scraping and web crawling framework.
 \newblock \url{http://scrapy.org}, 2015.
@@ -36,8 +41,7 @@ Wired.
 
 \bibitem{tj-wired}
 Wired.
-\newblock \url{http://www-users.cs.umn.edu/~byunx063/wired_prefetch_10_1.html},
-  2015.
+\newblock \url{http://www-users.cs.umn.edu/~byunx063/wired/random1.html}, 2015.
 \newblock Accessed: 2015-12-04.
 
 \bibitem{Cai:2014kjb}
@@ -88,6 +92,12 @@ X.~Fu, B.~Graham, R.~Bettati, and W.~Zhao.
 \newblock On countermeasures to traffic analysis attacks.
 \newblock In {\em Information Assurance Workshop, 2003. IEEE Systems, Man and
   Cybernetics Society}, pages 188--195. IEEE, 2003.
+
+\bibitem{chrome}
+Google.
+\newblock Chrome.
+\newblock \url{http://www.chrome.google.com/}, 2015.
+\newblock Accessed: 2015-12-14.
 
 \bibitem{hermann}
 D.~Herrmann, R.~Wendolsky, and H.~Federrath.

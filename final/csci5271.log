@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  16 DEC 2015 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.11)  16 DEC 2015 23:48
 entering extended mode
 **C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
 (C:/Users/Elaheh/Downloads/csci5271/final/csci5271.tex
@@ -433,13 +433,13 @@ ymity
 
 ])
 (sections/fingerprinting.tex
-<figures/tor.png, id=161, 725.20938pt x 311.66437pt>
+<figures/tor.png, id=160, 725.20938pt x 311.66437pt>
 File: figures/tor.png Graphic file (type png)
  <use figures/tor.png>
 Package pdftex.def Info: figures/tor.png used on input line 19.
 (pdftex.def)             Requested size: 240.0pt x 103.13965pt.
 
-<figures/attack_model.png, id=168, 348.8232pt x 109.3686pt>
+<figures/attack_model.png, id=167, 348.8232pt x 109.3686pt>
 File: figures/attack_model.png Graphic file (type png)
 
 <use figures/attack_model.png>
@@ -451,37 +451,38 @@ Overfull \hbox (7.58527pt too wide) in paragraph at lines 4--5
 
  []
 
-
-Overfull \hbox (1.98656pt too wide) in paragraph at lines 13--22
-\T1/aer/m/n/9 packet sizes. The WF at-tacks on Tor sug-gested by Penchenko
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 
+l.12 
       [2pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 
+l.12 
      pdfTeX warning (ext4): destination with the same identifier (name{figure.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.22 
+l.12 
       <./figures/tor.png> <./figures/attack_model.png>]
+Overfull \hbox (1.98656pt too wide) in paragraph at lines 13--22
+\T1/aer/m/n/9 packet sizes. The WF at-tacks on Tor sug-gested by Penchenko
+ []
+
+
 Underfull \vbox (badness 1558) has occurred while \output is active []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 
-      [3]) (sections/prefetching.tex
+l.70 W
+      eb prefetching has been widely used to reduce the latency for users. F...
+[3]) (sections/prefetching.tex
 LaTeX Font Info:    Try loading font information for T1+aett on input line 35.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
@@ -492,7 +493,7 @@ Overfull \hbox (3.55208pt too wide) in paragraph at lines 35--40
 m-ple, a \T1/aett/m/n/9 link \T1/aer/m/n/9 tag \T1/aett/m/n/9 <link rel="p-
  []
 
-<figures/prefetch-network-edited.png, id=227, 940.51375pt x 615.29875pt>
+<figures/prefetch-network-edited.png, id=225, 940.51375pt x 615.29875pt>
 File: figures/prefetch-network-edited.png Graphic file (type png)
 
 <use figures/prefetch-network-edited.png>
@@ -503,7 +504,7 @@ Package pdftex.def Info: figures/prefetch-network-edited.png used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/prefetch.png, id=228, 1008.76875pt x 602.25pt>
+<figures/prefetch.png, id=226, 1008.76875pt x 602.25pt>
 File: figures/prefetch.png Graphic file (type png)
 
 <use figures/prefetch.png>
@@ -524,14 +525,14 @@ l.80
  identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134 
-       [5pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.3}) has been already used, duplicate ignored
+l.122 \begin{equation}
+                       [5pdfTeX warning (ext4): destination with the same ident
+ifier (name{figure.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.134 
-       <./figures/prefetch-network-edited.png>]
+l.122 \begin{equation}
+                       <./figures/prefetch-network-edited.png>]
 Overfull \hbox (8.46733pt too wide) in paragraph at lines 149--150
 []\T1/aer/m/n/9 We show the ef-fect of prefetch-ing in var-i-ous set-tings thro
 ugh-
@@ -602,12 +603,6 @@ e.2}) has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.204 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.204 
       ]
 
 LaTeX Warning: No positions in optional float specifier.
@@ -638,7 +633,13 @@ ntifier (name{page.}) has been already used, duplicate ignored
                    \relax 
 l.82 
       [8pdfTeX warning (ext4): destination with the same identifier (name{table
-.4}) has been already used, duplicate ignored
+.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.82 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.4}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -665,14 +666,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \bibitem{fisher2004link}
-                              [9pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.5}) has been already used, duplicate ignored
+l.70 
+      [9pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.84 \bibitem{fisher2004link}
-                              <./figures/firechrome.png>]
+l.70 
+      <./figures/firechrome.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
@@ -694,11 +695,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
 Here is how much of TeX's memory you used:
  6812 strings out of 493673
  96219 string characters out of 3141527
- 201364 words of memory out of 3000000
+ 203364 words of memory out of 3000000
  9914 multiletter control sequences out of 15000+200000
  56158 words of font info for 81 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 41i,13n,34p,1052b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,34p,1053b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program File
@@ -714,7 +715,7 @@ pe1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/
 helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/ut
 mb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on csci5271.pdf (10 pages, 952919 bytes).
+Output written on csci5271.pdf (10 pages, 952199 bytes).
 PDF statistics:
  425 PDF objects out of 1000 (max. 8388607)
  90 named destinations out of 1000 (max. 500000)

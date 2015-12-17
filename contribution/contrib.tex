@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage{amsfonts}
+
+\title{Individual Contribution}
+\author{Taejoon Byun, Vaibhav Sharma}
+\date{December 16 2015}
+
+\begin{document}
+
+\section{Vaibhav's Contribution}
+\begin{enumerate}
+\item
+{\bf Summary}:
+The general idea of our project was to work towards creating a website fingerprinting attack or evaluating a novel defense against known attacks. 
+Vaibhav suggested the use of link prefetching(suggested as future work in a website fingerprinting presented by Rob Johnson), read through current literature on website fingerprinting attacks and defenses, designed experiments to evaluate the effect of link prefetching on webpage fingerprints, created classifiers to run these experiments.
+\item
+{\bf Experiment}
+\begin{itemize}
+\item
+Vaibhav designed the experiments together with Taejoon and provided frequent feedback about the intermediary results.
+\item
+Vaibhav did everything related to feature extraction, classifier design.
+\end{itemize}
+\item
+{\bf Writing}: Vaibhav wrote the Abstract, Experimental Evaluation, Discussion, Conclusion sections of the paper.
+\item
+{\bf Presentation}: Vaibhav designed 30\% of the presentation slides in collaboration with Taejoon and presented the 2nd half to class.
+\item
+{\bf Hours Spent}: Vaibhav spent an average of 7 hours for the last 6 days, 20 hours for the presentation, an average of 7 hours on the Thanks Giving holiday (for 3 days), and an average of 3 hours a week for the rest of the weeks throughout this semester.
+$t_{\mathit{last\_week}} = 7 \times 6 = 42$,
+$t_{\mathit{presentation\_week}} = 20$,
+$t_{\mathit{holiday}} = 7 \times 3 = 21$,
+$t_{\mathit{weekly}} = 10 \times 3 = 30$,
+$T = 42 + 20 + 21 + 30 = 113 (hours)$.
+\end{enumerate}
+
+
+
+\section{Taejoon's Contribution}
+\begin{enumerate}
+\item
+{\bf Summary}:
+Taejoon had been actively engaged in this project throughout the whole semester.
+He participated in every meeting with Professor McCamant and every big and small team meetings.
+His major contribution on this project lies in writing about the effect of prefetching, data collection, and performing experiment together with Vaibhav (he is the major contributor).
+\item
+{\bf Idea}: Taejoon has first suggested the direction of our research to study defense mechanism against website fingerprinting attacks by changing the contents on the server side, which was concretized through Vaibhav's suggestion to use link prefetching as a way of doing it.
+\item
+{\bf Experiment}
+\begin{itemize}
+\item
+He designed and performed the experiments together with Vaibhav and provided frequent feedback about the intermediary results.
+\item
+Taejoon did everything related to data collection, from analysis of prefetching websites to packet capturing for all the dataset.
+This involved setting up virtual machines to gather dataset, writing several Python scripts to crawl 6000 websites to find which website implements prefetching, and running a crawler multiple times.
+\item
+He also constructed the expererimental setting to see how different prefetching parameters affect the acuracy of fingerprinting, by setting up a copy of a famous website and implementing a script to control the size and number of resources to pre-fetch.
+\end{itemize}
+\item
+{\bf Writing}: Taejoon organized the structure of the paper and wrote section 4 (link prefetching) and a part of the introduction section.
+\item
+{\bf Presentation}: Taejoon wrote 70\% of the final presentation slides, and delivered 50\% of the work to the audience in class.
+\item
+{\bf Logistics}: Taejoon set up and managed tools and services to facilitate communication and an efficient collaboration among the team members -- he set up a Slack page {\tt csci5271.slack.com} which was actively used throughout the semester as a primary means of discussion and file sharing, and also managed the Git repository ({\tt https://github.com/bntejn/csci5271}).
+\item
+{\bf Hours Spent}: Taejoon spent an average of 7 hours for the last 6 days, 20 hours for the presentation, an average of 7 hours on the Thanks Giving holiday (for 3 days), and an average of 3 hours a week for the rest of the weeks throughout this semester.
+$t_{\mathit{last\_week}} = 7 \times 6 = 42$,
+$t_{\mathit{presentation\_week}} = 20$,
+$t_{\mathit{holiday}} = 7 \times 3 = 21$,
+$t_{\mathit{weekly}} = 10 \times 3 = 30$,
+$T = 42 + 20 + 21 + 30 = 113 (hours)$.
+\end{enumerate}
+
+
+\section{Elaheh's Contribution}
+
+\begin{enumerate}
+\item
+{\bf Summary}:
+Elaheh has been engaged in this project throughout the whole semester.
+She participated in every meeting with Professor McCamant and every team meetings.
+Her major contribution on this project lies in writing about the Website Fingerprinting on Tor providing the background, related Work, part of Introduction.
+\item
+{\bf Idea}: Worked on the attack model and the way we can collect data and sniff the network using VMs. She also had some idea about traffic morphing at the Tor level, which we investigated a long with other ideas we had at first.
+\item
+{\bf Project}
+\begin{itemize}
+\item
+Captured packets for our previous idea about the WF attack, though it was not related to pre-fetching work
+\item
+Worked on related work.
+\item
+Searched for different classifiers, investigating feature extraction, especially with WEKA. However, we did not use that.
+\end{itemize}
+\item
+{\bf Writing}: Worked on organizing and the structure of the final report.
+\item
+{\bf Hours Spent}: Elaheh spent an average of 3 hours per day throughout the semester spending most of the time on reading different papers. During the last week, in average, she has been working 5 hours per day on the project.
+\end{enumerate}
+
+
+\section{Se Eun's Contribution}
+\begin{enumerate}
+\item
+{\bf Summary}:
+She suggested the idea of website fingerprinting for the course project, provided feedback on existing literature, suggested the Tor browser crawler to be used and participated in the report writing.
+\item
+{\bf Experiment}
+\begin{itemize}
+\item
+She gave the group basic information on how Tor networks work, what website fingerprinting attacks and defenses are useful.
+\item
+She gave pointers to the Tor browser crawler, helped resolve issues with it during initial packet capture sessions.
+\end{itemize}
+\item
+{\bf Writing}: She edited the Related Work section of the report and provided feedback on other sections. 
+\item
+{\bf Presentation}: She wrote the Related Work section of the presentation.
+\item
+{\bf Hours Spent}: She spent an average of 3 hours a week for first 4 weeks of the semester and 2 hours a week in the final 2 weeks leading up to the deadline of this report.
+\end{enumerate}
+
+
+
+
+\end{document}

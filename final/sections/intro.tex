@@ -10,7 +10,6 @@
 % 7. Remaining sections
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 % 1. Tor & WF 
 Tor is an overlay network that provides communication anonymity and security using onion routing.
 An onion network encapsulates a message in layers of encryption and reroutes the messages throughout volunteering nodes, so as to hide not only the contents of the message but also the location of the origin.
@@ -24,25 +23,23 @@ Especially, Cai et al.~\cite{cai2012touching} showed that their attack can succe
 
 % 3. Defense
 Several defenses were also suggested accordingly to defend users against fingerprinting attacks.
-Those defense mechanisms are usually developed at the IP/TCP level by changing the pattern of traffic, whether by splitting, morphing, injecting, or padding packets~\cite{luo2011}.
+Those defense mechanisms are usually developed at the IP/TCP level by changing the pattern of the traffic whether by splitting, morphing, injecting, or padding packets~\cite{fu2003, wright2009, luo2011, perry11}.
+Many of the defense mechanisms, however, had been neutralized by following attacks~\cite{cai2012touching}.
+Moreover, {\bf (WHAT IS THE POSITION OF OUR WORK???)}?
 
-For example, they splited packets into multiple packets, injected spurious packets into the traffic, or involved  padding packets to prevent from leaking features of traffic.
-A study performed in \cite{fu2003} suggested to transmit packets at random intervals as a defense mechanism against traffic analysis.
-Another defense technique proposed in \cite{wright2009}, called traffic morphing, uses some tricks to change a traffic pattern to disguise new or existing other traffic.
-However, since their approach still leaks the information such as packet order, attacks that work without packet size information can easily defeat their mechanism.
+% 4. Why prefetching
+In this work, we propose a novel technique to provide defense against WF attacks using link prefetching.
+Link prefetching is a HTML syntax that gives hints to a browser the list of resources and pages to pre-fetch, when it can be sure about which page a user is likely to request next.
+When the browser encounters pre-fetch tags, it silently loads and caches the specified resources after the page is fully loaded.
+Since prefetching generates extra outgoing and incoming packets, it affects the features of website fingerprint and thus undermines the accuracy of the classifiers used in WF attack (Section~\ref{sec4}).
 
-In \cite{luo2011}, Luo et al. proposed novel HTTP/TCP level defense mechanisms against some analysis attacks by changing window sizes and the order of packets in the TCP stream.
-Besides, at the HTTP level, they tried to inject some extra data into HTTP GET headers, generate some irrelevant HTTP request, and re-order requests.
-The Tor community also introduced "randomized pipelining" \cite{perry11} to defend the WF, by having the browser load the web content in a random order.
-Despite such techniques, the proposed attack in \cite{cai2012touching} managed to successfully recognize target web pages with the accuracy of 87\%. 
-Howerver, all exisitng defenses have not been neither efficient nor effective for fancy WF attacks. %This attack is able to ignore packet sizes, while most of the attacks on Tor work based on packet sizes.
-In contrast, our work more focuses on utilizing existing HTML systax that is link prefetching shown in Section 4, which subsequently does not accomodate extra cost.
-
+% 5. Experimental validation
+We validated our approach through a series of experiments for the two research questions -- (1) {\it does prefetching itself provide an extra degree of defense?} (2) {\it can prefetching be uses as a browser-side mechanism?}
 
 % we should say, there is lots of work trying to prevent WF attack. And, in this project, we studied most of the state of the art works, and tries to provide a novel defend mechanism [or something similar]
 % we want to add a summary about we have done
 
-% 7. Contribution
+% 6. Contribution
 The major contribution of our work is twofolds:
 \begin{itemize}
 \item
@@ -50,7 +47,7 @@ We present a novel approach of using link prefetching as a defense mechanism aga
 \end{itemize}
 
 % 8. Remaining sections
-The remaining sections of this report is organized as follows: Section~\ref{sec2} provides a brief background about Tor anonymity network and website fingerprinting and Section~\ref{sec3} mentions related works on website fingerprinting attacks, defenses and criticisms.
-We suggest link prefetching as a defense mechanism in Section~\ref{sec4} followed by experimental evaluation (Section~\ref{sec5})
+The remaining sections of this report is organized as follows: Section~\ref{sec2} provides a brief background about Tor anonymity network and website fingerprinting, and Section~\ref{sec3} mentions related works on website fingerprinting attacks, defenses and criticisms.
+We suggest link prefetching as a defense mechanism in Section~\ref{sec4} followed by experimental evaluation (Section~\ref{sec5}).
 Section~\ref{sec6} discusses about the feasibility of the proposed defense based on experimental result, and finally conclude our report on Section~\ref{sec7}.
 

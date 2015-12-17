@@ -103,9 +103,9 @@ crawler\cite{tor-browser-crawler} to capture packets for each of these
 webpages 144 times. In order to have equal data for comparison for some
 other websites, we also captured data for two other websites which we
 found to be similar.
-We found the classifier accuracy was not affect by much with these variations of dynamic link prefetching. 
-We then collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
-We crawled each page 36 times in order to get 144 packet capture sessions.
+We found the classifier accuracy was not affected by much with these variations of dynamic link prefetching. 
+%We then collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
+%We crawled each page 36 times in order to get 144 packet capture sessions.
 
 
 \subsection{Feature Set}
@@ -237,7 +237,20 @@ A closer look at our dataset revealed one cause of this to be the difference in 
 
 
 
-We summarize this difference in Table \ref{table:rq2-diff}.
-%
+We summarize the difference in the means of feature values of our copy of the dynamically prefetching Wired.com page and EOnline.com\cite{eonline} in Table \ref{table:rq2-diff}. It can be seen that there exists a large difference in every feature. 
+We also noted that this difference is equal to almost half the feature values for our dynamically prefetching version of Wired.com\cite{tj-wired}. 
+We investigated further in order to get to the root cause of this issue. 
+We even collected another dataset wherein the number of prefetching requests made for every page was 1000 and the size of the prefetched response was between 2-4 MB and created four such variations of the Wired homepage on our webspage\cite{tj-wired}. 
+We crawled each page 36 times in order to get 144 packet capture sessions.
+However, we found the mean feature values for our copy of the dynamically prefetching Wired.com page from the new packet capture to be almost same as those from the previous capture. 
+The difference in the mean values also continued to be almost the same as shown in Table \ref{table:rq2-diff}.
+On further investigation we found that the Tor browser does not honor all the link prefetching requests specified in a webpage immediately after a page load has completed. 
+Prefetching requests continue to be sent many seconds after a page load has completed. 
+We found this behavior to be very different from the way prefetching requests are handled in the Chrome browser\cite{chrome}. 
+Our sample Wired.com page\cite{tj-wired} contains 1000 prefetching requests to be submitted by the browser.
+From the Web Inspector tool built into the Chrome browser, we can see all the prefetching requests for our sample Wired.com page being serviced during and after the page load completes whereas in the Tor browser we see only 4-6 requests being serviced.
+It is our conclusion that it is this deviation of the Tor browser from the expected behavior that causes all of our specified prefetching requests to not be serviced and prevents us from getting the packet capture containing traffic for the prefetching requests and responses.  
+
+
 %Values &  1800 &    1400  &    2422900    & 455100 
 
